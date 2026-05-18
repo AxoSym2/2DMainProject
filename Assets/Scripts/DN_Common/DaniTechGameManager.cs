@@ -7,6 +7,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     // 플레이 중에 저장되어야 하는 정보들이 있는 위치
     private DaniTechPlayerModel _playerModel = new DaniTechPlayerModel();
+    private GameObject _currentMap;
 
     private void Awake()
     {
@@ -59,5 +60,27 @@ public class DaniTechGameManager : MonoBehaviour
     {
         // _playerModel이 Private이므로 외부에서 ItemList를 받아올 수 있게 Get함수를 사용한다
         return _playerModel.ItemList;
+    }
+
+    public void StartChapter(int chapterIdx)
+    {
+        if (_currentMap != null)
+        {
+            Destroy(_currentMap);
+        }
+
+        string mapPath = $"Prefabs/Map/Chapter{chapterIdx:D2}";
+        GameObject mapPrefab = Resources.Load<GameObject>(mapPath);
+
+        if (mapPrefab == null) 
+        {
+            Debug.LogError($"맵을 찾을 수 없습니다.: {mapPath}");
+            return;
+        }
+
+        _currentMap = Instantiate(mapPrefab);
+
+        DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterPopup);
     }
 }
