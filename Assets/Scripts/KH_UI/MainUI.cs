@@ -35,10 +35,12 @@ public class MainUI : DaniTechUIBase
     {
         Debug.Log("에너지상점열기");
     }
+
     public void OnClick_Chip()
     {
         Debug.Log("칩셋상점열기");
     }
+
     public void OnClick_Jewel()
     {
         Debug.Log("보석상점열기");
@@ -59,7 +61,7 @@ public class MainUI : DaniTechUIBase
     public void OnClick_Chapter()
     {
         Debug.Log("챕터열기");
-
+        DaniTechUIManager.Instance.OpenChapterPopup();
     }
 
     public void OnClick_Chipset()

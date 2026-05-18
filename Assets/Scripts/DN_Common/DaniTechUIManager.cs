@@ -124,5 +124,4 @@ public class DaniTechUIManager : MonoBehaviour
     {
         CloseUI(DaniTechUIRootType.PopupUI, uiType);
     }
-
 }

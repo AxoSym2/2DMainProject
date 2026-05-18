@@ -21,7 +21,8 @@ public enum DaniTechUIType
     DNInfoBookUI,
     RobbyUI,
     MainUI,
-    LoadingUI
+    LoadingUI,
+    ChapterPopup
 
 }
 
@@ -116,6 +117,16 @@ public static class DaniTechUIManagerExtension
         if (uiBase is DaniTech_DialogueUI dialogueUi)
         {
             dialogueUi.StartDialogue(startDialogueId);
+        }
+    }
+
+    public static void OpenChapterPopup(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.ChapterPopup);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("UI가 생성되지 않았습니다");
+            return;
         }
     }
 }
