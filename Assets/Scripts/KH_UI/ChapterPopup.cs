@@ -30,6 +30,7 @@ public class ChapterPopup : DaniTechUIBase
 
     public void OnClick_StartChpater()
     {
+        DaniTechUIManager.Instance.OpenLoadingUI();
         DaniTechGameManager.Inst.StartChapter(_currentChapterIdx);
         Debug.Log("챕터시작");
     }
