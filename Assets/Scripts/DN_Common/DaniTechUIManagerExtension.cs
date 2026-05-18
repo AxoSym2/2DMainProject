@@ -20,7 +20,9 @@ public enum DaniTechUIType
     DNDialogueUI,
     DNInfoBookUI,
     RobbyUI,
-    MainUI
+    MainUI,
+    LoadingUI
+
 }
 
 public static class DaniTechUIManagerExtension
@@ -89,7 +91,7 @@ public static class DaniTechUIManagerExtension
 
     public static void OpenLoadingUI(this DaniTechUIManager uiManager)
     {
-        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DNLoadingUI);
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LoadingUI);
         if (uiBase == null)
         {
             Debug.LogWarning($"UI가 생성되지 않았습니다");
@@ -99,7 +101,7 @@ public static class DaniTechUIManagerExtension
 
     public static void CloseLoadingUI(this DaniTechUIManager uiManager)
     {
-        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.DNLoadingUI);
+        uiManager.CloseUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LoadingUI);
     }
 
     public static void OpenDialogueUI(this DaniTechUIManager uiManager, string startDialogueId)
