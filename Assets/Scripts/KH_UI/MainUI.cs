@@ -57,14 +57,14 @@ public class MainUI : DaniTechUIBase
     public void OnClick_Lab()
     {
         DaniTechUIManager.Instance.CloseAllContentUI();
-        Debug.Log("실험실열기");
+        //Debug.Log("실험실열기");
         DaniTechUIManager.Instance.OpenLabUI();
     }
 
     public void OnClick_Chapter()
     {
         DaniTechUIManager.Instance.CloseAllContentUI();
-        Debug.Log("챕터열기");
+        //Debug.Log("챕터열기");
         DaniTechUIManager.Instance.OpenChapterUI();
     }
 
