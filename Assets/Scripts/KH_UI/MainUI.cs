@@ -12,6 +12,7 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Chipset;
     [SerializeField] private DaniTechUIButton Button_Buddy;
 
+    [SerializeField] private AudioSource AudioSource_BGM;
 
     private void OnEnable()
     {
@@ -24,11 +25,13 @@ public class MainUI : DaniTechUIBase
         Button_Chapter.BindOnClickButtonEvent(OnClick_Chapter);
         Button_Chipset.BindOnClickButtonEvent(OnClick_Chipset);
         Button_Buddy.BindOnClickButtonEvent(OnClick_Buddy);
+
+        DaniTechGameUtil.LoadAndPlayAudioClip(AudioSource_BGM, "Sound/BGM_MainUI", isLoop: true).Forget();
     }
 
     private void OnDisable()
     {
-        
+        AudioSource_BGM.Stop();
     }
 
     public void OnClick_Energy()
