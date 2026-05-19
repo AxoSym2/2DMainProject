@@ -69,17 +69,23 @@ public class DaniTechGameManager : MonoBehaviour
             Destroy(_currentMap);
         }
 
-        string mapPath = $"Map/Prefab/Chapter{chapterIdx:D2}";
-        GameObject mapPrefab = Resources.Load<GameObject>(mapPath);
+        string chapterId = $"Chapter_Earth_{chapterIdx}";
+        ChapterData data = DaniTechGameDataManager.Instance.GetChapterData(chapterId);
 
+        if (data == null) 
+        {
+            Debug.LogError($"챕터 데이터 없음: {data}");
+            return;
+        }
+
+        GameObject mapPrefab = Resources.Load<GameObject>(data.PrefabPath);
         if (mapPrefab == null) 
         {
-            Debug.LogError($"맵을 찾을 수 없습니다.: {mapPath}");
+            Debug.LogError($"맵을 찾을 수 없습니다.: {data.PrefabPath}");
             return;
         }
 
         _currentMap = Instantiate(mapPrefab);
-
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterPopup);
     }
