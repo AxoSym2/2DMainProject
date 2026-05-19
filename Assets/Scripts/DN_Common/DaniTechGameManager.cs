@@ -117,4 +117,14 @@ public class DaniTechGameManager : MonoBehaviour
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterPopup);
         DaniTechUIManager.Instance.OpenInGameUI();
     }
+
+    public void ReturnToMainUI()
+    {
+        if (_currentMap != null) Destroy(_currentMap);
+        if (_currentPlayer != null) Destroy(_currentPlayer);
+
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.PausePopup);
+        DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
+        DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+    }
 }

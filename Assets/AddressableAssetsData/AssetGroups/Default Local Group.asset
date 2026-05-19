@@ -85,6 +85,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79d82ced71bf7844f8d9f87ffff4ca88
+    m_Address: Texture2D/Apocalypse_Project_Loading_Image4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 802c71914e1d4bd4dbbe725c5edaee2f
     m_Address: Texture2D/Apocalypse_Project_Loading_Image2
     m_ReadOnly: 0
@@ -132,6 +137,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d8d61a3cf509c944a9072703554e32fb
     m_Address: Sound/Voice_Pug_1_success
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d994c28eafc854a4a8ae3faf4463f8e2
+    m_Address: Texture2D/Apocalypse_Project_Loading_Image5
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

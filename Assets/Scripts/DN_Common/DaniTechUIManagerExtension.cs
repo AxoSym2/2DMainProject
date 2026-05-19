@@ -23,7 +23,8 @@ public enum DaniTechUIType
     MainUI,
     LoadingUI,
     ChapterPopup,
-    InGameUI
+    InGameUI,
+    PausePopup
 
 }
 

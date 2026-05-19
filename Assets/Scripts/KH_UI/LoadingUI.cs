@@ -20,7 +20,7 @@ public class LoadingUI : DaniTechUIBase
 
     private void LoadAndSetLoadingImage()
     {
-        int randomIdx = UnityEngine.Random.Range(0, 3);
+        int randomIdx = UnityEngine.Random.Range(0, 5);
 
         string texturePath = string.Empty;
         switch (randomIdx)
@@ -33,6 +33,12 @@ public class LoadingUI : DaniTechUIBase
                 break;
             case 2:
                 texturePath = "Texture2D/Apocalypse_Project_Loading_Image3";
+                break;
+            case 3:
+                texturePath = "Texture2D/Apocalypse_Project_Loading_Image4";
+                break;
+            case 4:
+                texturePath = "Texture2D/Apocalypse_Project_Loading_Image5";
                 break;
         }
 
