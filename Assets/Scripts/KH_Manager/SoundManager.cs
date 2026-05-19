@@ -1,16 +1,24 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static SoundManager Instance {  get; set; }
+
+    [SerializeField] private AudioSource AudioSource_BGM;
+
+    private void Awake()
     {
-        
+        Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayBGM(string bgmPath)
     {
-        
+        DaniTechGameUtil.LoadAndPlayAudioClip(AudioSource_BGM, bgmPath, isLoop: true).Forget();
+    }
+
+    public void StopBGM()
+    {
+        if (AudioSource_BGM == null) return;
+        AudioSource_BGM.Stop();
     }
 }
