@@ -9,6 +9,8 @@ public class DaniTechUIButton : MonoBehaviour
     [SerializeField] private Image Image_Base;
     [SerializeField] private Image Image_Select;
 
+    [SerializeField] private string BGMPath;
+
     private void Awake()
     {
         // 1-2) 이 오브젝트가 생성될 때, 한번 컴포넌트를 찾아서 캐싱하자
@@ -80,6 +82,11 @@ public class DaniTechUIButton : MonoBehaviour
         {
             bool currentActive = Image_Select.gameObject.activeSelf;
             Image_Select.gameObject.SetActive(!currentActive);
+        }
+
+        if(string.IsNullOrEmpty(BGMPath) == false)
+        {
+            SoundManager.Instance.PlayBGMOffLoop(BGMPath);
         }
     }
 }

@@ -6,7 +6,7 @@ public class ChapterUI : MonoBehaviour
 
     private void OnEnable()
     {
-        SoundManager.Instance.PlayBGM(BGMPath);
+        SoundManager.Instance.PlayBGMOnLoop(BGMPath);
     }
 
     private void OnDisable()

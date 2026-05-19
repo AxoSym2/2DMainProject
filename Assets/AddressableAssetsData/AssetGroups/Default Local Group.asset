@@ -75,6 +75,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 724131bc8a7f34041bb9f1701f0cb58d
+    m_Address: Sound/Sound_ButtonClick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 746b0a4860478a8469cded6dd0f5a0cb
+    m_Address: Sound/BGM_Chapter02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 802c71914e1d4bd4dbbe725c5edaee2f
     m_Address: Texture2D/Apocalypse_Project_Loading_Image2
     m_ReadOnly: 0
@@ -82,6 +92,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8cae9ee33c8e02f4eb52b1d4a3412a0a
     m_Address: Map/Thumbnail/Chapter02_Thumbnail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cb0216c8694e4d43a4912a53ae36ca9
+    m_Address: Sound/BGM_Chapter01
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -102,6 +117,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc0af8a65b5c46740a8f69543d1d1e75
     m_Address: 2DPrefab/Harvest_Carrot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7673de9bf1b7ee44be92337dd5fa6ae
+    m_Address: Sound/BGM_Chapter03
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

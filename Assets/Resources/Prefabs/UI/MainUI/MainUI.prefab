@@ -128,6 +128,7 @@ MonoBehaviour:
   Text_Base: {fileID: 2288746901577534842}
   Image_Base: {fileID: 3269782922271364190}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &426319048971904838
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +518,7 @@ MonoBehaviour:
   Text_Base: {fileID: 2389196495212458394}
   Image_Base: {fileID: 2197685488505863731}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &736931620324072190
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +951,7 @@ MonoBehaviour:
   Text_Base: {fileID: 208123936810181661}
   Image_Base: {fileID: 1366885123924553005}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &2010359065498535007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1167,7 @@ MonoBehaviour:
   Text_Base: {fileID: 9144197018802276240}
   Image_Base: {fileID: 7250258615501335294}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &2482344713447428219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,6 +1464,7 @@ MonoBehaviour:
   Text_Base: {fileID: 2809228018880419518}
   Image_Base: {fileID: 173226723405561859}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &3516260027859625812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,7 +2004,6 @@ MonoBehaviour:
   Button_Chapter: {fileID: 1134822003152161892}
   Button_Chipset: {fileID: 5993581873258032705}
   Button_Buddy: {fileID: 6899625112268169719}
-  AudioSource_BGM: {fileID: 1845394496670103678}
 --- !u!82 &1845394496670103678
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2013,7 +2017,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 58bcebdea2f980d418e500334125f731, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.114
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2227,6 +2231,7 @@ MonoBehaviour:
   Text_Base: {fileID: 3226142218384110751}
   Image_Base: {fileID: 7516974817280466324}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &4977851106881368215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,6 +2514,7 @@ MonoBehaviour:
   Text_Base: {fileID: 145878540566699979}
   Image_Base: {fileID: 8856275457129168185}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &5618774131690084694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,6 +2736,7 @@ MonoBehaviour:
   Text_Base: {fileID: 6677713940463533952}
   Image_Base: {fileID: 7337791860901711445}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &6421304866856130974
 GameObject:
   m_ObjectHideFlags: 0

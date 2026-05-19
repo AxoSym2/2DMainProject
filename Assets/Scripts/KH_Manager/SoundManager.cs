@@ -11,9 +11,14 @@ public class SoundManager : MonoBehaviour
         Instance = this;
     }
 
-    public void PlayBGM(string bgmPath)
+    public void PlayBGMOnLoop(string bgmPath)
     {
         DaniTechGameUtil.LoadAndPlayAudioClip(AudioSource_BGM, bgmPath, isLoop: true).Forget();
+    }
+
+    public void PlayBGMOffLoop(string bgmPath)
+    {
+        DaniTechGameUtil.LoadAndPlayAudioClip(AudioSource_BGM, bgmPath, isLoop: false).Forget();
     }
 
     public void StopBGM()

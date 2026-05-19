@@ -633,6 +633,7 @@ MonoBehaviour:
   Text_Base: {fileID: 7947683780701024176}
   Image_Base: {fileID: 5905219184199469235}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &3498149576319458921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1452,7 @@ MonoBehaviour:
   Text_Base: {fileID: 712834936076334415}
   Image_Base: {fileID: 3280886491867455063}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &6121204711956427674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,6 +1578,7 @@ MonoBehaviour:
   Text_Base: {fileID: 8780360723490910460}
   Image_Base: {fileID: 1045818248018764179}
   Image_Select: {fileID: 0}
+  BGMPath: Sound/Sound_ButtonClick
 --- !u!1 &6693860092649724128
 GameObject:
   m_ObjectHideFlags: 0

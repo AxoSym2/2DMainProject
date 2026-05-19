@@ -24,7 +24,7 @@ public class MainUI : DaniTechUIBase
         Button_Chipset.BindOnClickButtonEvent(OnClick_Chipset);
         Button_Buddy.BindOnClickButtonEvent(OnClick_Buddy);
 
-        SoundManager.Instance.PlayBGM("Sound/BGM_MainUI");
+        SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI");
     }
 
     private void OnDisable()
