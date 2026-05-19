@@ -50,29 +50,34 @@ public class MainUI : DaniTechUIBase
 
     public void OnClick_Store()
     {
+        DaniTechUIManager.Instance.CloseAllContentUI();
         Debug.Log("상점열기");
     }
 
     public void OnClick_Lab()
     {
-        Debug.Log("연구실열기");
-
+        DaniTechUIManager.Instance.CloseAllContentUI();
+        Debug.Log("실험실열기");
+        DaniTechUIManager.Instance.OpenLabUI();
     }
 
     public void OnClick_Chapter()
     {
+        DaniTechUIManager.Instance.CloseAllContentUI();
         Debug.Log("챕터열기");
-        DaniTechUIManager.Instance.OpenChapterPopup();
+        DaniTechUIManager.Instance.OpenChapterUI();
     }
 
     public void OnClick_Chipset()
     {
+        DaniTechUIManager.Instance.CloseAllContentUI();
         Debug.Log("칩셋열기");
 
     }
 
     public void OnClick_Buddy()
     {
+        DaniTechUIManager.Instance.CloseAllContentUI();
         Debug.Log("버디열기");
 
     }

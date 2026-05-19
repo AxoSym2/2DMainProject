@@ -11,6 +11,7 @@ public class PausePopup : DaniTechUIBase
         Button_Resume.BindOnClickButtonEvent(OnClick_Resume);
         Button_Setting.BindOnClickButtonEvent(OnClick_Setting);
         Button_Quit.BindOnClickButtonEvent(OnClick_Quit);
+        Time.timeScale = 0f;
     }
 
     private void OnDisable()
@@ -31,7 +32,6 @@ public class PausePopup : DaniTechUIBase
     public void OnClick_Quit()
     {
         Time.timeScale = 1f;
-        DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         DaniTechGameManager.Inst.ReturnToMainUI();
     }
 

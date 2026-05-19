@@ -114,7 +114,7 @@ public class DaniTechGameManager : MonoBehaviour
         Camera.main.GetComponent<Camera_Tracking>().SetTarget(_currentPlayer.transform);
 
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
-        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterPopup);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterUI);
         DaniTechUIManager.Instance.OpenInGameUI();
     }
 

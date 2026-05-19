@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerUnit_Move : MonoBehaviour
+public class PlayerUnit_Move : DaniTechUIBase
 {
     [SerializeField] private float _moveSpeed = 5f;
     private Rigidbody2D _rb;
@@ -15,6 +15,8 @@ public class PlayerUnit_Move : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0f) return;
+
         _moveInput.x = Input.GetAxisRaw("Horizontal");
         _moveInput.y = Input.GetAxisRaw("Vertical");
         _moveInput.Normalize();

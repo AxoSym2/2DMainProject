@@ -17,6 +17,7 @@ public class DaniTechUIManager : MonoBehaviour
     // 얘는 활성과 비활성에 관한 부분 -> SetActive
     private HashSet<DaniTechUIType> _openedUIDic = new HashSet<DaniTechUIType>();
 
+    private Dictionary<DaniTechUIType, DaniTechUIRootType> _uiRootDic = new Dictionary<DaniTechUIType, DaniTechUIRootType>();
 
     private void Awake()
     {
@@ -91,6 +92,7 @@ public class DaniTechUIManager : MonoBehaviour
             {
                 var uiBase = gObj.GetComponent<DaniTechUIBase>();
                 _createdUIDic.Add(uiType, uiBase);
+                _uiRootDic.Add(uiType, uiRootType);
             }
         }
     }
@@ -104,6 +106,20 @@ public class DaniTechUIManager : MonoBehaviour
         return _createdUIDic[uiType];
     }
 
+    public void CloseAllContentUI()
+    {
+        var uiTypesToClose = new List<DaniTechUIType>(_openedUIDic);
+        foreach (var uiType in uiTypesToClose)
+        {
+            if (_uiRootDic.TryGetValue(uiType, out var rootType) == false) continue;
+            if (rootType != DaniTechUIRootType.ContentUI) continue;
+            if (_createdUIDic.ContainsKey(uiType)) 
+            {
+                _createdUIDic[uiType].gameObject.SetActive(false);
+            }
+            _openedUIDic.Remove(uiType);
+        }
+    }
 
     public DaniTechUIBase OpenContentUI(DaniTechUIType uiType)
     {

@@ -1323,7 +1323,7 @@ GameObject:
   - component: {fileID: 2632807589031969619}
   - component: {fileID: 22830811861387237}
   m_Layer: 5
-  m_Name: ChapterPopup
+  m_Name: ChapterUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
