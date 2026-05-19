@@ -36,6 +36,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNFieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, DNFieldObjectData>();
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
     public Dictionary<string, ChapterData> ChapterDataList { get; private set; } = new Dictionary<string, ChapterData>();
+    public Dictionary<string, PlayerUnitData> PlayerUnitDataList { get; private set; } = new Dictionary<string, PlayerUnitData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -112,6 +113,11 @@ public class DaniTechGameDataManager : MonoBehaviour
         ChapterDataList = LoadData<ChapterData>(jsonPath);
     }
 
+    public void LoadPlayerUnitData(string jsonPath)
+    {
+        PlayerUnitDataList = LoadData<PlayerUnitData>(jsonPath);
+    }
+
     public void LoadAll()
     {
         FieldObjectDataList = LoadData<DNFieldObjectData>("DNFieldObject");
@@ -185,10 +191,17 @@ public class DaniTechGameDataManager : MonoBehaviour
         return FieldObjectDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
-    public ChapterData GetChapterData(string dataId) 
+    public ChapterData GetChapterData(string dataId)
     {
         if (ChapterDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
-        return ChapterDataList.TryGetValue(dataId,out var data) ? data : null;
+        return ChapterDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public PlayerUnitData GetPlayerUnitData(string dataId)
+    {
+        if (PlayerUnitDataList == null || string.IsNullOrEmpty(dataId)) return null;
+        
+        return PlayerUnitDataList.TryGetValue(dataId,out var data) ? data : null;   
     }
 }

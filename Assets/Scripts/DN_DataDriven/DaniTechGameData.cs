@@ -102,3 +102,10 @@ public class ChapterData: GameDataBase
     public string PrefabPath;
     public string ChapterNum;
 }
+
+[System.Serializable]
+public class PlayerUnitData: GameDataBase
+{
+    public string Name;
+    public string PrefabPath;
+}

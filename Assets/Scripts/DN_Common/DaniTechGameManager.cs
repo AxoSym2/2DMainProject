@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
+
 
 public class DaniTechGameManager : MonoBehaviour
 {
@@ -8,6 +11,7 @@ public class DaniTechGameManager : MonoBehaviour
     // 플레이 중에 저장되어야 하는 정보들이 있는 위치
     private DaniTechPlayerModel _playerModel = new DaniTechPlayerModel();
     private GameObject _currentMap;
+    private GameObject _currentPlayer;
 
     private void Awake()
     {
@@ -69,6 +73,11 @@ public class DaniTechGameManager : MonoBehaviour
             Destroy(_currentMap);
         }
 
+        if (_currentPlayer != null)
+        {
+            Destroy(_currentPlayer);
+        }
+
         string chapterId = $"Chapter_Earth_{chapterIdx}";
         ChapterData data = DaniTechGameDataManager.Instance.GetChapterData(chapterId);
 
@@ -86,7 +95,26 @@ public class DaniTechGameManager : MonoBehaviour
         }
 
         _currentMap = Instantiate(mapPrefab);
+
+        PlayerUnitData playerdata = DaniTechGameDataManager.Instance.GetPlayerUnitData("Player_Unit_FeMale_01");
+        if (playerdata == null)
+        {
+            Debug.LogError("플레이어 데이터 없음");
+            return;
+        }
+
+        GameObject playerPrefab = Resources.Load<GameObject>(playerdata.PrefabPath);
+        if (playerPrefab == null) 
+        {
+            Debug.LogError("플레이어 프리팹을 찾을 수 없습니다.");
+            return;
+        }
+
+        _currentPlayer = Instantiate(playerPrefab);
+        Camera.main.GetComponent<Camera_Tracking>().SetTarget(_currentPlayer.transform);
+
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterPopup);
+        DaniTechUIManager.Instance.OpenInGameUI();
     }
 }

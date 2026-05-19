@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "Player_Unit_Male_01",
+    "Name": "제이드",
+    "Description": "남자캐릭터 1번",
+    "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_01"
+  },
+  {
+    "Id": "Player_Unit_Male_02",
+    "Name": "크리스",
+    "Description": "남자캐릭터 2번",
+    "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_02"
+  },
+  {
+    "Id": "Player_Unit_FeMale_01",
+    "Name": "앨리스",
+    "Description": "여자캐릭터 1번",
+    "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_01"
+  },
+  {
+    "Id": "Player_Unit_FeMale_02",
+    "Name": "로셸",
+    "Description": "여자캐릭터 2번",
+    "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_02"
+  }
+]

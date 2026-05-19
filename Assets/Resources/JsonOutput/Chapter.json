@@ -2,7 +2,7 @@
   {
     "Id": "Chapter_Earth_1",
     "Name": "오염의 시작",
-    "Description": "방사능 물질이 대기권에 퍼지기 시작했다.\\n돌연변이 생물들이 도시 외곽에 출몰하고 있다.\\n인류의 마지막 저항이 시작된다.",
+    "Description": "방사능 물질을 대기권에 퍼뜨리기 시작했다.\\n돌연변이 생물들이 출몰하고 있다.\\n인류의 저항이 시작된다.",
     "IconPath": "Map/Thumbnail/Chapter01_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter01",
     "ChapterNum": "Chapter01"
