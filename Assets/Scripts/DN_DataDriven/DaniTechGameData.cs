@@ -92,3 +92,13 @@ public class DNMonsterData : GameDataBase
     public string IconPath;
     public string PrefabPath;
 }
+
+[System.Serializable]
+public class ChapterData: GameDataBase
+{
+    public string Name;
+    public string Description;
+    public string IconPath;
+    public string PrefabPath;
+    public string ChapterNum;
+}

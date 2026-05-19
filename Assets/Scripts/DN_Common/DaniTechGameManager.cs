@@ -69,7 +69,7 @@ public class DaniTechGameManager : MonoBehaviour
             Destroy(_currentMap);
         }
 
-        string mapPath = $"Prefabs/Map/Chapter{chapterIdx:D2}";
+        string mapPath = $"Map/Prefab/Chapter{chapterIdx:D2}";
         GameObject mapPrefab = Resources.Load<GameObject>(mapPath);
 
         if (mapPrefab == null) 

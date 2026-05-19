@@ -35,6 +35,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNDialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DNDialogueData>();
     public Dictionary<string, DNFieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, DNFieldObjectData>();
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
+    public Dictionary<string, ChapterData> ChapterDataList { get; private set; } = new Dictionary<string, ChapterData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -104,6 +105,11 @@ public class DaniTechGameDataManager : MonoBehaviour
     {
         DialogueGroupDataList = LoadData<DNDialogueGroupData>("DNDialogueGroup");
         DialogueDataList = LoadData<DNDialogueData>("DNDialogue");
+    }
+
+    public void LoadChapterData(string jsonPath)
+    {
+        ChapterDataList = LoadData<ChapterData>(jsonPath);
     }
 
     public void LoadAll()
@@ -177,5 +183,12 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (FieldObjectDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return FieldObjectDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public ChapterData GetChapterData(string dataId) 
+    {
+        if (ChapterDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return ChapterDataList.TryGetValue(dataId,out var data) ? data : null;
     }
 }

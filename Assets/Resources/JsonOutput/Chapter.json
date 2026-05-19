@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "Chapter_Earth_1",
+    "Name": "오염의 시작",
+    "Description": "방사능 물질이 대기권에 퍼지기 시작했다.\\n돌연변이 생물들이 도시 외곽에 출몰하고 있다.\\n인류의 마지막 저항이 시작된다.",
+    "IconPath": "Map/Thumbnail/Chapter01_Thumbnail",
+    "PrefabPath": "Map/Prefab/Chapter01",
+    "ChapterNum": "Chapter01"
+  },
+  {
+    "Id": "Chapter_Earth_2",
+    "Name": "도시의 붕괴",
+    "Description": "변이된 생물들이 도심까지 침투했다.\\n군대도 막지 못한 괴물들이 거리를 점령했다.\\n살아남은 자들은 지하로 숨어들었다.",
+    "IconPath": "Map/Thumbnail/Chapter02_Thumbnail",
+    "PrefabPath": "Map/Prefab/Chapter02",
+    "ChapterNum": "Chapter02"
+  },
+  {
+    "Id": "Chapter_Earth_3",
+    "Name": "자연의 역습",
+    "Description": "오염된 자연이 스스로 진화하기 시작했다.\\n식물과 동물의 경계가 사라진 듯한 생명체가 등장했다.\\n지구는 더 이상 인간의 것이 아니다.",
+    "IconPath": "Map/Thumbnail/Chapter03_Thumbnail",
+    "PrefabPath": "Map/Prefab/Chapter03",
+    "ChapterNum": "Chapter03"
+  }
+]
