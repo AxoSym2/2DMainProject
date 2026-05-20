@@ -86,6 +86,7 @@ public class DaniTechUIButton : MonoBehaviour
 
         if(string.IsNullOrEmpty(BGMPath) == false)
         {
+            if (SoundManager.Instance == null) return;
             SoundManager.Instance.PlayBGMOffLoop(BGMPath);
         }
     }

@@ -29,7 +29,7 @@ public class MainUI : DaniTechUIBase
 
     private void OnDisable()
     {
-        SoundManager.Instance.StopBGM();
+        //SoundManager.Instance.StopBGM();
     }
 
     public void OnClick_Energy()

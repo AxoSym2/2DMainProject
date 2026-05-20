@@ -12,6 +12,7 @@ public class DaniTechGameManager : MonoBehaviour
     private DaniTechPlayerModel _playerModel = new DaniTechPlayerModel();
     private GameObject _currentMap;
     private GameObject _currentPlayer;
+    private string _selectedPlayerUnitId = "Player_Unit_Male_01";
 
     private void Awake()
     {
@@ -96,13 +97,17 @@ public class DaniTechGameManager : MonoBehaviour
 
         _currentMap = Instantiate(mapPrefab);
 
-        PlayerUnitData playerdata = DaniTechGameDataManager.Instance.GetPlayerUnitData("Player_Unit_FeMale_01");
+
+        PlayerUnitData playerdata = DaniTechGameDataManager.Instance.GetPlayerUnitData(_selectedPlayerUnitId);
+        //Debug.Log($"선택된 캐릭터 ID: {_selectedPlayerUnitId}");
+        //Debug.Log($"playerdata: {playerdata}");
         if (playerdata == null)
         {
             Debug.LogError("플레이어 데이터 없음");
             return;
         }
 
+        //Debug.Log($"PrefabPath: {playerdata.PrefabPath}");
         GameObject playerPrefab = Resources.Load<GameObject>(playerdata.PrefabPath);
         if (playerPrefab == null) 
         {
@@ -126,5 +131,15 @@ public class DaniTechGameManager : MonoBehaviour
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.PausePopup);
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
         DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+    }
+
+    public void SetSelectedPlayerUnit(string playerId)
+    {
+        _selectedPlayerUnitId = playerId;
+    }
+
+    public string GetSelectedPlayerUnitId() 
+    {
+        return _selectedPlayerUnitId; 
     }
 }

@@ -45,11 +45,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5887dada66c6e7644a161046321fdb83
-    m_Address: Map/Thumbnail/Chapter03_Thumbnail
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 58bcebdea2f980d418e500334125f731
     m_Address: Sound/BGM_MainUI
     m_ReadOnly: 0
@@ -130,6 +125,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd91ecf255ebbae42937f01129b1d704
+    m_Address: Map/Thumbnail/Chapter04_Thumbnail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cfc5f99017f834a4aa425168d9f3048d
     m_Address: Icon/Icon_Item_Corn
     m_ReadOnly: 0
@@ -142,6 +142,16 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d994c28eafc854a4a8ae3faf4463f8e2
     m_Address: Texture2D/Apocalypse_Project_Loading_Image5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e94f2bb8d58ef534f88306774407a2d5
+    m_Address: Map/Thumbnail/Chapter03_Thumbnail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea15eba600b5f44429644594364c84af
+    m_Address: Sound/BGM_Chapter04
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

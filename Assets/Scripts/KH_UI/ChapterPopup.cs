@@ -14,7 +14,7 @@ public class ChapterPopup : DaniTechUIBase
     [SerializeField] private Text Text_Description;
 
     private int _currentChapterIdx = 1;
-    private int _maxChapterIdx = 3;
+    private int _maxChapterIdx = 4;
 
 
     private void OnEnable()
@@ -49,7 +49,7 @@ public class ChapterPopup : DaniTechUIBase
             RefreshUI();
         }
 
-        Debug.Log("이전챕터");
+        //Debug.Log("이전챕터");
     }
 
     public void OnClick_NextChpater()
@@ -60,13 +60,13 @@ public class ChapterPopup : DaniTechUIBase
             RefreshUI();
         }
 
-        Debug.Log("다음챕터");
+        //Debug.Log("다음챕터");
     }
 
     public void OnClick_StartChpater()
     {
         DaniTechUIManager.Instance.OpenLoadingUI();
         DaniTechGameManager.Inst.StartChapter(_currentChapterIdx);
-        Debug.Log("챕터시작");
+        //Debug.Log("챕터시작");
     }
 }

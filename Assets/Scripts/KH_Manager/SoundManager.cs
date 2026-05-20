@@ -9,10 +9,12 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public void PlayBGMOnLoop(string bgmPath)
     {
+        AudioSource_BGM.Stop();
         DaniTechGameUtil.LoadAndPlayAudioClip(AudioSource_BGM, bgmPath, isLoop: true).Forget();
     }
 
