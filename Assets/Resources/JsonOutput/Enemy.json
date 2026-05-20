@@ -40,7 +40,7 @@
     "Name": "경찰1",
     "Description": null,
     "IconPath": null,
-    "PrefabPath": null,
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Police_Prefab",
     "EnemyType": "normal",
     "ExpReward": 15,
     "Hp": 20,
