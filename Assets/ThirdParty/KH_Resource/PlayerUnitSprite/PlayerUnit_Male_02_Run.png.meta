@@ -1,0 +1,1223 @@
+fileFormatVersion: 2
+guid: 1bcd025ac3bd01f44914395c6b8428a2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 45
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 423
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6c44df34614b64a8327f8584f8b3dd
+      internalID: -1317990884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 422
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057cf0148dcd1a241a1775d45e0283af
+      internalID: -1939171184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 420
+        width: 54
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111a3ee84ed00b5448aad3026afee141
+      internalID: 83507147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 418
+        width: 48
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b13c189e3e52fc45b36b35ab3bb5321
+      internalID: 1205568197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_4
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 421
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60bb53148044b246ad4d2b8b62fb733
+      internalID: 239052727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 418
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c238fc7f6b21046b9ef208a7dd0977
+      internalID: 1758080591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 418
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313334411a417ed4090ae2c9f99edd7e
+      internalID: -130273687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_7
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 418
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4176643b5c1cff34dbe6336abc40dbb8
+      internalID: -117994245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 335
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f70ad762ccab5646bf589e3cb387708
+      internalID: -542486662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 335
+        width: 54
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635a4bc1b02cbd34d9b9177b333acab8
+      internalID: -1657221617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_10
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 335
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed578d9c8e6c71943bf87697086e7c4c
+      internalID: 317425953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_11
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 335
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3b3d0d9f0a78a42950182119925c14
+      internalID: -1034009701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 335
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee7caff3f35da6449fce0e91f8005c7
+      internalID: 122375186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_13
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 335
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3063985adf68fc54a9ebee78adb7ef77
+      internalID: -470244686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 335
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5764d609c747894b9b47daeb21a473b
+      internalID: -2018457441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_15
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 335
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26162d4536ce019489b6c54732000e90
+      internalID: -54616934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 259
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98ab2f5c685f2c45a8ce6e77f4e1c6d
+      internalID: 98983062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 256
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb29be9b04c2f7478326d69af62d441
+      internalID: -1994384159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 256
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab1caad39d47284aa1611983fa96ac4
+      internalID: -1046625305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_19
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 255
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c56d23edfb7244782d0d4a4727346a
+      internalID: 1949328581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_20
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 256
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e660f9e7e877240a91a5581b7c2803
+      internalID: -785916289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_21
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 255
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8540432da446b7478cafc64139a670f
+      internalID: -1730423896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_22
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 255
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23821b4b4639bf4fb9f4cd944ed3c37
+      internalID: -301965530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_23
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 255
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7558a7f685a7b44e8712f62d903ff29
+      internalID: -1060498369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 175
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7e07e2153a1e140a8128b952b69fb9
+      internalID: 1618580488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_25
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 176
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee17d9b5aaf14041a9b8f9daed488c7
+      internalID: 299848851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 176
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72c541490bc09e4888c7b972e6730b7
+      internalID: -1159908592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_27
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 178
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7276a92cba4e7b14f8ecfbc764927705
+      internalID: -807890347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_28
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 176
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218cadeb3ae82d64096c0fab5fa2b134
+      internalID: -498482924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_29
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 175
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3313e2871782bc442a1a47cbf4bba59b
+      internalID: -1794577581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_30
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 176
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ee6d4958b9f864f86cc2a4e4502dcb
+      internalID: -569437930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_31
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 175
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d309b947fe8110346852b4e15eecb87d
+      internalID: -2137449987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 95
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d145053647d85f64b8c64af92b04d6aa
+      internalID: 1587463944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_33
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 94
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9694d7aa161177141aee07e3c7be9718
+      internalID: -1926400451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 95
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2744bf13e1ee624dbccdcb54bbab08f
+      internalID: 478046754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_35
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 95
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90957fd74c6c8de4c8c6b5a73172ac41
+      internalID: 1898254638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_36
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 95
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c942850e7e159b34e81c1ae310808c48
+      internalID: -494271476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_37
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 95
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4d8026688ccf143985e0ff27cb2037
+      internalID: 333711725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_38
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 94
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5740cad3e553a443b8f59c462a4172a
+      internalID: -687994864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_39
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 95
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616a8dda47593cb43bdbee36265b3f6e
+      internalID: 296192383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 14
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e9c649e3093a043a7349de87cd1354
+      internalID: 1167621637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_41
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 13
+        width: 52
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a77ab922cba534795c2fdf57afb1f8
+      internalID: -987940169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_42
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 14
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ac1cc6b2fa07343b3828c42c9a3ae4
+      internalID: 385422715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_43
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 14
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af7f902ce2ce47419b3340e14b39bc0
+      internalID: -1920322971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_44
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 14
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620373f218ebc3e4f84be7432ddf7bee
+      internalID: 209634158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_45
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 13
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e1178e96d918a45a99bd6aec0cb47e
+      internalID: 455463088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 14
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6027e7933164cf4a8c5110a913f2ad3
+      internalID: 1556038380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerUnit_Male_02_Run_47
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 14
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27af3939d1b864240bbf023802be8bdb
+      internalID: -362105921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 393c2fa97c4118f409aeaa13cdc1ab7d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PlayerUnit_Male_02_Run_0: -1317990884
+      PlayerUnit_Male_02_Run_1: -1939171184
+      PlayerUnit_Male_02_Run_10: 317425953
+      PlayerUnit_Male_02_Run_11: -1034009701
+      PlayerUnit_Male_02_Run_12: 122375186
+      PlayerUnit_Male_02_Run_13: -470244686
+      PlayerUnit_Male_02_Run_14: -2018457441
+      PlayerUnit_Male_02_Run_15: -54616934
+      PlayerUnit_Male_02_Run_16: 98983062
+      PlayerUnit_Male_02_Run_17: -1994384159
+      PlayerUnit_Male_02_Run_18: -1046625305
+      PlayerUnit_Male_02_Run_19: 1949328581
+      PlayerUnit_Male_02_Run_2: 83507147
+      PlayerUnit_Male_02_Run_20: -785916289
+      PlayerUnit_Male_02_Run_21: -1730423896
+      PlayerUnit_Male_02_Run_22: -301965530
+      PlayerUnit_Male_02_Run_23: -1060498369
+      PlayerUnit_Male_02_Run_24: 1618580488
+      PlayerUnit_Male_02_Run_25: 299848851
+      PlayerUnit_Male_02_Run_26: -1159908592
+      PlayerUnit_Male_02_Run_27: -807890347
+      PlayerUnit_Male_02_Run_28: -498482924
+      PlayerUnit_Male_02_Run_29: -1794577581
+      PlayerUnit_Male_02_Run_3: 1205568197
+      PlayerUnit_Male_02_Run_30: -569437930
+      PlayerUnit_Male_02_Run_31: -2137449987
+      PlayerUnit_Male_02_Run_32: 1587463944
+      PlayerUnit_Male_02_Run_33: -1926400451
+      PlayerUnit_Male_02_Run_34: 478046754
+      PlayerUnit_Male_02_Run_35: 1898254638
+      PlayerUnit_Male_02_Run_36: -494271476
+      PlayerUnit_Male_02_Run_37: 333711725
+      PlayerUnit_Male_02_Run_38: -687994864
+      PlayerUnit_Male_02_Run_39: 296192383
+      PlayerUnit_Male_02_Run_4: 239052727
+      PlayerUnit_Male_02_Run_40: 1167621637
+      PlayerUnit_Male_02_Run_41: -987940169
+      PlayerUnit_Male_02_Run_42: 385422715
+      PlayerUnit_Male_02_Run_43: -1920322971
+      PlayerUnit_Male_02_Run_44: 209634158
+      PlayerUnit_Male_02_Run_45: 455463088
+      PlayerUnit_Male_02_Run_46: 1556038380
+      PlayerUnit_Male_02_Run_47: -362105921
+      PlayerUnit_Male_02_Run_5: 1758080591
+      PlayerUnit_Male_02_Run_6: -130273687
+      PlayerUnit_Male_02_Run_7: -117994245
+      PlayerUnit_Male_02_Run_8: -542486662
+      PlayerUnit_Male_02_Run_9: -1657221617
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
