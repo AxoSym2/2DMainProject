@@ -36,6 +36,13 @@ public class EnemySpawnManager : MonoBehaviour
         }
 
         WaveData waveData = _waveList[_currentWaveIndex];
+
+        var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
+        if (inGameUI is InGameUI ui)
+        {
+            ui.SetWaveNum(waveData.WaveNumber);
+        }
+
         SpawnWave(waveData).Forget();
         _currentWaveIndex++;
     }

@@ -82,7 +82,7 @@
     "Name": "운동선수1",
     "Description": null,
     "IconPath": null,
-    "PrefabPath": null,
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Athlete_Prefab",
     "EnemyType": "normal",
     "ExpReward": 10,
     "Hp": 15,

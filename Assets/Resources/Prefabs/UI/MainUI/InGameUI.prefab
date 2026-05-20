@@ -577,6 +577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InGameUI
   Button_Pause: {fileID: 3580647303321948965}
+  Text_WaveNum: {fileID: 6921749965244856643}
 --- !u!1 &2053005931121463098
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,18 +909,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 40
+    m_MaxSize: 51
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD0C0\uC774\uBA38\uAC00 \uB420 \uC6B4\uBA85\uC774\uB2E4\n"
+  m_Text: "\uD0C0\uC774\uBA38"
 --- !u!1 &2976232471975979065
 GameObject:
   m_ObjectHideFlags: 0
