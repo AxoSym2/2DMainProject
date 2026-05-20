@@ -22,6 +22,7 @@ public static class DaniTechGameUtil
         DaniTechGameDataManager.Instance.LoadDNDialogueData();
         DaniTechGameDataManager.Instance.LoadChapterData("Chapter");
         DaniTechGameDataManager.Instance.LoadPlayerUnitData("PlayerUnit");
+        DaniTechGameDataManager.Instance.LoadEnemyUnitData("Enemy");
         DaniTechGameDataManager.Instance.LoadAll();
     }
 

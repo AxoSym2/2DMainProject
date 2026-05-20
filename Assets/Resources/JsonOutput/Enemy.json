@@ -1,0 +1,110 @@
+[
+  {
+    "Id": "enemy_citizen_01",
+    "Name": "시민1",
+    "Description": null,
+    "IconPath": "Prefabs/Enemy/Enemy_Icon/Citizen_Icon",
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Citizen_Prefab",
+    "EnemyType": "normal",
+    "ExpReward": 5,
+    "Hp": 10,
+    "MoveSpeed": 2,
+    "AttackDamage": 1
+  },
+  {
+    "Id": "enemy_citizen_02",
+    "Name": "시민2",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 5,
+    "Hp": 10,
+    "MoveSpeed": 2,
+    "AttackDamage": 1
+  },
+  {
+    "Id": "enemy_citizen_03",
+    "Name": "시민3",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 5,
+    "Hp": 10,
+    "MoveSpeed": 2,
+    "AttackDamage": 1
+  },
+  {
+    "Id": "enemy_police_01",
+    "Name": "경찰1",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 15,
+    "Hp": 20,
+    "MoveSpeed": 4,
+    "AttackDamage": 5
+  },
+  {
+    "Id": "enemy_police_02",
+    "Name": "경찰2",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 15,
+    "Hp": 20,
+    "MoveSpeed": 4,
+    "AttackDamage": 5
+  },
+  {
+    "Id": "enemy_police_03",
+    "Name": "경찰3",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 15,
+    "Hp": 20,
+    "MoveSpeed": 4,
+    "AttackDamage": 5
+  },
+  {
+    "Id": "enemy_athlete_01",
+    "Name": "운동선수1",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 10,
+    "Hp": 15,
+    "MoveSpeed": 3,
+    "AttackDamage": 3
+  },
+  {
+    "Id": "enemy_athlete_02",
+    "Name": "운동선수2",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 10,
+    "Hp": 15,
+    "MoveSpeed": 3,
+    "AttackDamage": 3
+  },
+  {
+    "Id": "enemy_athlete_03",
+    "Name": "운동선수3",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": null,
+    "EnemyType": "normal",
+    "ExpReward": 10,
+    "Hp": 15,
+    "MoveSpeed": 3,
+    "AttackDamage": 3
+  }
+]

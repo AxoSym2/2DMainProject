@@ -109,3 +109,16 @@ public class PlayerUnitData: GameDataBase
     public string Name;
     public string PrefabPath;
 }
+
+[System.Serializable]
+public class EnemyUnitData: GameDataBase
+{
+    public string Name;
+    public string IconPath;
+    public string PrefabPath;
+    public string EnemyType;
+    public float ExpReward;
+    public float Hp;
+    public float MoveSpeed;
+    public float AttackDamage;
+}

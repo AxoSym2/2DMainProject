@@ -37,6 +37,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
     public Dictionary<string, ChapterData> ChapterDataList { get; private set; } = new Dictionary<string, ChapterData>();
     public Dictionary<string, PlayerUnitData> PlayerUnitDataList { get; private set; } = new Dictionary<string, PlayerUnitData>();
+    public Dictionary<string, EnemyUnitData> EnemyUnitDataList { get; private set; } = new Dictionary<string, EnemyUnitData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -116,6 +117,11 @@ public class DaniTechGameDataManager : MonoBehaviour
     public void LoadPlayerUnitData(string jsonPath)
     {
         PlayerUnitDataList = LoadData<PlayerUnitData>(jsonPath);
+    }
+
+    public void LoadEnemyUnitData(string jsonPath)
+    {
+        EnemyUnitDataList = LoadData<EnemyUnitData>(jsonPath);
     }
 
     public void LoadAll()
@@ -203,5 +209,12 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (PlayerUnitDataList == null || string.IsNullOrEmpty(dataId)) return null;
         
         return PlayerUnitDataList.TryGetValue(dataId,out var data) ? data : null;   
+    }
+
+    public EnemyUnitData GetEnemyUnitData(string dataId)
+    {
+        if (EnemyUnitDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return EnemyUnitDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 }
