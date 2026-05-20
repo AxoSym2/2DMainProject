@@ -3,10 +3,12 @@
 public class EnemyUnit_Base : MonoBehaviour
 {
     private EnemyUnitData _enemyData;
+    private string _enemyDataId;
     private float _currentHp;
 
     public void Init(string enemyDataId)
     {
+        _enemyDataId = enemyDataId;
         _enemyData = DaniTechGameDataManager.Instance.GetEnemyUnitData(enemyDataId);
         if (_enemyData == null)
         {
@@ -29,6 +31,11 @@ public class EnemyUnit_Base : MonoBehaviour
     private void OnDie()
     {
         DaniTechGameManager.Inst.IncreasePlayerExp((int)_enemyData.ExpReward);
-        ObjectPoolManager.instance.ReturnObject(_enemyData.PrefabPath, gameObject);
+        ObjectPoolManager.Instance.ReturnObject(_enemyData.PrefabPath, gameObject);
+    }
+
+    public string GetEnemyDataId()
+    {
+        return _enemyDataId;
     }
 }

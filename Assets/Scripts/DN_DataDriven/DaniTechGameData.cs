@@ -122,3 +122,13 @@ public class EnemyUnitData: GameDataBase
     public float MoveSpeed;
     public float AttackDamage;
 }
+
+[System.Serializable]
+public class WaveData: GameDataBase
+{
+    public string ChapterId;
+    public int WaveNumber;
+    public string EnemyIdList;
+    public int SpawnCount;
+    public float SpawnInterval;
+}

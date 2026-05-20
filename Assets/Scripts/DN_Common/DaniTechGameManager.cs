@@ -117,6 +117,7 @@ public class DaniTechGameManager : MonoBehaviour
 
         _currentPlayer = Instantiate(playerPrefab);
         Camera.main.GetComponent<Camera_Tracking>().SetTarget(_currentPlayer.transform);
+        EnemySpawnManager.Instance.Init($"Chapter_Earth_{chapterIdx}", _currentPlayer.transform);
 
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterUI);
@@ -125,6 +126,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     public void ReturnToMainUI()
     {
+        EnemySpawnManager.Instance.ClearAllEnemies();
         if (_currentMap != null) Destroy(_currentMap);
         if (_currentPlayer != null) Destroy(_currentPlayer);
 

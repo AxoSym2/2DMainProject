@@ -38,6 +38,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, ChapterData> ChapterDataList { get; private set; } = new Dictionary<string, ChapterData>();
     public Dictionary<string, PlayerUnitData> PlayerUnitDataList { get; private set; } = new Dictionary<string, PlayerUnitData>();
     public Dictionary<string, EnemyUnitData> EnemyUnitDataList { get; private set; } = new Dictionary<string, EnemyUnitData>();
+    public Dictionary<string, WaveData> WaveDataList { get; private set; } = new Dictionary<string, WaveData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -122,6 +123,11 @@ public class DaniTechGameDataManager : MonoBehaviour
     public void LoadEnemyUnitData(string jsonPath)
     {
         EnemyUnitDataList = LoadData<EnemyUnitData>(jsonPath);
+    }
+
+    public void LoadWaveData(string jsonpath)
+    {
+        WaveDataList = LoadData<WaveData>(jsonpath);
     }
 
     public void LoadAll()
@@ -216,5 +222,36 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (EnemyUnitDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return EnemyUnitDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public WaveData GetWaveData(string dataId)
+    {
+        if (WaveDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return WaveDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public List<WaveData> GetChapterWaveList(string chapterId)
+    {
+        var list = new List<WaveData>();
+        foreach (var wave in WaveDataList.Values)
+        {
+            if (wave.ChapterId == chapterId)
+                list.Add(wave);
+        }
+
+        for (int i = 0; i < list.Count - 1; i++)
+        {
+            for (int j = 0; j < list.Count - 1 - i; j++)
+            {
+                if (list[j].WaveNumber > list[j + 1].WaveNumber)
+                {
+                    WaveData temp = list[j];
+                    list[j] = list[j + 1];
+                    list[j + 1] = temp;
+                }
+            }
+        }
+        return list;
     }
 }

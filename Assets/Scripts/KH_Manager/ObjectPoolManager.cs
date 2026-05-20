@@ -4,13 +4,13 @@ using UnityEngine.Windows.Speech;
 
 public class ObjectPoolManager : MonoBehaviour
 {
-    public static ObjectPoolManager instance {  get; set; }
+    public static ObjectPoolManager Instance {  get; set; }
 
     private Dictionary<string, Queue<GameObject>> _poolDic = new Dictionary<string, Queue<GameObject>>();
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
     public GameObject GetObject(string prefabPath)
     {

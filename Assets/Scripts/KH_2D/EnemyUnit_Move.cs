@@ -11,13 +11,27 @@ public class EnemyUnit_Move : MonoBehaviour
     private Transform _target;
     private float _moveSpeed;
     private EnemyUnit_AnimationController _animController;
+    private SpriteRenderer _spriteRenderer;
 
     public void Init(float moveSpeed)
     {
         _rb = GetComponent<Rigidbody2D>();
         _enemyBase = GetComponent<EnemyUnit_Base>();
         _animController = GetComponent<EnemyUnit_AnimationController>();
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _moveSpeed = moveSpeed;
+    }
+
+    public void Flip(Vector2 direction)
+    {
+        if (direction.x > 0)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else if (direction.x < 0) 
+        {
+            _spriteRenderer.flipX = true;
+        }
     }
 
     public void SetTarget(Transform target)
@@ -42,6 +56,7 @@ public class EnemyUnit_Move : MonoBehaviour
             _rb.linearVelocity = direction * _moveSpeed;
             _animController.SetState(EnemyUnitState.Run);
             _animController.SetDirection(direction);
+            Flip(direction);
         }
     }
 
