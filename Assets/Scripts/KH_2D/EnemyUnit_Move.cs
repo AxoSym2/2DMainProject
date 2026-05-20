@@ -10,27 +10,32 @@ public class EnemyUnit_Move : MonoBehaviour
     private Rigidbody2D _rb;
     private Transform _target;
     private float _moveSpeed;
+    private float _attackCoolDown;
+    private float _lastAttackTime = 0f;
     private EnemyUnit_AnimationController _animController;
-    private SpriteRenderer _spriteRenderer;
 
-    public void Init(float moveSpeed)
+    public void Init(float moveSpeed, float attackCoolDown)
     {
         _rb = GetComponent<Rigidbody2D>();
         _enemyBase = GetComponent<EnemyUnit_Base>();
         _animController = GetComponent<EnemyUnit_AnimationController>();
-        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _moveSpeed = moveSpeed;
+        _attackCoolDown = attackCoolDown;
     }
 
     public void Flip(Vector2 direction)
     {
         if (direction.x > 0)
         {
-            _spriteRenderer.flipX = false;
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x);
+            transform.localScale = scale;
         }
         else if (direction.x < 0) 
         {
-            _spriteRenderer.flipX = true;
+            Vector3 scale = transform.localScale;
+            scale.x = -Mathf.Abs(scale.x);
+            transform.localScale = scale;
         }
     }
 
@@ -42,13 +47,16 @@ public class EnemyUnit_Move : MonoBehaviour
     private void FixedUpdate()
     {
         if (_target == null) return;
-
         Collider2D player = Physics2D.OverlapCircle(transform.position, _attackRange, _playerLayer);
 
         if (player != null)
         {
             _rb.linearVelocity = Vector2.zero;
-            _animController.SetState(EnemyUnitState.Attack);
+            if (Time.time - _lastAttackTime >= _attackCoolDown) 
+            {
+                _animController.SetState(EnemyUnitState.Attack);
+                _lastAttackTime = Time.time;
+            }
         }
         else
         {

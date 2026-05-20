@@ -9,7 +9,8 @@
     "ExpReward": 5,
     "Hp": 10,
     "MoveSpeed": 2,
-    "AttackDamage": 1
+    "AttackDamage": 1,
+    "AttackCoolDown": 2
   },
   {
     "Id": "enemy_citizen_02",
@@ -21,7 +22,8 @@
     "ExpReward": 5,
     "Hp": 10,
     "MoveSpeed": 2,
-    "AttackDamage": 1
+    "AttackDamage": 1,
+    "AttackCoolDown": 2
   },
   {
     "Id": "enemy_citizen_03",
@@ -33,7 +35,8 @@
     "ExpReward": 5,
     "Hp": 10,
     "MoveSpeed": 2,
-    "AttackDamage": 1
+    "AttackDamage": 1,
+    "AttackCoolDown": 2
   },
   {
     "Id": "enemy_police_01",
@@ -45,7 +48,8 @@
     "ExpReward": 15,
     "Hp": 20,
     "MoveSpeed": 4,
-    "AttackDamage": 5
+    "AttackDamage": 5,
+    "AttackCoolDown": 5
   },
   {
     "Id": "enemy_police_02",
@@ -57,7 +61,8 @@
     "ExpReward": 15,
     "Hp": 20,
     "MoveSpeed": 4,
-    "AttackDamage": 5
+    "AttackDamage": 5,
+    "AttackCoolDown": 5
   },
   {
     "Id": "enemy_police_03",
@@ -69,7 +74,8 @@
     "ExpReward": 15,
     "Hp": 20,
     "MoveSpeed": 4,
-    "AttackDamage": 5
+    "AttackDamage": 5,
+    "AttackCoolDown": 5
   },
   {
     "Id": "enemy_athlete_01",
@@ -81,7 +87,8 @@
     "ExpReward": 10,
     "Hp": 15,
     "MoveSpeed": 3,
-    "AttackDamage": 3
+    "AttackDamage": 3,
+    "AttackCoolDown": 1
   },
   {
     "Id": "enemy_athlete_02",
@@ -93,7 +100,8 @@
     "ExpReward": 10,
     "Hp": 15,
     "MoveSpeed": 3,
-    "AttackDamage": 3
+    "AttackDamage": 3,
+    "AttackCoolDown": 1
   },
   {
     "Id": "enemy_athlete_03",
@@ -105,6 +113,7 @@
     "ExpReward": 10,
     "Hp": 15,
     "MoveSpeed": 3,
-    "AttackDamage": 3
+    "AttackDamage": 3,
+    "AttackCoolDown": 1
   }
 ]

@@ -76,7 +76,7 @@ public class EnemySpawnManager : MonoBehaviour
 
         enemyObj.transform.position = spawnPos;
         enemyObj.GetComponent<EnemyUnit_Base>().Init(enemyDataId);
-        enemyObj.GetComponent<EnemyUnit_Move>().Init(data.MoveSpeed);
+        enemyObj.GetComponent<EnemyUnit_Move>().Init(data.MoveSpeed, data.AttackCoolDown);
         enemyObj.GetComponent<EnemyUnit_Move>().SetTarget(_playerTransform);
     }
 

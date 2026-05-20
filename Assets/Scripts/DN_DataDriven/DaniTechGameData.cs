@@ -121,6 +121,7 @@ public class EnemyUnitData: GameDataBase
     public float Hp;
     public float MoveSpeed;
     public float AttackDamage;
+    public float AttackCoolDown;
 }
 
 [System.Serializable]
