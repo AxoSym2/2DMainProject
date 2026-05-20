@@ -9,7 +9,7 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(transform.root.gameObject);
     }
 
     public void PlayBGMOnLoop(string bgmPath)
