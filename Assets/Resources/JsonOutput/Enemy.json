@@ -63,5 +63,44 @@
     "MoveSpeed": 4,
     "AttackDamage": 30,
     "AttackCoolDown": 2
+  },
+  {
+    "Id": "enemy_tank_01",
+    "Name": "탱크",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Tank_Prefab",
+    "EnemyType": "Epic",
+    "ExpReward": 250,
+    "Hp": 1500,
+    "MoveSpeed": 2,
+    "AttackDamage": 150,
+    "AttackCoolDown": 3
+  },
+  {
+    "Id": "enemy_firetank_01",
+    "Name": "화염탱크",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/FireTank_Prefab",
+    "EnemyType": "Epic",
+    "ExpReward": 200,
+    "Hp": 1000,
+    "MoveSpeed": 3,
+    "AttackDamage": 280,
+    "AttackCoolDown": 4
+  },
+  {
+    "Id": "enemy_drill_01",
+    "Name": "드릴",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Drill_Prefab",
+    "EnemyType": "Epic",
+    "ExpReward": 300,
+    "Hp": 3000,
+    "MoveSpeed": 1,
+    "AttackDamage": 450,
+    "AttackCoolDown": 5
   }
 ]

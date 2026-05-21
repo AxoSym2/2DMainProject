@@ -1,17 +1,44 @@
 [
   {
-    "Id": "skill_fireball_01",
-    "Name": "파이어볼",
-    "Description": "불로 된 구체를 만들어 날린다."
+    "Id": "skill_instance_01",
+    "Name": "근접 베기",
+    "Description": "전방을 가로로 빠르게 벤다",
+    "IconPath": null,
+    "PrefabPath": null,
+    "Damage": 10,
+    "CoolDown": 1.2,
+    "RangeType": "capsule",
+    "Range": 0.3,
+    "Duration": 0,
+    "SkillType": "Instance",
+    "ProjectilePath": null
   },
   {
-    "Id": "skill_normalSword_01",
-    "Name": "검기 날리기",
-    "Description": "적을 벨 수 있는 검기를 날린다."
+    "Id": "skill_projectile_01",
+    "Name": "에너지 볼",
+    "Description": "에너지를 모아 전방으로 발사한다",
+    "IconPath": null,
+    "PrefabPath": null,
+    "Damage": 15,
+    "CoolDown": 3,
+    "RangeType": "box",
+    "Range": 1,
+    "Duration": 0,
+    "SkillType": "Projectile",
+    "ProjectilePath": null
   },
   {
-    "Id": "skill_rest_coffee_01",
-    "Name": "커피 마시기",
-    "Description": "커피를 볶아 마신다. 모든 상태이상이 해제된다."
+    "Id": "skill_area_01",
+    "Name": "전기 지대",
+    "Description": "주변에 전기 지대를 소환해 적에게 지속적인 피해를 준다",
+    "IconPath": null,
+    "PrefabPath": null,
+    "Damage": 3,
+    "CoolDown": 8,
+    "RangeType": "circle",
+    "Range": 2,
+    "Duration": 5,
+    "SkillType": "Area",
+    "ProjectilePath": null
   }
 ]

@@ -5,9 +5,7 @@
     "Description": "남자캐릭터 1번",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_01",
     "Hp": 1000,
-    "MoveSpeed": 5,
-    "AttackDamage": 10,
-    "AttackCoolDown": 1.5
+    "MoveSpeed": 5
   },
   {
     "Id": "Player_Unit_Male_02",
@@ -15,9 +13,7 @@
     "Description": "남자캐릭터 2번",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_02",
     "Hp": 1000,
-    "MoveSpeed": 5,
-    "AttackDamage": 10,
-    "AttackCoolDown": 1.5
+    "MoveSpeed": 5
   },
   {
     "Id": "Player_Unit_FeMale_01",
@@ -25,9 +21,7 @@
     "Description": "여자캐릭터 1번",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_01",
     "Hp": 800,
-    "MoveSpeed": 7,
-    "AttackDamage": 8,
-    "AttackCoolDown": 1
+    "MoveSpeed": 7
   },
   {
     "Id": "Player_Unit_FeMale_02",
@@ -35,8 +29,6 @@
     "Description": "여자캐릭터 2번",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_02",
     "Hp": 800,
-    "MoveSpeed": 7,
-    "AttackDamage": 8,
-    "AttackCoolDown": 1
+    "MoveSpeed": 7
   }
 ]
