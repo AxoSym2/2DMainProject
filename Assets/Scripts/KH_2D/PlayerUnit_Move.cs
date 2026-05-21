@@ -6,6 +6,7 @@ public class PlayerUnit_Move : DaniTechUIBase
     private Rigidbody2D _rb;
     private PlayerUnit_AnimationController _animController;
     private Vector2 _moveInput;
+    private Vector2 _lastMoveDir = Vector2.down;
 
     private void Awake()
     {
@@ -23,6 +24,7 @@ public class PlayerUnit_Move : DaniTechUIBase
 
         if (_moveInput != Vector2.zero)
         {
+            _lastMoveDir = _moveInput;
             _animController.SetState(PlayerUnitState.Run);
             _animController.SetDirection(_moveInput);
         }
@@ -35,5 +37,10 @@ public class PlayerUnit_Move : DaniTechUIBase
     private void FixedUpdate()
     {
         _rb.linearVelocity = _moveInput * _moveSpeed;
+    }
+
+    public Vector2 GetLastMoveDir()
+    {
+        return _lastMoveDir;
     }
 }

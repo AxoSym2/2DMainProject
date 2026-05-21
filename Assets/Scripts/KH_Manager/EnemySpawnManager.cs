@@ -10,7 +10,7 @@ public class EnemySpawnManager : MonoBehaviour
     private Transform _playerTransform;
     private List<WaveData> _waveList;
     private int _currentWaveIndex =0;
-    private bool _isSpawning = false;
+    private bool _isSpawning;
 
     [SerializeField] private float _spawnRadius = 10f;
 

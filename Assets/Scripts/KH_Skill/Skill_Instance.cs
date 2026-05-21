@@ -5,12 +5,11 @@ public class Skill_Instance : MonoBehaviour
     private SkillData _skillData;
     private LayerMask _enemyLayer;
 
-    public void Init(SkillData skillData, LayerMask enemyLayer, float dirX)
+    public void Init(SkillData skillData, LayerMask enemyLayer)
     {
         _skillData = skillData;
         _enemyLayer = enemyLayer;
 
-        transform.position = transform.position + new Vector3(dirX, 0, 0) * 1f;
         ApplyDamage();
     }
 

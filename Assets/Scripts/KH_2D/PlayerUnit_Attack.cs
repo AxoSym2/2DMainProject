@@ -52,9 +52,11 @@ public class PlayerUnit_Attack : MonoBehaviour
         GameObject skillObj = ObjectPoolManager.Instance.GetObject(_skillData.PrefabPath);
         if (skillObj == null) return;
 
-        Vector2 direction = (_target.position - transform.position).normalized;
-        float dirX = direction.x > 0 ? 1f : -1f;
-        skillObj.transform.position = transform.position;
-        skillObj.GetComponent<Skill_Instance>().Init(_skillData, _enemyLayer, dirX);
+        Vector2 dir = GetComponent<PlayerUnit_Move>().GetLastMoveDir();
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        skillObj.transform.position = transform.position + new Vector3(dir.x, dir.y, 0) * 1f;
+        skillObj.transform.rotation = Quaternion.Euler(0, 0, angle);
+        skillObj.GetComponent<Skill_Instance>().Init(_skillData, _enemyLayer);
     }
 }
