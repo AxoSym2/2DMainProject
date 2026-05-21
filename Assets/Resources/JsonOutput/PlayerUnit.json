@@ -3,6 +3,7 @@
     "Id": "Player_Unit_Male_01",
     "Name": "제이드",
     "Description": "남자캐릭터 1번",
+    "SkillId": "skill_instance_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_01",
     "Hp": 1000,
     "MoveSpeed": 5
@@ -11,6 +12,7 @@
     "Id": "Player_Unit_Male_02",
     "Name": "크리스",
     "Description": "남자캐릭터 2번",
+    "SkillId": "skill_instance_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_02",
     "Hp": 1000,
     "MoveSpeed": 5
@@ -19,6 +21,7 @@
     "Id": "Player_Unit_FeMale_01",
     "Name": "앨리스",
     "Description": "여자캐릭터 1번",
+    "SkillId": "skill_instance_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_01",
     "Hp": 800,
     "MoveSpeed": 7
@@ -27,6 +30,7 @@
     "Id": "Player_Unit_FeMale_02",
     "Name": "로셸",
     "Description": "여자캐릭터 2번",
+    "SkillId": "skill_instance_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_02",
     "Hp": 800,
     "MoveSpeed": 7

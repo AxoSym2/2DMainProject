@@ -100,12 +100,12 @@ TextureImporter:
       name: BasicAttack_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 322
-        width: 454
-        height: 19
+        x: 322
+        y: 106
+        width: 34
+        height: 2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -119,57 +119,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BasicAttack_1
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 325
-        width: 51
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f6edb131a63e68409b02c5aa57d6789
-      internalID: 1144554537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_2
-      rect:
-        serializedVersion: 2
-        x: 554
-        y: 327
-        width: 17
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29c665925542af547865caffb0125f8a
-      internalID: -328732497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BasicAttack_3
       rect:
         serializedVersion: 2
-        x: 19
-        y: 245
-        width: 50
-        height: 26
+        x: 20
+        y: 240
+        width: 65
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,9 +145,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 93
-        y: 245
-        width: 60
-        height: 29
+        y: 240
+        width: 65
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,9 +167,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 245
-        width: 63
-        height: 32
+        y: 240
+        width: 65
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,9 +189,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 257
-        y: 242
-        width: 62
-        height: 37
+        y: 240
+        width: 65
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,9 +211,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 340
-        y: 246
-        width: 61
-        height: 33
+        y: 240
+        width: 65
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,9 +233,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 427
-        y: 246
-        width: 54
-        height: 30
+        y: 240
+        width: 65
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,10 +254,10 @@ TextureImporter:
       name: BasicAttack_9
       rect:
         serializedVersion: 2
-        x: 517
-        y: 248
-        width: 33
-        height: 23
+        x: 504
+        y: 240
+        width: 65
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,402 +268,6 @@ TextureImporter:
       bones: []
       spriteID: 4765258c06435e242afd680c579561e8
       internalID: -214551189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_10
-      rect:
-        serializedVersion: 2
-        x: 578
-        y: 251
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f59c27b6aedbc645b507938d152ab05
-      internalID: 23052840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_11
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 164
-        width: 81
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c8d5f7c2a04df444b49663b01a86b12
-      internalID: -839969108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_12
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 160
-        width: 68
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2179e36bb1a6a804cb7dfd81904115b3
-      internalID: 1939291012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_13
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 156
-        width: 70
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef8f2eba3034d0844827586ac4e7da1f
-      internalID: -265446227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_14
-      rect:
-        serializedVersion: 2
-        x: 283
-        y: 153
-        width: 83
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed0d23f58dfb1ed4cb63bb24668a64b9
-      internalID: 1310873108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_15
-      rect:
-        serializedVersion: 2
-        x: 378
-        y: 153
-        width: 66
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f0b2e8f2447cff47acd2404ba9bea7d
-      internalID: 246475938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_16
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 157
-        width: 45
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27bc250a3abef02448dfc2b211f5e5f2
-      internalID: 1865827212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_17
-      rect:
-        serializedVersion: 2
-        x: 523
-        y: 161
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8743bae7161abf4abfedb86d02be24d
-      internalID: -20324073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_18
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 164
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f59298665d0342949b09a7581c6b46af
-      internalID: -1746184886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_19
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 51
-        width: 21
-        height: 69
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 922df21720578494783d950a2c2e207d
-      internalID: -778753666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_20
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 50
-        width: 26
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ee1204195f36ac4e8f9cbea9fec6074
-      internalID: -1418057135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_21
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 50
-        width: 26
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af26d4e9e6b404b4a9de0503e36aca49
-      internalID: 324183552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_22
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 48
-        width: 22
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6554da2aed6c18b479fcb9c2d50b4779
-      internalID: -1768331018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_23
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 48
-        width: 21
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0c6ad45668c2c941bc15636605a7c31
-      internalID: 728525586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_24
-      rect:
-        serializedVersion: 2
-        x: 375
-        y: 54
-        width: 18
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6aba488f57f536e4c81884f3a63d16be
-      internalID: 1197914845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_25
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 55
-        width: 13
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6d500a6e0bcf884aa28ea4dd4cbed93
-      internalID: 1831277680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_26
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 56
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e565482cbab6c5b419adfba1a6f2b1bb
-      internalID: -789288494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasicAttack_27
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 56
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fa399e823ea9f1499ff195748db406c
-      internalID: -1401287941
       vertices: []
       indices: 
       edges: []

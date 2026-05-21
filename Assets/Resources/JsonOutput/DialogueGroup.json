@@ -1,0 +1,25 @@
+[
+  {
+    "Id": "dialogue_group_chapter1_1_1",
+    "Comment": "메인스트림 1_1챕터 그룹",
+    "DialogueIdList": [
+      "dialogue_mainstream_1_1_100",
+      "dialogue_mainstream_1_1_200.dialogue_mainstream_1_1_300"
+    ]
+  },
+  {
+    "Id": "dialogue_group_chapter1_1_2",
+    "Comment": null,
+    "DialogueIdList": null
+  },
+  {
+    "Id": "dialogue_group_chapter1_1_3",
+    "Comment": null,
+    "DialogueIdList": null
+  },
+  {
+    "Id": "dialogue_group_chapter1_1_4",
+    "Comment": null,
+    "DialogueIdList": null
+  }
+]

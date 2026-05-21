@@ -15,6 +15,16 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 80e8e0aaab7e37b4084b72f287df5f5d
   m_SerializeEntries:
+  - m_GUID: 3839be915be15724db7b66ceca676f91
+    m_Address: Map/Thumbnail/Chapter07_Thumbnail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ef53388c7412414696cd54e7d173ffe
+    m_Address: Sound/BGM_Chapter05
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 568d7c1665316cf428f61a1a7b82aeab
     m_Address: Texture2D/Apocalypse_Project_Loading_Image1
     m_ReadOnly: 0
@@ -60,8 +70,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aeed067757a1bca46aa4f5ae234f3eea
+    m_Address: Sound/BGM_Chapter06
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b70d3b19cae8a5c4890ac52a7de01764
     m_Address: Map/Thumbnail/Chapter01_Thumbnail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bdcbf735063dd534fae6a3e4c3bb5b9a
+    m_Address: Map/Thumbnail/Chapter06_Thumbnail
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -80,6 +100,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1fee1e3ab7ae6747b20839b23299201
+    m_Address: Sound/BGM_Chapter07
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e94f2bb8d58ef534f88306774407a2d5
     m_Address: Map/Thumbnail/Chapter03_Thumbnail
     m_ReadOnly: 0
@@ -87,6 +112,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ea15eba600b5f44429644594364c84af
     m_Address: Sound/BGM_Chapter04
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: edc262011d33e8147b6606373179c16e
+    m_Address: Map/Thumbnail/Chapter05_Thumbnail
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

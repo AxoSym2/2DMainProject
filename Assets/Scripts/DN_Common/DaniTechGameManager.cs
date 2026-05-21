@@ -117,6 +117,7 @@ public class DaniTechGameManager : MonoBehaviour
 
         _currentPlayer = Instantiate(playerPrefab);
         _currentPlayer.GetComponent<PlayerUnit_Base>().Init(_selectedPlayerUnitId);
+        _currentPlayer.GetComponent<PlayerUnit_Attack>().Init(playerdata.SkillId);
         Camera.main.GetComponent<Camera_Tracking>().SetTarget(_currentPlayer.transform);
 
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6556389913687850914}
   - component: {fileID: 2702562653863071024}
   - component: {fileID: 8958868265226116185}
+  - component: {fileID: -9000567541878547124}
   - component: {fileID: 842201602297289566}
   - component: {fileID: 643192092049967276}
   - component: {fileID: 819103888563850378}
@@ -76,6 +77,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9889e79d2ab344e8a0dd298226983e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerUnit_Base
+--- !u!114 &-9000567541878547124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7958838788584889426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb1b9865e7f3124cabfb412f7c64570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerUnit_Attack
+  _enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!212 &842201602297289566
 SpriteRenderer:
   serializedVersion: 2

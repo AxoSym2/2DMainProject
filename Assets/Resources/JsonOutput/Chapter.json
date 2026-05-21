@@ -1,7 +1,7 @@
 [
   {
     "Id": "Chapter_Earth_1",
-    "Name": "오염의 시작",
+    "Name": "종말의 시작",
     "Description": "방사능 물질을 대기권에 퍼뜨리기 시작했다.\\n지구의 생태계가 서서히 무너지고 있다..\\n지구 종말 프로젝트가 시작된다.",
     "IconPath": "Map/Thumbnail/Chapter01_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter01",
@@ -17,18 +17,42 @@
   },
   {
     "Id": "Chapter_Earth_3",
-    "Name": "야생의 침묵",
-    "Description": "오염이 퍼지며 야생의 소리가 사라져간다.\\n변이된 생물들조차 숨죽인 이 땅을 짓밟아라.\\n침묵 속에서 침략은 계속된다.",
+    "Name": "검은 침묵",
+    "Description": "오염이 퍼지며 야생의 소리가 사라져간다.\\n그 어떠한 생명체도 소리를 내지 않는다.\\n침묵 속에서 종말은 계속된다.",
     "IconPath": "Map/Thumbnail/Chapter03_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter03",
     "ChapterNum": "Chapter03"
   },
   {
     "Id": "Chapter_Earth_4",
-    "Name": "인류의 황혼",
-    "Description": "인류의 마지막 저항선에 도달했다.\\n이 전선을 무너뜨리면 지구는 내 것이 된다.\\n종말의 완성까지 단 한 걸음 남았다.",
+    "Name": "최후의 저항",
+    "Description": "인류의 마지막 저항선에 도달했다.\\n이 전선을 무너뜨리면 지구는 내 것이 된다.\\n하지만 인류의 저항이 생각보다 거세다.",
     "IconPath": "Map/Thumbnail/Chapter04_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter04",
     "ChapterNum": "Chapter04"
+  },
+  {
+    "Id": "Chapter_Earth_5",
+    "Name": "붉은 계획",
+    "Description": "지구를 지키기 위한 비밀무기를 꺼냈다.\\n상대하기 힘들어보일지도 모른다.\\n잠깐.. 사람이..?",
+    "IconPath": "Map/Thumbnail/Chapter05_Thumbnail",
+    "PrefabPath": "Map/Prefab/Chapter05",
+    "ChapterNum": "Chapter05"
+  },
+  {
+    "Id": "Chapter_Earth_6",
+    "Name": "외계의 유산",
+    "Description": "나는 분명 저 외계에서 태어났는데..\\n앗 머리가…\\n이상한 기억이 떠오르기 시작한다.",
+    "IconPath": "Map/Thumbnail/Chapter06_Thumbnail",
+    "PrefabPath": "Map/Prefab/Chapter06",
+    "ChapterNum": "Chapter06"
+  },
+  {
+    "Id": "Chapter_Earth_7",
+    "Name": "멸망 프로토콜",
+    "Description": "저것은..!\\n진실을 파헤치기 위해선 쓰러뜨리는 방법밖에 없다.\\n이게 내 마지막 전투가 될 것이다.",
+    "IconPath": "Map/Thumbnail/Chapter07_Thumbnail",
+    "PrefabPath": "Map/Prefab/Chapter07",
+    "ChapterNum": "Chapter07"
   }
 ]

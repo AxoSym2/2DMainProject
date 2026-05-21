@@ -14,7 +14,7 @@ public class ChapterPopup : DaniTechUIBase
     [SerializeField] private Text Text_Description;
 
     private int _currentChapterIdx = 1;
-    private int _maxChapterIdx = 4;
+    private int _maxChapterIdx = 7;
 
 
     private void OnEnable()

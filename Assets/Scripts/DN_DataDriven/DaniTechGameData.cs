@@ -110,6 +110,7 @@ public class PlayerUnitData: GameDataBase
     public string PrefabPath;
     public float Hp;
     public float MoveSpeed;
+    public string SkillId;
 }
 
 [System.Serializable]
@@ -144,7 +145,6 @@ public class SkillData: GameDataBase
     public string PrefabPath;
     public float Damage;
     public float CoolDown;
-    public string RangeType;
     public float Range;
     public float Duration;
     public string SkillType;
