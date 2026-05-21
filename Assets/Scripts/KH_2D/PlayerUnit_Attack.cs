@@ -57,6 +57,6 @@ public class PlayerUnit_Attack : MonoBehaviour
 
         skillObj.transform.position = transform.position + new Vector3(dir.x, dir.y, 0) * 1f;
         skillObj.transform.rotation = Quaternion.Euler(0, 0, angle);
-        skillObj.GetComponent<Skill_Instance>().Init(_skillData, _enemyLayer);
+        skillObj.GetComponent<Skill_Instance>().Init(_skillData, _enemyLayer, transform, dir);
     }
 }

@@ -4,13 +4,23 @@ public class Skill_Instance : MonoBehaviour
 {
     private SkillData _skillData;
     private LayerMask _enemyLayer;
+    private Transform _playerTransform;
+    private Vector2 _direction;
 
-    public void Init(SkillData skillData, LayerMask enemyLayer)
+    public void Init(SkillData skillData, LayerMask enemyLayer, Transform playerTransform, Vector2 direction)
     {
         _skillData = skillData;
         _enemyLayer = enemyLayer;
+        _playerTransform = playerTransform;
+        _direction = direction;
 
         ApplyDamage();
+    }
+
+    public void Update()
+    {
+        if (_playerTransform == null) return;
+        transform.position = _playerTransform.position + new Vector3(_direction.x, _direction.y, 0) * 1f;
     }
 
     private void ApplyDamage()
