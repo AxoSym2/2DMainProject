@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 
-public class Skill_Instance : MonoBehaviour
+public class Skill_Instance : SkillBase
 {
-    private SkillData _skillData;
-    private LayerMask _enemyLayer;
     private Transform _playerTransform;
     private Vector2 _direction;
 
