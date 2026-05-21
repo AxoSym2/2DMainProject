@@ -56,6 +56,8 @@ public class EnemyUnit_Move : MonoBehaviour
             {
                 _animController.SetState(EnemyUnitState.Attack);
                 _lastAttackTime = Time.time;
+
+                player.GetComponent<PlayerUnit_Base>()?.TakeDamage(_enemyBase.GetAttackDamage());
             }
         }
         else

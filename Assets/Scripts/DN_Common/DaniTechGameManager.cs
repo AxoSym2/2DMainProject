@@ -116,12 +116,14 @@ public class DaniTechGameManager : MonoBehaviour
         }
 
         _currentPlayer = Instantiate(playerPrefab);
+        _currentPlayer.GetComponent<PlayerUnit_Base>().Init(_selectedPlayerUnitId);
         Camera.main.GetComponent<Camera_Tracking>().SetTarget(_currentPlayer.transform);
-        EnemySpawnManager.Instance.Init($"Chapter_Earth_{chapterIdx}", _currentPlayer.transform);
 
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.ChapterUI);
         DaniTechUIManager.Instance.OpenInGameUI();
+
+        EnemySpawnManager.Instance.Init($"Chapter_Earth_{chapterIdx}", _currentPlayer.transform);
     }
 
     public void ReturnToMainUI()
@@ -143,5 +145,10 @@ public class DaniTechGameManager : MonoBehaviour
     public string GetSelectedPlayerUnitId() 
     {
         return _selectedPlayerUnitId; 
+    }
+
+    public void OnPlayerDie()
+    {
+        ReturnToMainUI();
     }
 }

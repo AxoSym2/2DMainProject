@@ -108,6 +108,10 @@ public class PlayerUnitData: GameDataBase
 {
     public string Name;
     public string PrefabPath;
+    public float Hp;
+    public float MoveSpeed;
+    public float AttackDamage;
+    public float AttackCoolDown;
 }
 
 [System.Serializable]

@@ -28,6 +28,11 @@ public class EnemyUnit_Base : MonoBehaviour
         }
     }
 
+    public float GetAttackDamage()
+    {
+        return _enemyData.AttackDamage;
+    }
+
     private void OnDie()
     {
         DaniTechGameManager.Inst.IncreasePlayerExp((int)_enemyData.ExpReward);

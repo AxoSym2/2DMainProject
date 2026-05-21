@@ -6,6 +6,9 @@ public class InGameUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Pause;
     [SerializeField] private Text Text_WaveNum;
 
+    [SerializeField] private Slider Slider_Health;
+    [SerializeField] private Text Text_Health;
+
     private void OnEnable()
     {
         Button_Pause.BindOnClickButtonEvent(OnClick_Pause);
@@ -19,5 +22,11 @@ public class InGameUI : DaniTechUIBase
     public void SetWaveNum(int waveNum)
     {
         Text_WaveNum.text = $"Wave {waveNum}";
+    }
+
+    public void SetHealthBar(float currentHp, float maxHp)
+    {
+        Slider_Health.value = currentHp / maxHp;
+        Text_Health.text = $"{(int)currentHp} / {(int)maxHp}";
     }
 }

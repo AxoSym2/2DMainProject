@@ -55,6 +55,7 @@ public class EnemySpawnManager : MonoBehaviour
 
         for (int i = 0; i < waveData.SpawnCount; i++)
         {
+            if (_playerTransform == null) return;
             string enemyId = enemyIds[UnityEngine.Random.Range(0, enemyIds.Length)];
             SpawnEnemy(enemyId, GetRandomSpawnPos());
             await UniTask.Delay(TimeSpan.FromSeconds(waveData.SpawnInterval));
@@ -63,6 +64,7 @@ public class EnemySpawnManager : MonoBehaviour
         _isSpawning = false;
 
         await UniTask.Delay(TimeSpan.FromSeconds(30f));
+        if (_playerTransform == null) return;
         StartNextWave();
     }
 
