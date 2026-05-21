@@ -39,6 +39,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, PlayerUnitData> PlayerUnitDataList { get; private set; } = new Dictionary<string, PlayerUnitData>();
     public Dictionary<string, EnemyUnitData> EnemyUnitDataList { get; private set; } = new Dictionary<string, EnemyUnitData>();
     public Dictionary<string, WaveData> WaveDataList { get; private set; } = new Dictionary<string, WaveData>();
+    public Dictionary<string, SkillData> SkillsDataList { get; private set; } = new Dictionary<string, SkillData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -130,6 +131,10 @@ public class DaniTechGameDataManager : MonoBehaviour
         WaveDataList = LoadData<WaveData>(jsonpath);
     }
 
+    public void LoadSkillsData(string jsonpath)
+    {
+        SkillsDataList = LoadData<SkillData>(jsonpath);
+    }
     public void LoadAll()
     {
         FieldObjectDataList = LoadData<DNFieldObjectData>("DNFieldObject");
@@ -253,5 +258,12 @@ public class DaniTechGameDataManager : MonoBehaviour
             }
         }
         return list;
+    }
+
+    public SkillData GetSkillsData(string dataId)
+    {
+        if (SkillsDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return SkillsDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 }

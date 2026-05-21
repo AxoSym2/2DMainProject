@@ -110,8 +110,6 @@ public class PlayerUnitData: GameDataBase
     public string PrefabPath;
     public float Hp;
     public float MoveSpeed;
-    public float AttackDamage;
-    public float AttackCoolDown;
 }
 
 [System.Serializable]
@@ -136,4 +134,19 @@ public class WaveData: GameDataBase
     public string EnemyIdList;
     public int SpawnCount;
     public float SpawnInterval;
+}
+
+[System.Serializable]
+public class SkillData: GameDataBase
+{
+    public string Name;
+    public string IconPath;
+    public string PrefabPath;
+    public float Damage;
+    public float CoolDown;
+    public string RangeType;
+    public float Range;
+    public float Duration;
+    public string SkillType;
+    public string ProjectilePath;
 }

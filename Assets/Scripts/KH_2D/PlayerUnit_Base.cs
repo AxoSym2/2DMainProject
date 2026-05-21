@@ -22,7 +22,7 @@ public class PlayerUnit_Base : MonoBehaviour
     {
         _currentHp -= damage;
         UpdateHealthBar();
-        Debug.Log($"플레이어 체력: {_currentHp}");
+        //Debug.Log($"플레이어 체력: {_currentHp}");
         if ( _currentHp <= 0 )
         {
             OnDie();
@@ -45,11 +45,6 @@ public class PlayerUnit_Base : MonoBehaviour
         UpdateHealthBar();
 
         DaniTechGameManager.Inst.OnPlayerDie();
-    }
-
-    public float GetAttackDamage()
-    {
-        return _playerData.AttackDamage;
     }
 }
 

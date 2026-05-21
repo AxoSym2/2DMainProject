@@ -24,6 +24,7 @@ public static class DaniTechGameUtil
         DaniTechGameDataManager.Instance.LoadPlayerUnitData("PlayerUnit");
         DaniTechGameDataManager.Instance.LoadEnemyUnitData("Enemy");
         DaniTechGameDataManager.Instance.LoadWaveData("WaveData");
+        DaniTechGameDataManager.Instance.LoadSkillsData("Skill");
         DaniTechGameDataManager.Instance.LoadAll();
     }
 

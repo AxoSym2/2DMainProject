@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyUnit_Base : MonoBehaviour
 {
+    [SerializeField] private Slider Slider_Health;
+
     private EnemyUnitData _enemyData;
     private string _enemyDataId;
     private float _currentHp;
@@ -17,15 +20,23 @@ public class EnemyUnit_Base : MonoBehaviour
         }
 
         _currentHp = _enemyData.Hp;
+        UpdateHealthBar();
     }
 
     public void TakeDamage(float damage)
     {
         _currentHp -= damage;
+        UpdateHealthBar();
         if (_currentHp <= 0) 
         {
             OnDie();
         }
+    }
+
+    private void UpdateHealthBar()
+    {
+        if (Slider_Health == null) return;
+        Slider_Health.value = _currentHp / _enemyData.Hp;
     }
 
     public float GetAttackDamage()
