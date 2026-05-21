@@ -5,7 +5,7 @@
     "Description": "전방을 가로로 빠르게 벤다",
     "IconPath": null,
     "PrefabPath": "Prefabs/Skill/Skill_Instance_Cleave",
-    "Damage": 50,
+    "Damage": 20,
     "CoolDown": 1.2,
     "Range": 0.3,
     "Duration": 0,

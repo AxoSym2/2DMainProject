@@ -57,17 +57,20 @@ public class PlayerUnit_Attack : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
         skillObj.transform.position = transform.position + new Vector3(dir.x, dir.y, 0) * 1f;
-        skillObj.transform.rotation = Quaternion.Euler(0, 0, angle);
 
         switch(_skillData.SkillType)
         {
             case "Instance":
+                skillObj.transform.rotation = Quaternion.Euler(0, 0, angle);
                 skillObj.GetComponent<Skill_Instance>().Init(_skillData, _enemyLayer, transform, dir);
                 break;
             case "Projectile":
+                skillObj.transform.rotation = Quaternion.Euler(0, 0, angle);
                 skillObj.GetComponent<Skill_Projectile>().Init(_skillData, _enemyLayer, dir);
                 break;
             case "Area":
+                skillObj.transform.rotation = Quaternion.identity;
+                skillObj.GetComponent<Skill_Area>().Init(_skillData, _enemyLayer, transform);
                 break;
         }
 
