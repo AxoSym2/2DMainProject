@@ -9,6 +9,9 @@ public class InGameUI : DaniTechUIBase
     [SerializeField] private Slider Slider_Health;
     [SerializeField] private Text Text_Health;
 
+    [SerializeField] private Slider Slider_Exp;
+    [SerializeField] private Text Text_Level;
+
     private void OnEnable()
     {
         Button_Pause.BindOnClickButtonEvent(OnClick_Pause);
@@ -28,5 +31,11 @@ public class InGameUI : DaniTechUIBase
     {
         Slider_Health.value = currentHp / maxHp;
         Text_Health.text = $"{(int)currentHp} / {(int)maxHp}";
+    }
+
+    public void SetExpBar(float currentExp, float maxExp, int level)
+    {
+        Slider_Exp.value = currentExp / maxExp;
+        Text_Level.text = $"Lv.{level:D2}";
     }
 }

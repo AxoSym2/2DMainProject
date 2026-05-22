@@ -26,7 +26,8 @@ public enum DaniTechUIType
     InGameUI,
     PausePopup,
     LaboratoryUI,
-    DialogueUI
+    DialogueUI,
+    LevelUpPopup
 
 }
 

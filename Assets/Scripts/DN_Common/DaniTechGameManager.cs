@@ -13,6 +13,8 @@ public class DaniTechGameManager : MonoBehaviour
     private GameObject _currentMap;
     private GameObject _currentPlayer;
     private string _selectedPlayerUnitId = "Player_Unit_Male_01";
+    private int _currentLevel = 1;
+    private float _currentExp = 0f;
 
     private void Awake()
     {
@@ -38,12 +40,6 @@ public class DaniTechGameManager : MonoBehaviour
     private void LoadSaveData()
     {
         _playerModel = DaniTechNetworkManager.Inst.RequstLoadSaveData();
-    }
-
-    public void IncreasePlayerExp(int exp)
-    {
-        // 추후에 한곳에서 관리할 수 있게 익스텐션으로 빼도 된다
-        _playerModel.PlayerTotalExp += exp;
     }
 
     public void AddItem(string itemDataId, int addItemCount)
@@ -151,5 +147,58 @@ public class DaniTechGameManager : MonoBehaviour
     public void OnPlayerDie()
     {
         ReturnToMainUI();
+    }
+
+    public void IncreasePlayerExp(int exp)
+    {
+        _playerModel.PlayerTotalExp += exp;
+        _currentExp += exp;
+        CheckLevelUp();
+    }
+
+    private float GetExpToNextLevel()
+    {
+        return 100 * Mathf.Pow(1.5f, _currentLevel - 1);
+    }
+
+    private void CheckLevelUp()
+    {
+        float expToNextLevel = GetExpToNextLevel();
+
+        var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
+        if (inGameUI is InGameUI ui)
+        {
+            ui.SetExpBar(_currentExp, expToNextLevel, _currentLevel);
+        }
+
+        if (_currentExp >= expToNextLevel)
+        {
+            _currentExp -= expToNextLevel;
+            _currentLevel++;
+            OnLevelUp();
+        }
+    }
+
+    private void OnLevelUp()
+    {
+        Debug.Log($"레벨업, 현재 레벨: {_currentLevel}");
+        Time.timeScale = 0f;
+
+        List<SkillData> allSkills = new List<SkillData>(DaniTechGameDataManager.Instance.SkillsDataList.Values);
+        List<SkillData> randomSkills = new List<SkillData>();
+
+        while (randomSkills.Count < 3 && allSkills.Count > 0)
+        {
+            int idx = Random.Range(0, allSkills.Count);
+            randomSkills.Add(allSkills[idx]);
+            allSkills.RemoveAt(idx);
+        }
+
+        var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
+        var popup = DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.LevelUpPopup);
+        if (popup is LevelUpPopup levelUpPopup)
+        {
+            levelUpPopup.Init(randomSkills);
+        }
     }
 }

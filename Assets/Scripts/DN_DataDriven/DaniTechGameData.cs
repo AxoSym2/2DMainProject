@@ -141,6 +141,7 @@ public class WaveData: GameDataBase
 public class SkillData: GameDataBase
 {
     public string Name;
+    public string Description;
     public string IconPath;
     public string PrefabPath;
     public float Damage;
