@@ -149,6 +149,7 @@ public class DaniTechGameManager : MonoBehaviour
         ReturnToMainUI();
     }
 
+
     public void IncreasePlayerExp(int exp)
     {
         _playerModel.PlayerTotalExp += exp;
@@ -200,5 +201,10 @@ public class DaniTechGameManager : MonoBehaviour
         {
             levelUpPopup.Init(randomSkills);
         }
+    }
+
+    public void AddPlayerSkill(string skillId)
+    {
+        _currentPlayer.GetComponent<PlayerUnit_Attack>().AddSkill(skillId);
     }
 }

@@ -6,7 +6,7 @@
     "IconPath": "Prefabs/Enemy/Enemy_Icon/Citizen_Icon",
     "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Citizen_Prefab",
     "EnemyType": "normal",
-    "ExpReward": 5,
+    "ExpReward": 20,
     "Hp": 10,
     "MoveSpeed": 2,
     "AttackDamage": 1,
