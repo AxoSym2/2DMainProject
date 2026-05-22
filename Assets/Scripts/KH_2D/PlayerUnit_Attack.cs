@@ -37,7 +37,7 @@ public class PlayerUnit_Attack : MonoBehaviour
 
         for (int i = 0; i < _skillDataList.Count; i++)
         {
-            if (_target != null && Time.time - _lastAttackTimeList[i] >= _skillDataList[i].CoolDown)
+            if (Time.time - _lastAttackTimeList[i] >= _skillDataList[i].CoolDown)
             {
                 FireSkill(_skillDataList[i]);
                 _lastAttackTimeList[i] = Time.time;
@@ -69,7 +69,15 @@ public class PlayerUnit_Attack : MonoBehaviour
         if (skillObj == null) return;
 
         Vector2 dir = GetComponent<PlayerUnit_Move>().GetLastMoveDir();
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (_target != null)
+        {
+            dir = (_target.position - transform.position).normalized;
+        }
+        else
+        {
+            dir = GetComponent<PlayerUnit_Move>().GetLastMoveDir();
+        }
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
         skillObj.transform.position = transform.position + new Vector3(dir.x, dir.y, 0) * 1f;
 
