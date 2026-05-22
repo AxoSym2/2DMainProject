@@ -2,31 +2,31 @@
   {
     "Id": "dialogue_chapter01_1",
     "CharacterDataId": null,
-    "Description": "챕터6 대사1",
+    "Description": "훗, 가소로운 인간들. 이 정도로 날 막을 수 있을거라고 생각했나. 아직 몸도 안풀렸는데",
     "NextDialogueId": "dialogue_chapter01_2",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": "Texture2D/Texture2D_Loading_1",
+    "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Smile",
     "VoicePath": null
   },
   {
     "Id": "dialogue_chapter01_2",
     "CharacterDataId": null,
-    "Description": "챕터6 대사2",
+    "Description": "재미없는 싸움이었다. 지금은 이 정도로 마무리해주지.",
     "NextDialogueId": "dialogue_chapter01_3",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "VoicePath": null
   },
   {
     "Id": "dialogue_chapter01_3",
     "CharacterDataId": null,
-    "Description": "챕터6 대사3",
+    "Description": "놈들의 비명은 시끄럽기만 할 뿐, 가치가 없다.",
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
-    "VoicePath": "Sound/Voice_Pug_1_I_WantToEatPizza"
+    "VoicePath": null
   }
 ]

@@ -24,15 +24,12 @@ public class DialogueUI : DaniTechUIBase
 
     public void StartDialogue(string dialogueGroupId)
     {
-        Debug.Log($"StartDialogue 호출됨: {dialogueGroupId}");
         DialogueGroupData groupData = DaniTechGameDataManager.Instance.GetDialogueGroupData(dialogueGroupId);
-        Debug.Log($"groupData: {groupData}");
         if (groupData == null)
         {
             Debug.LogError($"다이얼로그 그룹 없음: {dialogueGroupId}");
             return;
         }
-        Debug.Log($"첫번째 대사 ID: {groupData.DialogueIdList[0]}");
         _currentDialogueId = groupData.DialogueIdList[0];
         ShowCurrentDialogue();
     }
@@ -69,11 +66,26 @@ public class DialogueUI : DaniTechUIBase
         if (dialogueData == null) return;
 
         SetCurrentDialogueDescription(dialogueData.Description);
+        SetCharactername(dialogueData.CharacterDataId);
 
         if (string.IsNullOrEmpty(dialogueData.TexturePath) == false)
         {
-            Sprite sprite = Resources.Load<Sprite>(dialogueData.TexturePath);
-            if (sprite != null)
+            string[] pathParts = dialogueData.TexturePath.Split('/');
+            string spriteName = pathParts[pathParts.Length - 1];
+            string folderPath = dialogueData.TexturePath.Substring(0, dialogueData.TexturePath.LastIndexOf('/'));
+
+            Sprite[] sprites = Resources.LoadAll<Sprite>(folderPath);
+            Sprite sprite = null;
+            foreach(var s in sprites)
+            {
+                if (s.name == spriteName)
+                {
+                    sprite = s;
+                    break;
+                }
+            }
+
+            if(sprite != null)
             {
                 Image_Character.sprite = sprite;
             }
@@ -82,8 +94,9 @@ public class DialogueUI : DaniTechUIBase
 
     private void SetCharactername(string characterDataId)
     {
-        if (string.IsNullOrEmpty(characterDataId)) return;
-        PlayerUnitData playerUnitData = DaniTechGameDataManager.Instance.GetPlayerUnitData(characterDataId);
+        string id = string.IsNullOrEmpty(characterDataId) ? DaniTechGameManager.Inst.GetSelectedPlayerUnitId() : characterDataId;
+
+        PlayerUnitData playerUnitData = DaniTechGameDataManager.Instance.GetPlayerUnitData(id);
         if (playerUnitData == null) return;
         Text_Character.text = playerUnitData.Name;  
         
