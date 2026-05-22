@@ -207,4 +207,10 @@ public class DaniTechGameManager : MonoBehaviour
     {
         _currentPlayer.GetComponent<PlayerUnit_Attack>().AddSkill(skillId);
     }
+
+    public void OnChapterClear()
+    {
+        Time.timeScale = 0f;
+        DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.ContentUI, DaniTechUIType.DialogueUI);
+    }
 }

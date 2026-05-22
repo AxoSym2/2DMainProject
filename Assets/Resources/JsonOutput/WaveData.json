@@ -478,5 +478,21 @@
     "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
     "SpawnCount": 29,
     "SpawnInterval": 0.5
+  },
+  {
+    "Id": "Wave_Chapter06_01",
+    "ChapterId": "Chapter_Earth_6",
+    "WaveNumber": 1,
+    "EnemyIdList": "enemy_citizen_01",
+    "SpawnCount": 1,
+    "SpawnInterval": 0.5
+  },
+  {
+    "Id": "Wave_Chapter06_02",
+    "ChapterId": "Chapter_Earth_6",
+    "WaveNumber": 2,
+    "EnemyIdList": "enemy_citizen_01",
+    "SpawnCount": 1,
+    "SpawnInterval": 0.5
   }
 ]

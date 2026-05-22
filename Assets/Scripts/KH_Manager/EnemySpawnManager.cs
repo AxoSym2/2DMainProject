@@ -12,6 +12,9 @@ public class EnemySpawnManager : MonoBehaviour
     private int _currentWaveIndex =0;
     private bool _isSpawning;
 
+    private ChapterClearType _clearType;
+    private bool _isAllWaveSpawned = false;
+
     [SerializeField] private float _spawnRadius = 10f;
 
     private void Awake()
@@ -19,11 +22,40 @@ public class EnemySpawnManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Update()
+    {
+        if (_clearType != ChapterClearType.AllKill) return;
+        if (_isAllWaveSpawned == false) return;
+
+        EnemyUnit_Base[] enemies = FindObjectsByType<EnemyUnit_Base>(FindObjectsSortMode.None);
+        bool hasAliveEnemy = false;
+        foreach (var enemy in enemies)
+        {
+            if (enemy.gameObject.activeSelf)
+            {
+                hasAliveEnemy = true;
+                break;
+            }
+        }
+        if (hasAliveEnemy == false)
+        {
+            OnChapterClear().Forget();
+        }
+    }
+
     public void Init(string chapterId, Transform playerTransform)
     {
         _playerTransform = playerTransform;
         _currentWaveIndex = 0;
+        _isAllWaveSpawned = false;
         _waveList = DaniTechGameDataManager.Instance.GetChapterWaveList(chapterId);
+
+        ChapterUI chapterUI = FindAnyObjectByType<ChapterUI>();
+        if (chapterUI != null)
+        {
+            _clearType = chapterUI.ClearType;
+        }
+
         StartNextWave();
     }
 
@@ -63,7 +95,16 @@ public class EnemySpawnManager : MonoBehaviour
 
         _isSpawning = false;
 
-        await UniTask.Delay(TimeSpan.FromSeconds(30f));
+        
+        if (_playerTransform == null) return;
+
+        if(_currentWaveIndex >= _waveList.Count)
+        {
+            _isAllWaveSpawned = true;
+            return;
+        }
+
+        await UniTask.Delay(TimeSpan.FromSeconds(10f));
         if (_playerTransform == null) return;
         StartNextWave();
     }
@@ -106,5 +147,11 @@ public class EnemySpawnManager : MonoBehaviour
                 ObjectPoolManager.Instance.ReturnObject(data.PrefabPath, enemy.gameObject);
             }
         }
+    }
+
+    private async UniTaskVoid OnChapterClear()
+    {
+        await UniTask.Delay(TimeSpan.FromSeconds(3f));
+        DaniTechGameManager.Inst.OnChapterClear();
     }
 }

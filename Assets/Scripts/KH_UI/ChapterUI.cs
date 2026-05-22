@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
 
+public enum ChapterClearType
+{
+    None = 0,
+    AllKill,
+    BossKill
+}
+
 public class ChapterUI : MonoBehaviour
 {
     [SerializeField] private string BGMPath;
+    [SerializeField] public ChapterClearType ClearType;
 
     private void OnEnable()
     {

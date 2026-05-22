@@ -504,6 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChapterUI
   BGMPath: Sound/BGM_Chapter07
+  ClearType: 2
 --- !u!1 &7212461298522907029
 GameObject:
   m_ObjectHideFlags: 0
