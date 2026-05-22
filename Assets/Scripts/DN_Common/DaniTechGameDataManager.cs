@@ -31,8 +31,6 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNWeaponData> WeaponDataList { get; private set; } = new Dictionary<string, DNWeaponData>();
     public Dictionary<string, DNCostumeData> CostumeDataList { get; private set; } = new Dictionary<string, DNCostumeData>();
     public Dictionary<string, DNItemData> ItemDataList { get; private set; } = new Dictionary<string, DNItemData>();
-    public Dictionary<string, DNDialogueGroupData> DialogueGroupDataList { get; private set; } = new Dictionary<string, DNDialogueGroupData>();
-    public Dictionary<string, DNDialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DNDialogueData>();
     public Dictionary<string, DNFieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, DNFieldObjectData>();
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
     public Dictionary<string, ChapterData> ChapterDataList { get; private set; } = new Dictionary<string, ChapterData>();
@@ -40,6 +38,8 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, EnemyUnitData> EnemyUnitDataList { get; private set; } = new Dictionary<string, EnemyUnitData>();
     public Dictionary<string, WaveData> WaveDataList { get; private set; } = new Dictionary<string, WaveData>();
     public Dictionary<string, SkillData> SkillsDataList { get; private set; } = new Dictionary<string, SkillData>();
+    public Dictionary<string, DialogueGroupData> DialogueGroupDataList { get; private set; } = new Dictionary<string, DialogueGroupData>();
+    public Dictionary<string, DialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DialogueData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -105,10 +105,10 @@ public class DaniTechGameDataManager : MonoBehaviour
         ItemDataList = LoadData<DNItemData>(jsonPath);
     }
 
-    public void LoadDNDialogueData()
+    public void LoadDialogueData()
     {
-        DialogueGroupDataList = LoadData<DNDialogueGroupData>("DNDialogueGroup");
-        DialogueDataList = LoadData<DNDialogueData>("DNDialogue");
+        DialogueGroupDataList = LoadData<DialogueGroupData>("DialogueGroup");
+        DialogueDataList = LoadData<DialogueData>("Dialogue");
     }
 
     public void LoadChapterData(string jsonPath)
@@ -180,14 +180,14 @@ public class DaniTechGameDataManager : MonoBehaviour
         return ItemDataList.TryGetValue(id, out var data) ? data : null;
     }
 
-    public DNDialogueGroupData GetDNDialogueGroupData(string dataId)
+    public DialogueGroupData GetDialogueGroupData(string dataId)
     {
         if (DialogueGroupDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return DialogueGroupDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
-    public DNDialogueData GetDNDialogueData(string dataId)
+    public DialogueData GetDialogueData(string dataId)
     {
         if (DialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
 

@@ -1,10 +1,11 @@
 [
   {
     "Id": "dialogue_group_chapter1_1_1",
-    "Comment": "메인스트림 1_1챕터 그룹",
+    "Comment": "챕터1 클리어 대사",
     "DialogueIdList": [
-      "dialogue_mainstream_1_1_100",
-      "dialogue_mainstream_1_1_200.dialogue_mainstream_1_1_300"
+      "dialogue_chapter01_1",
+      "dialogue_chapter01_2",
+      "dialogue_chapter01_3"
     ]
   },
   {

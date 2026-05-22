@@ -151,3 +151,18 @@ public class SkillData: GameDataBase
     public string SkillType;
     public string ProjectilePath;
 }
+
+[System.Serializable]
+public class DialogueData: GameDataBase
+{
+    public string CharacterDataId;
+    public string Description;
+    public string NextDialogueId;
+    public string TexturePath;
+}
+
+[System.Serializable]
+public class DialogueGroupData : GameDataBase
+{
+    public List<string> DialogueIdList;
+}

@@ -11,12 +11,27 @@ public class DialogueUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Next;
 
     private string _currentDialogueId;
-    private Queue<string> _descriptionQueue = new Queue<string>();
-
 
     private void OnEnable()
     {
         Button_Next.BindOnClickButtonEvent(OnClick_Next);
+    }
+
+    private void OnDisable()
+    {
+        Button_Next.UnBindOnClickButtonEvent(OnClick_Next);
+    }
+
+    public void StartDialogue(string dialogueGroupId)
+    {
+        DialogueGroupData groupData = DaniTechGameDataManager.Instance.GetDialogueGroupData(dialogueGroupId);
+        if (groupData == null)
+        {
+            Debug.LogError($"다이얼로그 그룹 없음: {dialogueGroupId}");
+            return;
+        }
+        _currentDialogueId = groupData.DialogueIdList[0];
+        ShowCurrentDialogue();
     }
 
     public void OnClick_Next()
@@ -28,36 +43,50 @@ public class DialogueUI : DaniTechUIBase
             return;
         }
 
-        bool isNextDialogueExist = CheckAndStartNextDialogue();
-        if (isNextDialogueExist)
-        {
-            DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.DialogueUI);
-        }
+        DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.DialogueUI);
+        Time.timeScale = 1f;
     }
 
     private bool CheckAndStartNextDialogue()
     {
-        // var dialogueData = DaniTechGameDataManager.Instance.Ge
-        return false;
+        DialogueData dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(_currentDialogueId);
+        if (dialogueData == null) return false;
+
+        if (string.IsNullOrEmpty(dialogueData.NextDialogueId)) return false;
+
+        _currentDialogueId = dialogueData.NextDialogueId;
+        ShowCurrentDialogue();
+        return true;
     }
 
-    public void StartDialogue(string dialogueId)
+    private void ShowCurrentDialogue()
     {
+        DialogueData dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(_currentDialogueId);
+        if (dialogueData == null) return;
 
-    }
+        SetCurrentDialogueDescription(dialogueData.Description);
 
-    private bool CheckAndSetDescription()
-    {
-        return false;
+        if (string.IsNullOrEmpty(dialogueData.TexturePath) == false)
+        {
+            Sprite sprite = Resources.Load<Sprite>(dialogueData.TexturePath);
+            if (sprite != null)
+            {
+                Image_Character.sprite = sprite;
+            }
+        }
     }
 
     private void SetCharactername(string characterDataId)
     {
-
+        if (string.IsNullOrEmpty(characterDataId)) return;
+        PlayerUnitData playerUnitData = DaniTechGameDataManager.Instance.GetPlayerUnitData(characterDataId);
+        if (playerUnitData == null) return;
+        Text_Character.text = playerUnitData.Name;  
+        
     }
 
     private void SetCurrentDialogueDescription(string description)
     {
-
+        Text_Description.text = description;
     }
 }

@@ -38,7 +38,7 @@ public class DaniTech_DialogueUI : DaniTechUIBase
 
     private bool CheckAndStartNextDialogue()
     {
-        var dialogueData = DaniTechGameDataManager.Instance.GetDNDialogueData(_currentDialogueId);
+        var dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(_currentDialogueId);
         if (dialogueData == null)
         {
             Debug.LogWarning($"다이얼로그 데이터가 존재하지 않습니다 {dialogueData}");
@@ -59,7 +59,7 @@ public class DaniTech_DialogueUI : DaniTechUIBase
     // 다이얼로그를 시작하는 메서드 (외부에서 UIManager를 통해 다이얼로그 시작을 요청할때도 쓴다!)
     public void StartDialogue(string dialogeId)
     {
-        var dialogueData = DaniTechGameDataManager.Instance.GetDNDialogueData(dialogeId);
+        var dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(dialogeId);
         if (dialogueData == null)
         {
             Debug.LogWarning($"다이얼로그 데이터가 존재하지 않습니다 {dialogueData}");

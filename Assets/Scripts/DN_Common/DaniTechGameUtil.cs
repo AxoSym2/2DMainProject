@@ -19,7 +19,7 @@ public static class DaniTechGameUtil
         DaniTechGameDataManager.Instance.LoadWeaponData("Weapon");
         DaniTechGameDataManager.Instance.LoadCostumeData("Costume");
         DaniTechGameDataManager.Instance.LoadDNItemData("DNItem");
-        DaniTechGameDataManager.Instance.LoadDNDialogueData();
+        DaniTechGameDataManager.Instance.LoadDialogueData();
         DaniTechGameDataManager.Instance.LoadChapterData("Chapter");
         DaniTechGameDataManager.Instance.LoadPlayerUnitData("PlayerUnit");
         DaniTechGameDataManager.Instance.LoadEnemyUnitData("Enemy");
@@ -99,7 +99,7 @@ public static class DaniTechGameUtil
         var list = new List<string>();
 
         // "dialogue_group_mainstream_1_1"
-        var data = DaniTechGameDataManager.Instance.GetDNDialogueGroupData(dialogueGroupId);
+        var data = DaniTechGameDataManager.Instance.GetDialogueGroupData(dialogueGroupId);
         if (data != null)
         {
             var idArr = data.DialogueIdList;
