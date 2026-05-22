@@ -14,6 +14,7 @@ public class EnemySpawnManager : MonoBehaviour
 
     private ChapterClearType _clearType;
     private bool _isAllWaveSpawned = false;
+    private bool _isChapterCleared = false;
 
     [SerializeField] private float _spawnRadius = 10f;
 
@@ -26,6 +27,7 @@ public class EnemySpawnManager : MonoBehaviour
     {
         if (_clearType != ChapterClearType.AllKill) return;
         if (_isAllWaveSpawned == false) return;
+        if (_isChapterCleared) return;
 
         EnemyUnit_Base[] enemies = FindObjectsByType<EnemyUnit_Base>(FindObjectsSortMode.None);
         bool hasAliveEnemy = false;
@@ -39,6 +41,7 @@ public class EnemySpawnManager : MonoBehaviour
         }
         if (hasAliveEnemy == false)
         {
+            _isChapterCleared = true;
             OnChapterClear().Forget();
         }
     }
@@ -48,6 +51,7 @@ public class EnemySpawnManager : MonoBehaviour
         _playerTransform = playerTransform;
         _currentWaveIndex = 0;
         _isAllWaveSpawned = false;
+        _isChapterCleared = false;
         _waveList = DaniTechGameDataManager.Instance.GetChapterWaveList(chapterId);
 
         ChapterUI chapterUI = FindAnyObjectByType<ChapterUI>();

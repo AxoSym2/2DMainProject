@@ -28,41 +28,5 @@
     "SelectionDialogueIdList": null,
     "TexturePath": null,
     "VoicePath": "Sound/Voice_Pug_1_I_WantToEatPizza"
-  },
-  {
-    "Id": null,
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": [
-      "아무 대답하지 않는다",
-      "대답한다"
-    ],
-    "SelectionDialogueIdList": [
-      "dialogue_mainstream_1_2_200",
-      "dialogue_mainstream_1_2_300"
-    ],
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": null,
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": null,
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": "Sound/Voice_Pug_1_I_WantToEatPizza"
   }
 ]

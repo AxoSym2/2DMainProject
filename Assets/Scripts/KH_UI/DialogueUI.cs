@@ -24,12 +24,15 @@ public class DialogueUI : DaniTechUIBase
 
     public void StartDialogue(string dialogueGroupId)
     {
+        Debug.Log($"StartDialogue 호출됨: {dialogueGroupId}");
         DialogueGroupData groupData = DaniTechGameDataManager.Instance.GetDialogueGroupData(dialogueGroupId);
+        Debug.Log($"groupData: {groupData}");
         if (groupData == null)
         {
             Debug.LogError($"다이얼로그 그룹 없음: {dialogueGroupId}");
             return;
         }
+        Debug.Log($"첫번째 대사 ID: {groupData.DialogueIdList[0]}");
         _currentDialogueId = groupData.DialogueIdList[0];
         ShowCurrentDialogue();
     }
@@ -45,6 +48,7 @@ public class DialogueUI : DaniTechUIBase
 
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.DialogueUI);
         Time.timeScale = 1f;
+        DaniTechGameManager.Inst.ReturnToMainUI();
     }
 
     private bool CheckAndStartNextDialogue()

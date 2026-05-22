@@ -210,6 +210,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     public void OnChapterClear()
     {
+        DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
         var popup = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
         if (popup is DialogueUI dialogueUI)
         {
