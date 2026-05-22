@@ -12,7 +12,7 @@
     "Id": "Player_Unit_Male_02",
     "Name": "크리스",
     "Description": "남자캐릭터 2번",
-    "SkillId": "skill_instance_01",
+    "SkillId": "skill_area_03",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_02",
     "Hp": 1000,
     "MoveSpeed": 5

@@ -50,5 +50,18 @@
     "Duration": 0,
     "SkillType": "Area",
     "ProjectilePath": null
+  },
+  {
+    "Id": "skill_area_03",
+    "Name": "블랙홀",
+    "Description": "플레이어 주변에 소환되어 지속적인 피해를 입힌다.",
+    "IconPath": "Icon/BlackHall_Icon",
+    "PrefabPath": "Prefabs/Skill/Skill_Area_BlackHall",
+    "Damage": 25,
+    "CoolDown": 10,
+    "Range": 3,
+    "Duration": 10,
+    "SkillType": "Area",
+    "ProjectilePath": null
   }
 ]
