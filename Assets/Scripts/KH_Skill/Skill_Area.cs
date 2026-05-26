@@ -34,7 +34,7 @@ public class Skill_Area : SkillBase
                 EnemyUnit_Base enemyBase = enemy.GetComponent<EnemyUnit_Base>();
                 if (enemyBase != null)
                 {
-                    enemyBase.TakeDamage(_skillData.Damage);
+                    DealDamage(enemyBase);
                 }
             }
 

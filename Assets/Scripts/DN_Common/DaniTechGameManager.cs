@@ -288,4 +288,58 @@ public class DaniTechGameManager : MonoBehaviour
             }
         }
     }
+
+    public int GetUpGradeLevel(string statType)
+    {
+        switch (statType)
+        {
+            case "Attack":
+                return _playerModel.AttackUpgradeLevel;
+            case "Hp":
+                return _playerModel.HpUpgradeLevel;
+            case "Defense":
+                return _playerModel.DefenseUpgradeLevel;
+            case "CoolDown":
+                return _playerModel.CoolDownUpgradeLevel;
+            default: return 0;
+        }
+    }
+
+    public void SetUpgradeLevel(string statType, int level)
+    {
+        switch (statType)
+        {
+            case "Attack":
+                _playerModel.AttackUpgradeLevel = level;
+                break;
+            case "Hp":
+                _playerModel.HpUpgradeLevel = level;
+                break;
+            case "Defense":
+                _playerModel.DefenseUpgradeLevel = level;
+                break;
+            case "CoolDown":
+                _playerModel.CoolDownUpgradeLevel = level;
+                break;
+        }
+    }
+
+    public void SpendUmbra(int amount)
+    {
+        _playerModel.Umbra -= amount;
+    }
+
+    public float GetAttackMultiplier()
+    {
+        int level = _playerModel.AttackUpgradeLevel;
+        if (level == 0) return 1f;
+
+        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_attack_{level}");
+        if (data == null)
+        {
+            return 1f;
+        }
+
+        return 1f + data.IncreaseAmount;
+    }
 }

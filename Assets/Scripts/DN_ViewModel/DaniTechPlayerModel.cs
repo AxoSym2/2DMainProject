@@ -24,4 +24,9 @@ public class DaniTechPlayerModel
     public List<DaniTechItemModel> ItemList = new List<DaniTechItemModel>();
 
     public int Umbra;
+
+    public int AttackUpgradeLevel;
+    public int HpUpgradeLevel;
+    public int DefenseUpgradeLevel;
+    public int CoolDownUpgradeLevel;
 }

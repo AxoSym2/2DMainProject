@@ -29,7 +29,7 @@ public class Skill_Instance : SkillBase
             EnemyUnit_Base enemyBase = enemy.GetComponent<EnemyUnit_Base>();
             if (enemyBase != null)
             {
-                enemyBase.TakeDamage(_skillData.Damage);
+                DealDamage(enemyBase);
             }
         }
     }

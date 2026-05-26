@@ -1,0 +1,322 @@
+[
+  {
+    "Id": "upgrade_attack_1",
+    "Name": "공격1렙",
+    "StatType": "Attack",
+    "Level": 1,
+    "Cost": 100,
+    "IncreaseAmount": 0.05
+  },
+  {
+    "Id": "upgrade_attack_2",
+    "Name": "공격2렙",
+    "StatType": "Attack",
+    "Level": 2,
+    "Cost": 500,
+    "IncreaseAmount": 0.2
+  },
+  {
+    "Id": "upgrade_attack_3",
+    "Name": "공격3렙",
+    "StatType": "Attack",
+    "Level": 3,
+    "Cost": 1500,
+    "IncreaseAmount": 0.5
+  },
+  {
+    "Id": "upgrade_attack_4",
+    "Name": "공격4렙",
+    "StatType": "Attack",
+    "Level": 4,
+    "Cost": 5000,
+    "IncreaseAmount": 1
+  },
+  {
+    "Id": "upgrade_attack_5",
+    "Name": "공격5렙",
+    "StatType": "Attack",
+    "Level": 5,
+    "Cost": 30000,
+    "IncreaseAmount": 5
+  },
+  {
+    "Id": "upgrade_attack_6",
+    "Name": "공격6렙",
+    "StatType": "Attack",
+    "Level": 6,
+    "Cost": 80000,
+    "IncreaseAmount": 10
+  },
+  {
+    "Id": "upgrade_attack_7",
+    "Name": "공격7렙",
+    "StatType": "Attack",
+    "Level": 7,
+    "Cost": 150000,
+    "IncreaseAmount": 25
+  },
+  {
+    "Id": "upgrade_attack_8",
+    "Name": "공격8렙",
+    "StatType": "Attack",
+    "Level": 8,
+    "Cost": 500000,
+    "IncreaseAmount": 50
+  },
+  {
+    "Id": "upgrade_attack_9",
+    "Name": "공격9렙",
+    "StatType": "Attack",
+    "Level": 9,
+    "Cost": 1000000,
+    "IncreaseAmount": 100
+  },
+  {
+    "Id": "upgrade_attack_10",
+    "Name": "공격10렙",
+    "StatType": "Attack",
+    "Level": 10,
+    "Cost": 3000000,
+    "IncreaseAmount": 200
+  },
+  {
+    "Id": "upgrade_cooldown_1",
+    "Name": "쿨감1렙",
+    "StatType": "CoolDown",
+    "Level": 1,
+    "Cost": 100,
+    "IncreaseAmount": 0.05
+  },
+  {
+    "Id": "upgrade_cooldown_2",
+    "Name": "쿨감2렙",
+    "StatType": "CoolDown",
+    "Level": 2,
+    "Cost": 500,
+    "IncreaseAmount": 0.1
+  },
+  {
+    "Id": "upgrade_cooldown_3",
+    "Name": "쿨감3렙",
+    "StatType": "CoolDown",
+    "Level": 3,
+    "Cost": 1500,
+    "IncreaseAmount": 0.15
+  },
+  {
+    "Id": "upgrade_cooldown_4",
+    "Name": "쿨감4렙",
+    "StatType": "CoolDown",
+    "Level": 4,
+    "Cost": 5000,
+    "IncreaseAmount": 0.2
+  },
+  {
+    "Id": "upgrade_cooldown_5",
+    "Name": "쿨감5렙",
+    "StatType": "CoolDown",
+    "Level": 5,
+    "Cost": 30000,
+    "IncreaseAmount": 0.25
+  },
+  {
+    "Id": "upgrade_cooldown_6",
+    "Name": "쿨감6렙",
+    "StatType": "CoolDown",
+    "Level": 6,
+    "Cost": 80000,
+    "IncreaseAmount": 0.3
+  },
+  {
+    "Id": "upgrade_cooldown_7",
+    "Name": "쿨감7렙",
+    "StatType": "CoolDown",
+    "Level": 7,
+    "Cost": 150000,
+    "IncreaseAmount": 0.35
+  },
+  {
+    "Id": "upgrade_cooldown_8",
+    "Name": "쿨감8렙",
+    "StatType": "CoolDown",
+    "Level": 8,
+    "Cost": 500000,
+    "IncreaseAmount": 0.4
+  },
+  {
+    "Id": "upgrade_cooldown_9",
+    "Name": "쿨감9렙",
+    "StatType": "CoolDown",
+    "Level": 9,
+    "Cost": 1000000,
+    "IncreaseAmount": 0.45
+  },
+  {
+    "Id": "upgrade_cooldown_10",
+    "Name": "쿨감10렙",
+    "StatType": "CoolDown",
+    "Level": 10,
+    "Cost": 3000000,
+    "IncreaseAmount": 0.5
+  },
+  {
+    "Id": "upgrade_hp_1",
+    "Name": "체력1렙",
+    "StatType": "Hp",
+    "Level": 1,
+    "Cost": 100,
+    "IncreaseAmount": 50
+  },
+  {
+    "Id": "upgrade_hp_2",
+    "Name": "체력2렙",
+    "StatType": "Hp",
+    "Level": 2,
+    "Cost": 500,
+    "IncreaseAmount": 150
+  },
+  {
+    "Id": "upgrade_hp_3",
+    "Name": "체력3렙",
+    "StatType": "Hp",
+    "Level": 3,
+    "Cost": 1500,
+    "IncreaseAmount": 300
+  },
+  {
+    "Id": "upgrade_hp_4",
+    "Name": "체력4렙",
+    "StatType": "Hp",
+    "Level": 4,
+    "Cost": 5000,
+    "IncreaseAmount": 500
+  },
+  {
+    "Id": "upgrade_hp_5",
+    "Name": "체력5렙",
+    "StatType": "Hp",
+    "Level": 5,
+    "Cost": 30000,
+    "IncreaseAmount": 800
+  },
+  {
+    "Id": "upgrade_hp_6",
+    "Name": "체력6렙",
+    "StatType": "Hp",
+    "Level": 6,
+    "Cost": 80000,
+    "IncreaseAmount": 1200
+  },
+  {
+    "Id": "upgrade_hp_7",
+    "Name": "체력7렙",
+    "StatType": "Hp",
+    "Level": 7,
+    "Cost": 150000,
+    "IncreaseAmount": 1800
+  },
+  {
+    "Id": "upgrade_hp_8",
+    "Name": "체력8렙",
+    "StatType": "Hp",
+    "Level": 8,
+    "Cost": 500000,
+    "IncreaseAmount": 2500
+  },
+  {
+    "Id": "upgrade_hp_9",
+    "Name": "체력9렙",
+    "StatType": "Hp",
+    "Level": 9,
+    "Cost": 1000000,
+    "IncreaseAmount": 3500
+  },
+  {
+    "Id": "upgrade_hp_10",
+    "Name": "체력10렙",
+    "StatType": "Hp",
+    "Level": 10,
+    "Cost": 3000000,
+    "IncreaseAmount": 5000
+  },
+  {
+    "Id": "upgrade_defense_1",
+    "Name": "방어력1렙",
+    "StatType": "Defense",
+    "Level": 1,
+    "Cost": 100,
+    "IncreaseAmount": 0.05
+  },
+  {
+    "Id": "upgrade_defense_2",
+    "Name": "방어력2렙",
+    "StatType": "Defense",
+    "Level": 2,
+    "Cost": 500,
+    "IncreaseAmount": 0.1
+  },
+  {
+    "Id": "upgrade_defense_3",
+    "Name": "방어력3렙",
+    "StatType": "Defense",
+    "Level": 3,
+    "Cost": 1500,
+    "IncreaseAmount": 0.15
+  },
+  {
+    "Id": "upgrade_defense_4",
+    "Name": "방어력4렙",
+    "StatType": "Defense",
+    "Level": 4,
+    "Cost": 5000,
+    "IncreaseAmount": 0.2
+  },
+  {
+    "Id": "upgrade_defense_5",
+    "Name": "방어력5렙",
+    "StatType": "Defense",
+    "Level": 5,
+    "Cost": 30000,
+    "IncreaseAmount": 0.25
+  },
+  {
+    "Id": "upgrade_defense_6",
+    "Name": "방어력6렙",
+    "StatType": "Defense",
+    "Level": 6,
+    "Cost": 80000,
+    "IncreaseAmount": 0.3
+  },
+  {
+    "Id": "upgrade_defense_7",
+    "Name": "방어력7렙",
+    "StatType": "Defense",
+    "Level": 7,
+    "Cost": 150000,
+    "IncreaseAmount": 0.38
+  },
+  {
+    "Id": "upgrade_defense_8",
+    "Name": "방어력8렙",
+    "StatType": "Defense",
+    "Level": 8,
+    "Cost": 500000,
+    "IncreaseAmount": 0.46
+  },
+  {
+    "Id": "upgrade_defense_9",
+    "Name": "방어력9렙",
+    "StatType": "Defense",
+    "Level": 9,
+    "Cost": 1000000,
+    "IncreaseAmount": 0.54
+  },
+  {
+    "Id": "upgrade_defense_10",
+    "Name": "방어력10렙",
+    "StatType": "Defense",
+    "Level": 10,
+    "Cost": 3000000,
+    "IncreaseAmount": 0.6
+  }
+]

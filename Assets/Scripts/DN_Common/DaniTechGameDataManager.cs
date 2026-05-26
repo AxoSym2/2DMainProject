@@ -40,6 +40,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, SkillData> SkillsDataList { get; private set; } = new Dictionary<string, SkillData>();
     public Dictionary<string, DialogueGroupData> DialogueGroupDataList { get; private set; } = new Dictionary<string, DialogueGroupData>();
     public Dictionary<string, DialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DialogueData>();
+    public Dictionary<string, UpgradeData> UpgradeDataList { get; private set; } = new Dictionary<string, UpgradeData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -135,6 +136,12 @@ public class DaniTechGameDataManager : MonoBehaviour
     {
         SkillsDataList = LoadData<SkillData>(jsonpath);
     }
+
+    public void LoadUpgradeData(string jsonpath)
+    {
+        UpgradeDataList = LoadData<UpgradeData>(jsonpath);
+    }
+
     public void LoadAll()
     {
         FieldObjectDataList = LoadData<DNFieldObjectData>("DNFieldObject");
@@ -265,5 +272,12 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (SkillsDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return SkillsDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public UpgradeData GetUpgradeData(string dataId)
+    {
+        if (UpgradeDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return UpgradeDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 }

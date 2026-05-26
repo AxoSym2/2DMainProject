@@ -171,3 +171,12 @@ public class DialogueGroupData : GameDataBase
 {
     public List<string> DialogueIdList;
 }
+
+[System.Serializable]
+public class UpgradeData : GameDataBase
+{
+    public string StatType;
+    public int Level;
+    public int Cost;
+    public float IncreaseAmount;
+}

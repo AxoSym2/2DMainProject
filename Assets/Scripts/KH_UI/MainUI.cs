@@ -8,7 +8,7 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Store;
     [SerializeField] private DaniTechUIButton Button_Lab;
     [SerializeField] private DaniTechUIButton Button_Chapter;
-    [SerializeField] private DaniTechUIButton Button_Chipset;
+    [SerializeField] private DaniTechUIButton Button_Chamber;
     [SerializeField] private DaniTechUIButton Button_Buddy;
 
     private void OnEnable()
@@ -16,7 +16,7 @@ public class MainUI : DaniTechUIBase
         Button_Store.BindOnClickButtonEvent(OnClick_Store);
         Button_Lab.BindOnClickButtonEvent(OnClick_Lab);
         Button_Chapter.BindOnClickButtonEvent(OnClick_Chapter);
-        Button_Chipset.BindOnClickButtonEvent(OnClick_Chipset);
+        Button_Chamber.BindOnClickButtonEvent(OnClick_Chamber);
         Button_Buddy.BindOnClickButtonEvent(OnClick_Buddy);
 
         SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI");
@@ -63,10 +63,11 @@ public class MainUI : DaniTechUIBase
         DaniTechUIManager.Instance.OpenChapterUI();
     }
 
-    public void OnClick_Chipset()
+    public void OnClick_Chamber()
     {
         DaniTechUIManager.Instance.CloseAllContentUI();
-        Debug.Log("칩셋열기");
+        //Debug.Log("챔버열기");
+        DaniTechUIManager.Instance.OpenChamberUI();
 
     }
 

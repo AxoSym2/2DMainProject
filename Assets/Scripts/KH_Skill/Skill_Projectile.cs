@@ -36,7 +36,7 @@ public class Skill_Projectile : SkillBase
         EnemyUnit_Base enemy = collision.GetComponent<EnemyUnit_Base>();
         if (enemy != null)
         {
-            enemy.TakeDamage(_skillData.Damage);
+            DealDamage(enemy);
             ObjectPoolManager.Instance.ReturnObject(_skillData.PrefabPath, gameObject);
         }
     }
