@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9858a3520adf704c9d072ba2ec1505b
+guid: 544aae1d29d546f46b38380ed437525e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dialogue_Image1_Surprised
+      name: Soldier1_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 0
-        width: 225
-        height: 215
+        width: 500
+        height: 472
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,52 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 755f7db1863bf4b40a9b16f247cf9966
-      internalID: -636034257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dialogue_Image1_Smile
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 0
-        width: 225
-        height: 215
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f91dfe26cc23cb745a4abeeec62d8b4d
-      internalID: -537701005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dialogue_Image1_Basic
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 219
-        width: 225
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 059f4a3295a53de4ab1fb720d491d582
-      internalID: -122545764
+      spriteID: b7300cd8c1d4f444a99d05f6b8d5b8ba
+      internalID: 1363088562
       vertices: []
       indices: 
       edges: []
@@ -166,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d4544fa57cd7e7e4c928a0d2ae747629
+    spriteID: 15a62bc7086fd5444b9696c64f0029b4
     internalID: 0
     vertices: []
     indices: 
@@ -178,10 +134,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Dialogue_Image1_1: -1648098573
-      Dialogue_Image1_Basic: -122545764
-      Dialogue_Image1_Smile: -537701005
-      Dialogue_Image1_Surprised: -636034257
+      Soldier1_0: 1363088562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

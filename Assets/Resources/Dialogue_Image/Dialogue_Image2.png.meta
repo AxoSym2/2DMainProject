@@ -100,10 +100,10 @@ TextureImporter:
       name: Dialogue_Image2_Angry
       rect:
         serializedVersion: 2
-        x: 287
+        x: 294
         y: 203
-        width: 231
-        height: 199
+        width: 225
+        height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
