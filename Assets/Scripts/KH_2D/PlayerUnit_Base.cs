@@ -38,6 +38,16 @@ public class PlayerUnit_Base : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        _currentHp += amount;
+        if(_currentHp > _playerData.Hp)
+        {
+            _currentHp = _playerData.Hp;
+            UpdateHealthBar();
+        }
+    }
+
     private void OnDie() 
     {
         Debug.Log("플레이어 사망");

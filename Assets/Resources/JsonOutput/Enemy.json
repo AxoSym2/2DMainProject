@@ -10,7 +10,10 @@
     "Hp": 10,
     "MoveSpeed": 2,
     "AttackDamage": 1,
-    "AttackCoolDown": 2
+    "AttackCoolDown": 2,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 100
   },
   {
     "Id": "enemy_police_01",
@@ -23,7 +26,10 @@
     "Hp": 20,
     "MoveSpeed": 4,
     "AttackDamage": 5,
-    "AttackCoolDown": 5
+    "AttackCoolDown": 5,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 150
   },
   {
     "Id": "enemy_athlete_01",
@@ -36,7 +42,10 @@
     "Hp": 15,
     "MoveSpeed": 3,
     "AttackDamage": 3,
-    "AttackCoolDown": 1
+    "AttackCoolDown": 1,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 100
   },
   {
     "Id": "enemy_soldiergun_01",
@@ -49,7 +58,10 @@
     "Hp": 80,
     "MoveSpeed": 3,
     "AttackDamage": 15,
-    "AttackCoolDown": 4
+    "AttackCoolDown": 4,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 500
   },
   {
     "Id": "enemy_soldierknife_01",
@@ -62,7 +74,10 @@
     "Hp": 100,
     "MoveSpeed": 4,
     "AttackDamage": 30,
-    "AttackCoolDown": 2
+    "AttackCoolDown": 2,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 500
   },
   {
     "Id": "enemy_tank_01",
@@ -75,7 +90,10 @@
     "Hp": 1500,
     "MoveSpeed": 2,
     "AttackDamage": 150,
-    "AttackCoolDown": 3
+    "AttackCoolDown": 3,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 3000
   },
   {
     "Id": "enemy_firetank_01",
@@ -88,7 +106,10 @@
     "Hp": 1000,
     "MoveSpeed": 3,
     "AttackDamage": 280,
-    "AttackCoolDown": 4
+    "AttackCoolDown": 4,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 3000
   },
   {
     "Id": "enemy_drill_01",
@@ -101,6 +122,9 @@
     "Hp": 3000,
     "MoveSpeed": 1,
     "AttackDamage": 450,
-    "AttackCoolDown": 5
+    "AttackCoolDown": 5,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 3000
   }
 ]

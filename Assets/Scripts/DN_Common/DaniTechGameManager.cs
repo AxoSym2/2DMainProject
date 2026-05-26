@@ -16,6 +16,7 @@ public class DaniTechGameManager : MonoBehaviour
     private int _currentLevel = 1;
     private float _currentExp = 0f;
     private string _pendingStartDialogueGroupId;
+    private int _currentChapterUmbra = 0;
 
     private void Awake()
     {
@@ -151,12 +152,15 @@ public class DaniTechGameManager : MonoBehaviour
     {
         _currentLevel = 1;
         _currentExp = 0;
+        _currentChapterUmbra = 0;
 
         EnemySpawnManager.Instance.ClearAllEnemies();
+        ClearAllItems();
         if (_currentMap != null) Destroy(_currentMap);
         if (_currentPlayer != null) Destroy(_currentPlayer);
 
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.PausePopup);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.LevelUpPopup);
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
         DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
     }
@@ -240,6 +244,48 @@ public class DaniTechGameManager : MonoBehaviour
         if (ui is DialogueUI dialogueUI)
         {
             dialogueUI.StartDialogue(dialogueGroupId, DialogueOpenType.ChapterClear);
+        }
+    }
+
+    public void AddUmbra(int amount)
+    {
+        _playerModel.Umbra += amount;
+        _currentChapterUmbra += amount;
+        UpdateUmbraUI();
+    }
+
+    public int GetUmbra()
+    {
+        return _playerModel.Umbra;
+    }
+
+    private void UpdateUmbraUI()
+    {
+        var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
+        if (inGameUI is InGameUI ui)
+        {
+            ui.SetUmbra(_currentChapterUmbra);
+        }
+    }
+
+    private void ClearAllItems()
+    {
+        HealKit[] healKits = FindObjectsByType<HealKit>(FindObjectsSortMode.None);
+        foreach (var item in healKits)
+        {
+            if (item.gameObject.activeSelf)
+            {
+                ObjectPoolManager.Instance.ReturnObject("Prefabs/Item/HealKit", item.gameObject);
+            }
+        }
+
+        Umbra[] umbra = FindObjectsByType<Umbra>(FindObjectsSortMode.None);
+        foreach (var item in umbra)
+        {
+            if (item.gameObject.activeSelf)
+            {
+                ObjectPoolManager.Instance.ReturnObject("Prefabs/Item/Umbra", item.gameObject);
+            }
         }
     }
 }

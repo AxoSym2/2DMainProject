@@ -12,6 +12,8 @@ public class InGameUI : DaniTechUIBase
     [SerializeField] private Slider Slider_Exp;
     [SerializeField] private Text Text_Level;
 
+    [SerializeField] private Text Text_Umbra;
+
     private void OnEnable()
     {
         Button_Pause.BindOnClickButtonEvent(OnClick_Pause);
@@ -37,5 +39,10 @@ public class InGameUI : DaniTechUIBase
     {
         Slider_Exp.value = currentExp / maxExp;
         Text_Level.text = $"Lv.{level:D2}";
+    }
+
+    public void SetUmbra(int amount)
+    {
+        Text_Umbra.text = $"{amount}";
     }
 }

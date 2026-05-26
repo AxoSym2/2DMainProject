@@ -44,9 +44,36 @@ public class EnemyUnit_Base : MonoBehaviour
         return _enemyData.AttackDamage;
     }
 
+    private void DropHealKit()
+    {
+        GameObject obj = ObjectPoolManager.Instance.GetObject("Prefabs/Item/HealKit");
+        if (obj != null)
+        {
+            obj.transform.position = transform.position;
+        }
+    }
+
+    private void DropUmbra()
+    {
+        GameObject obj = ObjectPoolManager.Instance.GetObject("Prefabs/Item/Umbra");
+        if (obj != null)
+        {
+            obj.transform.position = transform.position;
+            obj.GetComponent<Umbra>().Init(_enemyData.DropUmbraAmount);
+        }
+    }
+
+
     private void OnDie()
     {
         DaniTechGameManager.Inst.IncreasePlayerExp((int)_enemyData.ExpReward);
+
+        if (UnityEngine.Random.value <= _enemyData.DropUmbraChance)
+            DropUmbra();
+
+        if (UnityEngine.Random.value <= _enemyData.DropHealKitChance)
+            DropHealKit();
+
         ObjectPoolManager.Instance.ReturnObject(_enemyData.PrefabPath, gameObject);
     }
 

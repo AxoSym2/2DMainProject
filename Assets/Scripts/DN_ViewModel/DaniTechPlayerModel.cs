@@ -22,4 +22,6 @@ public class DaniTechPlayerModel
     public Vector3 LastMapPosition;
 
     public List<DaniTechItemModel> ItemList = new List<DaniTechItemModel>();
+
+    public int Umbra;
 }

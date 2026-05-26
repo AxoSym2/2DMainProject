@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class MainUI : DaniTechUIBase
 {
-    [SerializeField] private DaniTechUIButton Button_Energy;
-    [SerializeField] private DaniTechUIButton Button_Chip;
-    [SerializeField] private DaniTechUIButton Button_Jewel;
+    [SerializeField] private Text Text_Umbra;
 
     [SerializeField] private DaniTechUIButton Button_Store;
     [SerializeField] private DaniTechUIButton Button_Lab;
@@ -14,10 +13,6 @@ public class MainUI : DaniTechUIBase
 
     private void OnEnable()
     {
-        Button_Energy.BindOnClickButtonEvent(OnClick_Energy);
-        Button_Chip.BindOnClickButtonEvent(OnClick_Chip);
-        Button_Jewel.BindOnClickButtonEvent(OnClick_Jewel);
-
         Button_Store.BindOnClickButtonEvent(OnClick_Store);
         Button_Lab.BindOnClickButtonEvent(OnClick_Lab);
         Button_Chapter.BindOnClickButtonEvent(OnClick_Chapter);
@@ -25,6 +20,7 @@ public class MainUI : DaniTechUIBase
         Button_Buddy.BindOnClickButtonEvent(OnClick_Buddy);
 
         SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI");
+        RefreshUmbra();
     }
 
     private void OnDisable()
@@ -42,11 +38,10 @@ public class MainUI : DaniTechUIBase
         Debug.Log("칩셋상점열기");
     }
 
-    public void OnClick_Jewel()
+    public void RefreshUmbra()
     {
-        Debug.Log("보석상점열기");
+        Text_Umbra.text = $"{DaniTechGameManager.Inst.GetUmbra()}";
     }
-
 
     public void OnClick_Store()
     {

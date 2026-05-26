@@ -125,6 +125,9 @@ public class EnemyUnitData: GameDataBase
     public float MoveSpeed;
     public float AttackDamage;
     public float AttackCoolDown;
+    public float DropHealKitChance;
+    public float DropUmbraChance;
+    public int DropUmbraAmount;
 }
 
 [System.Serializable]
