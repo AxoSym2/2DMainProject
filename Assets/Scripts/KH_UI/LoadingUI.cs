@@ -9,6 +9,8 @@ public class LoadingUI : DaniTechUIBase
     [SerializeField] private RawImage RawImage_Loading;
     [SerializeField] private Slider Slider_LoadingBar;
 
+    private Action _onLoadingComplete;
+
     private CancellationTokenSource _cancelToken;
     float[] _pausePoints = { 0.1f, 0.1f, 0.1f };
     int _pauseIndex = 0;
@@ -16,6 +18,11 @@ public class LoadingUI : DaniTechUIBase
     private void OnEnable()
     {
         LoadAndSetLoadingImage();
+    }
+
+    public void SetOnLoadingComplete(Action callback)
+    {
+        _onLoadingComplete = callback;
     }
 
     private void LoadAndSetLoadingImage()
@@ -75,5 +82,7 @@ public class LoadingUI : DaniTechUIBase
 
         Slider_LoadingBar.value = 1.0f;
         DaniTechUIManager.Instance.CloseLoadingUI();
+        _onLoadingComplete?.Invoke();
+        _onLoadingComplete = null;
     }
 }

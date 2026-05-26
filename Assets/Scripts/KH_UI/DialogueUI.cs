@@ -3,14 +3,23 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum DialogueOpenType
+{
+    None = 0,
+    ChapterStart,
+    ChapterClear
+}
+
 public class DialogueUI : DaniTechUIBase
 {
     [SerializeField] private Image Image_Character;
+    [SerializeField] private Image Image_Enemy;
     [SerializeField] private Text Text_Character;
     [SerializeField] private Text Text_Description;
     [SerializeField] private DaniTechUIButton Button_Next;
 
     private string _currentDialogueId;
+    private DialogueOpenType _openType;
 
     private void OnEnable()
     {
@@ -22,8 +31,9 @@ public class DialogueUI : DaniTechUIBase
         Button_Next.UnBindOnClickButtonEvent(OnClick_Next);
     }
 
-    public void StartDialogue(string dialogueGroupId)
+    public void StartDialogue(string dialogueGroupId, DialogueOpenType openType)
     {
+        _openType = openType;
         DialogueGroupData groupData = DaniTechGameDataManager.Instance.GetDialogueGroupData(dialogueGroupId);
         if (groupData == null)
         {
@@ -44,8 +54,16 @@ public class DialogueUI : DaniTechUIBase
         }
 
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.DialogueUI);
-        Time.timeScale = 1f;
-        DaniTechGameManager.Inst.ReturnToMainUI();
+
+        if (_openType == DialogueOpenType.ChapterStart)
+        {
+            Time.timeScale = 1f;
+        }
+        else if (_openType == DialogueOpenType.ChapterClear)
+        {
+            Time.timeScale = 1f;
+            DaniTechGameManager.Inst.ReturnToMainUI();
+        }
     }
 
     private bool CheckAndStartNextDialogue()
@@ -66,7 +84,7 @@ public class DialogueUI : DaniTechUIBase
         if (dialogueData == null) return;
 
         SetCurrentDialogueDescription(dialogueData.Description);
-        SetCharactername(dialogueData.CharacterDataId);
+        Text_Character.text = dialogueData.SpeakerName;
 
         if (string.IsNullOrEmpty(dialogueData.TexturePath) == false)
         {
@@ -87,19 +105,42 @@ public class DialogueUI : DaniTechUIBase
 
             if(sprite != null)
             {
+                Image_Character.gameObject.SetActive(true);
                 Image_Character.sprite = sprite;
             }
         }
-    }
+        else
+        {
+            Image_Character.gameObject.SetActive(false);
+        }
 
-    private void SetCharactername(string characterDataId)
-    {
-        string id = string.IsNullOrEmpty(characterDataId) ? DaniTechGameManager.Inst.GetSelectedPlayerUnitId() : characterDataId;
+        if (string.IsNullOrEmpty(dialogueData.EnemyTexturePath) == false)
+        {
+            string[] pathParts = dialogueData.EnemyTexturePath.Split("/");
+            string spriteName = pathParts[pathParts.Length - 1];
+            string folderPath = dialogueData.EnemyTexturePath.Substring(0, dialogueData.EnemyTexturePath.LastIndexOf('/'));
 
-        PlayerUnitData playerUnitData = DaniTechGameDataManager.Instance.GetPlayerUnitData(id);
-        if (playerUnitData == null) return;
-        Text_Character.text = playerUnitData.Name;  
-        
+            Sprite[] sprites = Resources.LoadAll<Sprite>(folderPath);
+            Sprite sprite = null;
+            foreach (var s in sprites)
+            {
+                if (s.name == spriteName)
+                {
+                    sprite = s;
+                    break;
+                }
+            }
+
+            if (sprite != null)
+            {
+                Image_Enemy.gameObject.SetActive(true);
+                Image_Enemy.sprite = sprite;
+            }
+        }
+        else
+        {
+            Image_Enemy.gameObject.SetActive(false);
+        }
     }
 
     private void SetCurrentDialogueDescription(string description)

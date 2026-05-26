@@ -159,6 +159,8 @@ public class DialogueData: GameDataBase
     public string Description;
     public string NextDialogueId;
     public string TexturePath;
+    public string EnemyTexturePath;
+    public string SpeakerName;
 }
 
 [System.Serializable]

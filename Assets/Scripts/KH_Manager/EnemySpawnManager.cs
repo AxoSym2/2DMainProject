@@ -18,6 +18,8 @@ public class EnemySpawnManager : MonoBehaviour
 
     [SerializeField] private float _spawnRadius = 10f;
 
+    private ChapterUI _chapterUI;
+
     private void Awake()
     {
         Instance = this;
@@ -28,6 +30,7 @@ public class EnemySpawnManager : MonoBehaviour
         if (_clearType != ChapterClearType.AllKill) return;
         if (_isAllWaveSpawned == false) return;
         if (_isChapterCleared) return;
+        //Debug.Log("클리어 체크 중");
 
         EnemyUnit_Base[] enemies = FindObjectsByType<EnemyUnit_Base>(FindObjectsSortMode.None);
         bool hasAliveEnemy = false;
@@ -53,11 +56,11 @@ public class EnemySpawnManager : MonoBehaviour
         _isAllWaveSpawned = false;
         _isChapterCleared = false;
         _waveList = DaniTechGameDataManager.Instance.GetChapterWaveList(chapterId);
+        _chapterUI = FindAnyObjectByType<ChapterUI>();
 
-        ChapterUI chapterUI = FindAnyObjectByType<ChapterUI>();
-        if (chapterUI != null)
+        if (_chapterUI != null)
         {
-            _clearType = chapterUI.ClearType;
+            _clearType = _chapterUI.ClearType;
         }
 
         StartNextWave();
@@ -68,6 +71,7 @@ public class EnemySpawnManager : MonoBehaviour
         if (_currentWaveIndex >= _waveList.Count)
         {
             Debug.Log("모든 웨이브 클리어");
+            _isAllWaveSpawned = true;
             return;
         }
 
@@ -99,11 +103,13 @@ public class EnemySpawnManager : MonoBehaviour
 
         _isSpawning = false;
 
-        
         if (_playerTransform == null) return;
+        
+        //Debug.Log($"현재 웨이브 인덱스: {_currentWaveIndex}, 전체 웨이브 수: {_waveList.Count}");
 
-        if(_currentWaveIndex >= _waveList.Count)
+        if (_currentWaveIndex >= _waveList.Count)
         {
+            //Debug.Log("_isAllWaveSpawned = true 설정됨");
             _isAllWaveSpawned = true;
             return;
         }
@@ -156,6 +162,14 @@ public class EnemySpawnManager : MonoBehaviour
     private async UniTaskVoid OnChapterClear()
     {
         await UniTask.Delay(TimeSpan.FromSeconds(3f));
-        DaniTechGameManager.Inst.OnChapterClear();
+
+        if (_chapterUI != null && string.IsNullOrEmpty(_chapterUI.ClearDialogueGroupId) == false)
+        {
+            DaniTechGameManager.Inst.OnChapterClear(_chapterUI.ClearDialogueGroupId);
+        }
+        else
+        {
+            DaniTechGameManager.Inst.ReturnToMainUI();
+        }
     }
 }

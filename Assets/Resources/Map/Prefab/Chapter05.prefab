@@ -505,6 +505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChapterUI
   BGMPath: Sound/BGM_Chapter05
   ClearType: 1
+  StartDialogueGroupId: 
+  ClearDialogueGroupId: dialogue_group_chapter5
 --- !u!1 &7212461298522907029
 GameObject:
   m_ObjectHideFlags: 0

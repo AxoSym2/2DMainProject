@@ -1,26 +1,177 @@
 [
   {
-    "Id": "dialogue_group_chapter1_1_1",
-    "Comment": "챕터1 클리어 대사",
+    "Id": "dialogue_group_chapter1",
+    "Comment": "챕터1",
     "DialogueIdList": [
       "dialogue_chapter01_1",
       "dialogue_chapter01_2",
-      "dialogue_chapter01_3"
+      "dialogue_chapter01_3",
+      "dialogue_chapter01_4",
+      "dialogue_chapter01_5",
+      "dialogue_chapter01_6"
     ]
   },
   {
-    "Id": "dialogue_group_chapter1_1_2",
-    "Comment": null,
-    "DialogueIdList": null
+    "Id": "dialogue_group_chapter2",
+    "Comment": "챕터2",
+    "DialogueIdList": [
+      "dialogue_chapter02_1",
+      "dialogue_chapter02_2",
+      "dialogue_chapter02_3",
+      "dialogue_chapter02_4",
+      "dialogue_chapter02_5",
+      "dialogue_chapter02_6",
+      "dialogue_chapter02_7"
+    ]
   },
   {
-    "Id": "dialogue_group_chapter1_1_3",
-    "Comment": null,
-    "DialogueIdList": null
+    "Id": "dialogue_group_chapter3",
+    "Comment": "챕터3",
+    "DialogueIdList": [
+      "dialogue_chapter03_1",
+      "dialogue_chapter03_2",
+      "dialogue_chapter03_3",
+      "dialogue_chapter03_4",
+      "dialogue_chapter03_5",
+      "dialogue_chapter03_6",
+      "dialogue_chapter03_7",
+      "dialogue_chapter03_8"
+    ]
   },
   {
-    "Id": "dialogue_group_chapter1_1_4",
-    "Comment": null,
-    "DialogueIdList": null
+    "Id": "dialogue_group_chapter4",
+    "Comment": "챕터4",
+    "DialogueIdList": [
+      "dialogue_chapter04_1",
+      "dialogue_chapter04_2",
+      "dialogue_chapter04_3",
+      "dialogue_chapter04_4",
+      "dialogue_chapter04_5",
+      "dialogue_chapter04_6",
+      "dialogue_chapter04_7",
+      "dialogue_chapter04_8",
+      "dialogue_chapter04_9",
+      "dialogue_chapter04_10",
+      "dialogue_chapter04_11",
+      "dialogue_chapter04_12"
+    ]
+  },
+  {
+    "Id": "dialogue_group_chapter5",
+    "Comment": "챕터5",
+    "DialogueIdList": [
+      "dialogue_chapter05_1",
+      "dialogue_chapter05_2",
+      "dialogue_chapter05_3",
+      "dialogue_chapter05_4",
+      "dialogue_chapter05_5",
+      "dialogue_chapter05_6",
+      "dialogue_chapter05_7",
+      "dialogue_chapter05_8",
+      "dialogue_chapter05_9",
+      "dialogue_chapter05_10",
+      "dialogue_chapter05_11",
+      "dialogue_chapter05_12",
+      "dialogue_chapter05_13"
+    ]
+  },
+  {
+    "Id": "dialogue_group_chapter6",
+    "Comment": "챕터6",
+    "DialogueIdList": [
+      "dialogue_chapter06_1",
+      "dialogue_chapter06_2",
+      "dialogue_chapter06_3",
+      "dialogue_chapter06_4",
+      "dialogue_chapter06_5",
+      "dialogue_chapter06_6",
+      "dialogue_chapter06_7",
+      "dialogue_chapter06_8",
+      "dialogue_chapter06_9",
+      "dialogue_chapter06_10",
+      "dialogue_chapter06_11",
+      "dialogue_chapter06_12",
+      "dialogue_chapter06_13",
+      "dialogue_chapter06_14",
+      "dialogue_chapter06_15",
+      "dialogue_chapter06_16",
+      "dialogue_chapter06_17",
+      "dialogue_chapter06_18"
+    ]
+  },
+  {
+    "Id": "dialogue_group_chapter7",
+    "Comment": "챕터7",
+    "DialogueIdList": [
+      "dialogue_chapter07_1",
+      "dialogue_chapter07_2",
+      "dialogue_chapter07_3",
+      "dialogue_chapter07_4",
+      "dialogue_chapter07_5",
+      "dialogue_chapter07_6",
+      "dialogue_chapter07_7",
+      "dialogue_chapter07_8",
+      "dialogue_chapter07_9",
+      "dialogue_chapter07_10",
+      "dialogue_chapter07_11",
+      "dialogue_chapter07_12",
+      "dialogue_chapter07_13",
+      "dialogue_chapter07_14",
+      "dialogue_chapter07_15",
+      "dialogue_chapter07_16",
+      "dialogue_chapter07_17"
+    ]
+  },
+  {
+    "Id": "dialogue_group_final",
+    "Comment": "챕터7 클리어 대사",
+    "DialogueIdList": [
+      "dialogue_final_1",
+      "dialogue_final_2",
+      "dialogue_final_3",
+      "dialogue_final_4",
+      "dialogue_final_5",
+      "dialogue_final_6",
+      "dialogue_final_7",
+      "dialogue_final_8",
+      "dialogue_final_9",
+      "dialogue_final_10",
+      "dialogue_final_11",
+      "dialogue_final_12",
+      "dialogue_final_13",
+      "dialogue_final_14",
+      "dialogue_final_15",
+      "dialogue_final_16",
+      "dialogue_final_17",
+      "dialogue_final_18",
+      "dialogue_final_19",
+      "dialogue_final_20",
+      "dialogue_final_21",
+      "dialogue_final_22",
+      "dialogue_final_23",
+      "dialogue_final_24",
+      "dialogue_final_25",
+      "dialogue_final_26",
+      "dialogue_final_26",
+      "dialogue_final_27",
+      "dialogue_final_28",
+      "dialogue_final_29",
+      "dialogue_final_30",
+      "dialogue_final_31",
+      "dialogue_final_32",
+      "dialogue_final_33",
+      "dialogue_final_34",
+      "dialogue_final_35",
+      "dialogue_final_36",
+      "dialogue_final_37",
+      "dialogue_final_38",
+      "dialogue_final_39",
+      "dialogue_final_40",
+      "dialogue_final_41",
+      "dialogue_final_42",
+      "dialogue_final_43",
+      "dialogue_final_44",
+      "dialogue_final_45"
+    ]
   }
 ]

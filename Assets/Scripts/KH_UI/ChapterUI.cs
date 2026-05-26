@@ -11,6 +11,8 @@ public class ChapterUI : MonoBehaviour
 {
     [SerializeField] private string BGMPath;
     [SerializeField] public ChapterClearType ClearType;
+    [SerializeField] public string StartDialogueGroupId;
+    [SerializeField] public string ClearDialogueGroupId;
 
     private void OnEnable()
     {

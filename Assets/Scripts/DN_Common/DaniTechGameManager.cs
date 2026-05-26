@@ -15,6 +15,7 @@ public class DaniTechGameManager : MonoBehaviour
     private string _selectedPlayerUnitId = "Player_Unit_Male_01";
     private int _currentLevel = 1;
     private float _currentExp = 0f;
+    private string _pendingStartDialogueGroupId;
 
     private void Awake()
     {
@@ -61,6 +62,18 @@ public class DaniTechGameManager : MonoBehaviour
     {
         // _playerModel이 Private이므로 외부에서 ItemList를 받아올 수 있게 Get함수를 사용한다
         return _playerModel.ItemList;
+    }
+
+    public void OnLoadingComplete()
+    {
+        if (string.IsNullOrEmpty(_pendingStartDialogueGroupId)) return;
+        Time.timeScale = 0f;
+        var ui = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
+        if (ui is DialogueUI dialogueUI)
+        {
+            dialogueUI.StartDialogue(_pendingStartDialogueGroupId, DialogueOpenType.ChapterStart);
+        }
+        _pendingStartDialogueGroupId = string.Empty;
     }
 
     public void StartChapter(int chapterIdx)
@@ -121,10 +134,24 @@ public class DaniTechGameManager : MonoBehaviour
         DaniTechUIManager.Instance.OpenInGameUI();
 
         EnemySpawnManager.Instance.Init($"Chapter_Earth_{chapterIdx}", _currentPlayer.transform);
+
+        ChapterUI chapterUI = UnityEngine.Object.FindAnyObjectByType<ChapterUI>();
+        if (chapterUI != null && string.IsNullOrEmpty(chapterUI.StartDialogueGroupId) == false)
+        {
+            _pendingStartDialogueGroupId = chapterUI.StartDialogueGroupId;
+            var loadingUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LoadingUI);
+            if (loadingUI is LoadingUI loading)
+            {
+                loading.SetOnLoadingComplete(OnLoadingComplete);
+            }
+        }
     }
 
     public void ReturnToMainUI()
     {
+        _currentLevel = 1;
+        _currentExp = 0;
+
         EnemySpawnManager.Instance.ClearAllEnemies();
         if (_currentMap != null) Destroy(_currentMap);
         if (_currentPlayer != null) Destroy(_currentPlayer);
@@ -148,7 +175,6 @@ public class DaniTechGameManager : MonoBehaviour
     {
         ReturnToMainUI();
     }
-
 
     public void IncreasePlayerExp(int exp)
     {
@@ -208,13 +234,12 @@ public class DaniTechGameManager : MonoBehaviour
         _currentPlayer.GetComponent<PlayerUnit_Attack>().AddSkill(skillId);
     }
 
-    public void OnChapterClear()
+    public void OnChapterClear(string dialogueGroupId)
     {
-        DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
-        var popup = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
-        if (popup is DialogueUI dialogueUI)
+        var ui = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
+        if (ui is DialogueUI dialogueUI)
         {
-            dialogueUI.StartDialogue("dialogue_group_chapter1_1_1");
+            dialogueUI.StartDialogue(dialogueGroupId, DialogueOpenType.ChapterClear);
         }
     }
 }
