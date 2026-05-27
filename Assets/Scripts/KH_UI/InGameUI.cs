@@ -45,4 +45,9 @@ public class InGameUI : DaniTechUIBase
     {
         Text_Umbra.text = $"{amount}";
     }
+
+    public void RefreshUmbra()
+    {
+        Text_Umbra.text = $"{DaniTechGameManager.Inst.GetUmbra()}";
+    }
 }
