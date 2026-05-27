@@ -21,18 +21,40 @@ public class EnemyUnit_PointAttack : MonoBehaviour
     public void FirePointAttack()
     {
         //Debug.Log("FirePointAttack 호출됨");
-        if (_target == null)
-        {
-            //Debug.Log("타겟 없음");
-            return;
-        }
+        if (_target == null) return;
         Vector2 targetPos = _target.position;
 
+        if (_enemyData.PointAttackType == "Throw")
+        {
+            ThrowAttack(targetPos);
+        }
+        else if (_enemyData.PointAttackType == "Instance")
+        {
+            InstanceAttack(targetPos).Forget();
+        }
+    }
+
+    private void ThrowAttack(Vector2 targetPos)
+    {
         if (string.IsNullOrEmpty(_enemyData.ProjectilePath)) return;
         GameObject pointAttack = ObjectPoolManager.Instance.GetObject(_enemyData.ProjectilePath);
         if (pointAttack == null) return;
 
         pointAttack.transform.position = transform.position;
         pointAttack.GetComponent<Enemy_PointAttack>().Init(_enemyData.AttackDamage, _enemyData.AttackRange, _enemyData.ProjectileSpeed, targetPos, _enemyData.ProjectilePath);
+    }
+
+    private async UniTaskVoid InstanceAttack(Vector2 targetPos)
+    {
+        await UniTask.Delay(TimeSpan.FromSeconds(_enemyData.PointAttackDelay));
+        Collider2D[] players = Physics2D.OverlapCircleAll(targetPos, _enemyData.AttackRange, LayerMask.GetMask("Player"));
+        foreach (var player in players)
+        {
+            PlayerUnit_Base playerBase = player.GetComponent<PlayerUnit_Base>();
+            if (playerBase != null)
+            {
+                playerBase.TakeDamage(_enemyData.AttackDamage);
+            }
+        }
     }
 }

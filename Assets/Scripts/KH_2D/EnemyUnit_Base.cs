@@ -26,6 +26,7 @@ public class EnemyUnit_Base : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (_enemyData == null) return;
         float defense = DaniTechGameManager.Inst.GetDefenseMultiplier();
         float finalDamage = damage * (1f - defense);
 

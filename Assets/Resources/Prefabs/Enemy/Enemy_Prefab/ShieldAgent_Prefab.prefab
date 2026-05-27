@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2719444599896745347}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.384, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -145,13 +145,12 @@ GameObject:
   - component: {fileID: 7423381731481392280}
   - component: {fileID: 9191323164806923198}
   - component: {fileID: 3520422748731537665}
-  - component: {fileID: 5687067735150923720}
   - component: {fileID: 812224569838572564}
   - component: {fileID: 851057310051463316}
   - component: {fileID: 7975983068457855393}
   - component: {fileID: 7984264189247101415}
   m_Layer: 8
-  m_Name: Agent_Prefab
+  m_Name: ShieldAgent_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e623570e45734286bcbf1d6050c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_Move
-  _attackRange: 8
+  _attackRange: 0.5
   _attackRangeCheck: {fileID: 1374028906917828262}
   _playerLayer:
     serializedVersion: 2
@@ -217,18 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_AnimationController
   Animator_enemyUnit: {fileID: 7984264189247101415}
---- !u!114 &5687067735150923720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5060049303463991261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aedb23aad1fd5c2478921421dedb964d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_PointAttack
 --- !u!212 &812224569838572564
 SpriteRenderer:
   serializedVersion: 2
@@ -278,7 +265,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -210432713, guid: ed5475d19ed6c3348bbe22523284a6db, type: 3}
+  m_Sprite: {fileID: -1713054728, guid: c8f2011dba1eb984f8b01fdf94ede206, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -362,7 +349,7 @@ Animator:
   m_GameObject: {fileID: 5060049303463991261}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b09ded5bc4cceb41af77534ec464009, type: 2}
+  m_Controller: {fileID: 9100000, guid: b4845767e7e3fc645920e3b32ea34bbc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

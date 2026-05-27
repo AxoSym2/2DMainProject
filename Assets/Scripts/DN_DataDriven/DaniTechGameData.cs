@@ -120,6 +120,7 @@ public class EnemyUnitData: GameDataBase
     public string IconPath;
     public string PrefabPath;
     public string EnemyType;
+    public string PointAttackType;
     public string ProjectilePath;
     public float ProjectileSpeed;
     public float ExpReward;
