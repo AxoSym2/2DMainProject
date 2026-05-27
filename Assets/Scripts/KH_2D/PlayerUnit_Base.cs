@@ -63,8 +63,8 @@ public class PlayerUnit_Base : MonoBehaviour
         if(_currentHp > _playerData.Hp)
         {
             _currentHp = _playerData.Hp;
-            UpdateHealthBar();
         }
+        UpdateHealthBar();
     }
 
     private void OnDie() 

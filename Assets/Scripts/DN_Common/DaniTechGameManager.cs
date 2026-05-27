@@ -212,7 +212,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     private void OnLevelUp()
     {
-        Debug.Log($"레벨업, 현재 레벨: {_currentLevel}");
+        //Debug.Log($"레벨업, 현재 레벨: {_currentLevel}");
         Time.timeScale = 0f;
 
         List<SkillData> allSkills = new List<SkillData>(DaniTechGameDataManager.Instance.SkillsDataList.Values);

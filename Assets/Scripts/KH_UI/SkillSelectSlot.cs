@@ -35,7 +35,7 @@ public class SkillSelectSlot : DaniTechUIBase
 
     private void OnClick_Select()
     {
-        Debug.Log($"스킬 선택: {_skillData.Name}");
+        //Debug.Log($"스킬 선택: {_skillData.Name}");
         DaniTechGameManager.Inst.AddPlayerSkill(_skillData.Id);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.LevelUpPopup);
         Time.timeScale = 1f;

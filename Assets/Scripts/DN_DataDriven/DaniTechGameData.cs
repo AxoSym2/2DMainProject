@@ -154,7 +154,9 @@ public class SkillData: GameDataBase
     public float Range;
     public float Duration;
     public string SkillType;
-    public string ProjectilePath;
+    public string RangeType;
+    public float RangeX;
+    public float RangeY;
 }
 
 [System.Serializable]

@@ -6,11 +6,28 @@
     "IconPath": "Icon/Cleave_Icon",
     "PrefabPath": "Prefabs/Skill/Skill_Instance_Cleave",
     "Damage": 20,
-    "CoolDown": 1.2,
-    "Range": 0.3,
+    "CoolDown": 0.5,
     "Duration": 0,
     "SkillType": "Instance",
-    "ProjectilePath": null
+    "RangeType": "Circle",
+    "Range": 0.5,
+    "RangeX": null,
+    "RangeY": null
+  },
+  {
+    "Id": "skill_instance_02",
+    "Name": "레이저",
+    "Description": "에너지를 모아 전방에 레이저를 발사하여 큰 피해를 입힌다.",
+    "IconPath": "Icon/Laser_Icon",
+    "PrefabPath": "Prefabs/Skill/Skill_Instance_Laser",
+    "Damage": 50,
+    "CoolDown": 7,
+    "Duration": 0,
+    "SkillType": "Instance",
+    "RangeType": "Box",
+    "Range": null,
+    "RangeX": 5,
+    "RangeY": 0.5
   },
   {
     "Id": "skill_projectile_01",
@@ -20,10 +37,12 @@
     "PrefabPath": "Prefabs/Skill/Skill_Projectile_EnergyBall",
     "Damage": 15,
     "CoolDown": 0.8,
-    "Range": 1,
     "Duration": 0,
     "SkillType": "Projectile",
-    "ProjectilePath": null
+    "RangeType": "Circle",
+    "Range": 1,
+    "RangeX": null,
+    "RangeY": null
   },
   {
     "Id": "skill_area_01",
@@ -33,10 +52,12 @@
     "PrefabPath": "Prefabs/Skill/Skill_Area_ElectricArea",
     "Damage": 3,
     "CoolDown": 8,
-    "Range": 3,
     "Duration": 5,
     "SkillType": "Area",
-    "ProjectilePath": null
+    "RangeType": "Circle",
+    "Range": 3,
+    "RangeX": null,
+    "RangeY": null
   },
   {
     "Id": "skill_area_02",
@@ -46,10 +67,12 @@
     "PrefabPath": "Prefabs/Skill/Skill_Area_Blade",
     "Damage": 10,
     "CoolDown": 0,
-    "Range": 3,
     "Duration": 0,
     "SkillType": "Area",
-    "ProjectilePath": null
+    "RangeType": "Circle",
+    "Range": 3,
+    "RangeX": null,
+    "RangeY": null
   },
   {
     "Id": "skill_area_03",
@@ -59,9 +82,11 @@
     "PrefabPath": "Prefabs/Skill/Skill_Area_BlackHall",
     "Damage": 25,
     "CoolDown": 10,
-    "Range": 3,
     "Duration": 10,
     "SkillType": "Area",
-    "ProjectilePath": null
+    "RangeType": "Circle",
+    "Range": 3,
+    "RangeX": null,
+    "RangeY": null
   }
 ]

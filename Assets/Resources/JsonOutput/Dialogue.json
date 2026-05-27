@@ -6,7 +6,7 @@
     "NextDialogueId": "dialogue_chapter01_2",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -18,7 +18,7 @@
     "NextDialogueId": "dialogue_chapter01_3",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -54,7 +54,7 @@
     "NextDialogueId": "dialogue_chapter01_6",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Smile",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -66,7 +66,7 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Smile",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -102,7 +102,7 @@
     "NextDialogueId": "dialogue_chapter02_4",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -126,7 +126,7 @@
     "NextDialogueId": "dialogue_chapter02_6",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Smile",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -138,7 +138,7 @@
     "NextDialogueId": "dialogue_chapter02_7",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -150,7 +150,7 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -174,7 +174,7 @@
     "NextDialogueId": "dialogue_chapter03_3",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -186,7 +186,7 @@
     "NextDialogueId": "dialogue_chapter03_4",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Smile",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -210,7 +210,7 @@
     "NextDialogueId": "dialogue_chapter03_6",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Smile",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -234,7 +234,7 @@
     "NextDialogueId": "dialogue_chapter03_8",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -246,7 +246,7 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Smile",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -306,7 +306,7 @@
     "NextDialogueId": "dialogue_chapter04_6",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Surprised",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -318,7 +318,7 @@
     "NextDialogueId": "dialogue_chapter04_7",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Surprised",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -342,7 +342,7 @@
     "NextDialogueId": "dialogue_chapter04_9",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -354,7 +354,7 @@
     "NextDialogueId": "dialogue_chapter04_10",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -378,7 +378,7 @@
     "NextDialogueId": "dialogue_chapter04_12",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Surprised",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -390,7 +390,7 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -426,7 +426,7 @@
     "NextDialogueId": "dialogue_chapter05_4",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -438,7 +438,7 @@
     "NextDialogueId": "dialogue_chapter05_5",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -486,7 +486,7 @@
     "NextDialogueId": "dialogue_chapter05_9",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -510,7 +510,7 @@
     "NextDialogueId": "dialogue_chapter05_11",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -546,7 +546,7 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -570,7 +570,7 @@
     "NextDialogueId": "dialogue_chapter06_3",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -606,7 +606,7 @@
     "NextDialogueId": "dialogue_chapter06_6",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -630,7 +630,7 @@
     "NextDialogueId": "dialogue_chapter06_8",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -654,7 +654,7 @@
     "NextDialogueId": "dialogue_chapter06_10",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -678,7 +678,7 @@
     "NextDialogueId": "dialogue_chapter06_12",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -714,7 +714,7 @@
     "NextDialogueId": "dialogue_chapter06_15",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -750,7 +750,7 @@
     "NextDialogueId": "dialogue_chapter06_18",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -762,7 +762,7 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -782,11 +782,11 @@
   {
     "Id": "dialogue_chapter07_2",
     "CharacterDataId": null,
-    "Description": "E-01?",
+    "Description": "넌 누구냐!!",
     "NextDialogueId": "dialogue_chapter07_3",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Surprised",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -794,7 +794,7 @@
   {
     "Id": "dialogue_chapter07_3",
     "CharacterDataId": null,
-    "Description": "그게 네 진짜 이름이다.",
+    "Description": "난 널 만들어낸 존재이다.",
     "NextDialogueId": "dialogue_chapter07_4",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -806,11 +806,11 @@
   {
     "Id": "dialogue_chapter07_4",
     "CharacterDataId": null,
-    "Description": "난… 지구를 정복하러 온…",
+    "Description": "날 만들었다고?",
     "NextDialogueId": "dialogue_chapter07_5",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -818,7 +818,7 @@
   {
     "Id": "dialogue_chapter07_5",
     "CharacterDataId": null,
-    "Description": "아니.",
+    "Description": "내 이름은 카인… 너는 내 손으로 만들어졌다.",
     "NextDialogueId": "dialogue_chapter07_6",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -830,7 +830,7 @@
   {
     "Id": "dialogue_chapter07_6",
     "CharacterDataId": null,
-    "Description": "너는 인간에게 만들어진 병기일 뿐이야.",
+    "Description": "그리고 너는 내가 만들어낸 병기일 뿐이야.",
     "NextDialogueId": "dialogue_chapter07_7",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -846,7 +846,7 @@
     "NextDialogueId": "dialogue_chapter07_8",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -882,7 +882,7 @@
     "NextDialogueId": "dialogue_chapter07_11",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -890,7 +890,7 @@
   {
     "Id": "dialogue_chapter07_11",
     "CharacterDataId": null,
-    "Description": "너는 불완전했다.",
+    "Description": "너는 불완전하다.",
     "NextDialogueId": "dialogue_chapter07_12",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -942,7 +942,7 @@
     "NextDialogueId": "dialogue_chapter07_16",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1014,7 +1014,7 @@
     "NextDialogueId": "dialogue_final_5",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1050,7 +1050,7 @@
     "NextDialogueId": "dialogue_final_8",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1062,7 +1062,7 @@
     "NextDialogueId": "dialogue_final_9",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1110,7 +1110,7 @@
     "NextDialogueId": "dialogue_final_13",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1146,7 +1146,7 @@
     "NextDialogueId": "dialogue_final_16",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1158,7 +1158,7 @@
     "NextDialogueId": "dialogue_final_17",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1182,7 +1182,7 @@
     "NextDialogueId": "dialogue_final_19",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1218,7 +1218,7 @@
     "NextDialogueId": "dialogue_final_22",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "솔리스",
+    "SpeakerName": "E-01",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1238,7 +1238,7 @@
   {
     "Id": "dialogue_final_23",
     "CharacterDataId": null,
-    "Description": "시온.",
+    "Description": "솔리스",
     "NextDialogueId": "dialogue_final_24",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -1250,11 +1250,11 @@
   {
     "Id": "dialogue_final_24",
     "CharacterDataId": null,
-    "Description": "시온..?",
+    "Description": "솔리스…?",
     "NextDialogueId": "dialogue_final_25",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1278,7 +1278,7 @@
     "NextDialogueId": "dialogue_final_27",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1290,7 +1290,7 @@
     "NextDialogueId": "dialogue_final_28",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1326,7 +1326,7 @@
     "NextDialogueId": "dialogue_final_31",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1338,7 +1338,7 @@
     "NextDialogueId": "dialogue_final_32",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1374,7 +1374,7 @@
     "NextDialogueId": "dialogue_final_35",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1458,7 +1458,7 @@
     "NextDialogueId": "dialogue_final_42",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null
@@ -1482,7 +1482,7 @@
     "NextDialogueId": "dialogue_final_44",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "SpeakerName": "시온",
+    "SpeakerName": "솔리스",
     "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
     "EnemyTexturePath": null,
     "VoicePath": null

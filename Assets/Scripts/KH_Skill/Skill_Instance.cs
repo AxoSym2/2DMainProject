@@ -23,7 +23,7 @@ public class Skill_Instance : SkillBase
 
     private void ApplyDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, _skillData.Range, _enemyLayer);
+        Collider2D[] enemies = GetEnemiesInRange();
         foreach (var enemy in enemies)
         {
             EnemyUnit_Base enemyBase = enemy.GetComponent<EnemyUnit_Base>();

@@ -28,7 +28,7 @@ public class Skill_Area : SkillBase
 
         while (elapsed < _skillData.Duration)
         {
-            Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, _skillData.Range, _enemyLayer);
+            Collider2D[] enemies = GetEnemiesInRange();
             foreach (var enemy in enemies)
             {
                 EnemyUnit_Base enemyBase = enemy.GetComponent<EnemyUnit_Base>();
