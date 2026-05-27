@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 1816611032269419368}
   - component: {fileID: 4659343667902322598}
   - component: {fileID: 395097385857673998}
+  - component: {fileID: 8456103662924284923}
   - component: {fileID: 3250206675874470498}
   - component: {fileID: 174945088226623481}
   - component: {fileID: 824731483400575276}
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e623570e45734286bcbf1d6050c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_Move
-  _attackRange: 2.2
+  _attackRange: 5
   _attackRangeCheck: {fileID: 2277796782860470346}
   _playerLayer:
     serializedVersion: 2
@@ -216,6 +217,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_AnimationController
   Animator_enemyUnit: {fileID: 8147792274427900299}
+--- !u!114 &8456103662924284923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8947639828941361791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3562b4cf43d2eaf4aabb923cd97416b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_Projectile
 --- !u!212 &3250206675874470498
 SpriteRenderer:
   serializedVersion: 2

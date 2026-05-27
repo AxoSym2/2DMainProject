@@ -138,6 +138,12 @@ public class EnemySpawnManager : MonoBehaviour
         enemyObj.GetComponent<EnemyUnit_Base>().Init(enemyDataId);
         enemyObj.GetComponent<EnemyUnit_Move>().Init(data.MoveSpeed, data.AttackCoolDown);
         enemyObj.GetComponent<EnemyUnit_Move>().SetTarget(_playerTransform);
+
+        EnemyUnit_Projectile projectileAttack = enemyObj.GetComponent<EnemyUnit_Projectile>();
+        if (projectileAttack != null)
+        {
+            projectileAttack.Init(data, _playerTransform);
+        }
     }
 
     private Vector2 GetRandomSpawnPos()

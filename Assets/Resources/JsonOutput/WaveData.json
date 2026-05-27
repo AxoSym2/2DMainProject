@@ -363,8 +363,8 @@
     "Id": "Wave_Chapter04_01",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 1,
-    "EnemyIdList": null,
-    "SpawnCount": 1,
+    "EnemyIdList": "enemy_soldiergun_01",
+    "SpawnCount": 5,
     "SpawnInterval": 0.5
   },
   {

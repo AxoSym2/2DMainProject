@@ -13,12 +13,14 @@ public class EnemyUnit_Move : MonoBehaviour
     private float _attackCoolDown;
     private float _lastAttackTime = 0f;
     private EnemyUnit_AnimationController _animController;
+    private EnemyUnit_Projectile _projectileAttack;
 
     public void Init(float moveSpeed, float attackCoolDown)
     {
         _rb = GetComponent<Rigidbody2D>();
         _enemyBase = GetComponent<EnemyUnit_Base>();
         _animController = GetComponent<EnemyUnit_AnimationController>();
+        _projectileAttack = GetComponent<EnemyUnit_Projectile>();
         _moveSpeed = moveSpeed;
         _attackCoolDown = attackCoolDown;
     }
@@ -54,10 +56,22 @@ public class EnemyUnit_Move : MonoBehaviour
             _rb.linearVelocity = Vector2.zero;
             if (Time.time - _lastAttackTime >= _attackCoolDown) 
             {
-                _animController.SetState(EnemyUnitState.Attack);
                 _lastAttackTime = Time.time;
+                EnemyUnitData data = DaniTechGameDataManager.Instance.GetEnemyUnitData(_enemyBase.GetEnemyDataId());
 
-                player.GetComponent<PlayerUnit_Base>()?.TakeDamage(_enemyBase.GetAttackDamage());
+                if(data.EnemyType == "Projectile")
+                {
+                    _animController.SetState(EnemyUnitState.Attack);
+                    if(_projectileAttack != null)
+                    {
+                        _projectileAttack.FireProjectile();
+                    }    
+                }
+                else
+                {
+                    _animController.SetState(EnemyUnitState.Attack);
+                    player.GetComponent<PlayerUnit_Base>()?.TakeDamage(_enemyBase.GetAttackDamage());
+                }
             }
         }
         else
