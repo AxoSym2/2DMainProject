@@ -23,7 +23,7 @@
     "Description": "여자캐릭터 1번",
     "SkillId": "skill_projectile_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_01",
-    "Hp": 800,
+    "Hp": 10000000,
     "MoveSpeed": 7
   },
   {

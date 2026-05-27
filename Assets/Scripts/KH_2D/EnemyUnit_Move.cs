@@ -81,7 +81,7 @@ public class EnemyUnit_Move : MonoBehaviour
                 else
                 {
                     _animController.SetState(EnemyUnitState.Attack);
-                    player.GetComponent<PlayerUnit_Base>()?.TakeDamage(_enemyBase.GetAttackDamage());
+                    MeleeAttack(player).Forget();
                 }
             }
         }
@@ -93,6 +93,16 @@ public class EnemyUnit_Move : MonoBehaviour
             _animController.SetDirection(direction);
             Flip(direction);
         }
+    }
+
+    private async Cysharp.Threading.Tasks.UniTaskVoid MeleeAttack(Collider2D player)
+    {
+        await Cysharp.Threading.Tasks.UniTask.Delay(System.TimeSpan.FromSeconds(0.7f));
+        if (player == null) return;
+
+        Collider2D check = Physics2D.OverlapCircle(_attackRangeCheck.position, _attackRange, _playerLayer);
+        if(check == null) return;   
+        player.GetComponent<PlayerUnit_Base>()?.TakeDamage(_enemyBase.GetAttackDamage());
     }
 
     private void OnDrawGizmos()

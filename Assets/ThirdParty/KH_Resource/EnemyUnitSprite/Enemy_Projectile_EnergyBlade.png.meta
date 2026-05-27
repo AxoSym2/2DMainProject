@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: e2d14f5f323dfad47a1f73d5c86639ec
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 320
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7ba945e3a1abc48b31cbb0e70c227d
+      internalID: -1209023437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 319
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c2bba32e2d59f4aa8b8bb3b7bf6cfd
+      internalID: -1632238163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 319
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450d8b4c94d76024580766e7df1e74c7
+      internalID: -435043263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 317
+        width: 50
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf585dc2f421504a87f333258a76900
+      internalID: 739031745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 315
+        width: 67
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be1bc65883d17740a58d5e373578a78
+      internalID: -407603798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 308
+        width: 94
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d1fbf3c88cb4947b030efe4c204514
+      internalID: -621658589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_6
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 306
+        width: 106
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cace93de655de1499ce434a4d7ab353
+      internalID: 1747990426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 306
+        width: 119
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15eb0ebec5aff7a489f36dbdb24c2d3e
+      internalID: -801060486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 229
+        width: 174
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2abe7bd101cdf48bc382dd743b9a6d
+      internalID: 1885721816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_9
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 232
+        width: 143
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463444a30e61f87479cc4fdb15a3f501
+      internalID: -1552205690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 234
+        width: 151
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0b2cd02ae37af49be1327cbc8377f2
+      internalID: -192858334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_12
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 124
+        width: 94
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d58725cc65cea458f88c4cc50de8c9
+      internalID: 1700418366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_13
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 124
+        width: 91
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132bb3bb46a78d046913074b9537c025
+      internalID: -165001362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 126
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e507331a320f62847b9adcf22c97af05
+      internalID: -1087937444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 125
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afd96ca0ba6076479bbc87ec9f5d748
+      internalID: 1222516743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 125
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07211cf709d41764f9c1f92e6b8cd1a2
+      internalID: 1194949637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_18
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 124
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37b84f906fd9024785f486b4e642fa4
+      internalID: -1432754469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile_EnergyBlade_19
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 124
+        width: 79
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8ecfefa51cafe42b662f276d0b2acc
+      internalID: -217263199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 068c323fdefbcae43901d0ddd0b4da70
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Enemy_Projectile_EnergyBlade_0: -1209023437
+      Enemy_Projectile_EnergyBlade_1: -1632238163
+      Enemy_Projectile_EnergyBlade_10: 1890619016
+      Enemy_Projectile_EnergyBlade_11: -192858334
+      Enemy_Projectile_EnergyBlade_12: 1700418366
+      Enemy_Projectile_EnergyBlade_13: -165001362
+      Enemy_Projectile_EnergyBlade_14: -1735184879
+      Enemy_Projectile_EnergyBlade_15: -1087937444
+      Enemy_Projectile_EnergyBlade_16: 1222516743
+      Enemy_Projectile_EnergyBlade_17: 1194949637
+      Enemy_Projectile_EnergyBlade_18: -1432754469
+      Enemy_Projectile_EnergyBlade_19: -217263199
+      Enemy_Projectile_EnergyBlade_2: -435043263
+      Enemy_Projectile_EnergyBlade_20: -1283926477
+      Enemy_Projectile_EnergyBlade_21: 845292622
+      Enemy_Projectile_EnergyBlade_22: -1408649090
+      Enemy_Projectile_EnergyBlade_23: 269350678
+      Enemy_Projectile_EnergyBlade_24: -1937467022
+      Enemy_Projectile_EnergyBlade_25: -1489755635
+      Enemy_Projectile_EnergyBlade_26: 417973272
+      Enemy_Projectile_EnergyBlade_27: 1177555681
+      Enemy_Projectile_EnergyBlade_28: -1421771649
+      Enemy_Projectile_EnergyBlade_29: 1599735442
+      Enemy_Projectile_EnergyBlade_3: 739031745
+      Enemy_Projectile_EnergyBlade_30: 427239916
+      Enemy_Projectile_EnergyBlade_31: 414174963
+      Enemy_Projectile_EnergyBlade_32: 47748442
+      Enemy_Projectile_EnergyBlade_4: -407603798
+      Enemy_Projectile_EnergyBlade_5: -621658589
+      Enemy_Projectile_EnergyBlade_6: 1747990426
+      Enemy_Projectile_EnergyBlade_7: -801060486
+      Enemy_Projectile_EnergyBlade_8: 1885721816
+      Enemy_Projectile_EnergyBlade_9: -1552205690
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

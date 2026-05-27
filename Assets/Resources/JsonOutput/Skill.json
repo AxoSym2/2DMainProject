@@ -35,7 +35,7 @@
     "Description": "에너지를 모아 전방으로 발사한다.",
     "IconPath": "Icon/EnergyBall_Icon",
     "PrefabPath": "Prefabs/Skill/Skill_Projectile_EnergyBall",
-    "Damage": 2000,
+    "Damage": 5000,
     "CoolDown": 0.8,
     "Duration": 0,
     "SkillType": "Projectile",
