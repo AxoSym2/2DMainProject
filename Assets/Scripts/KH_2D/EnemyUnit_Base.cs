@@ -25,7 +25,12 @@ public class EnemyUnit_Base : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        _currentHp -= damage;
+        float defense = DaniTechGameManager.Inst.GetDefenseMultiplier();
+        float finalDamage = damage * (1f - defense);
+
+        //Debug.Log($"받은 데미지: {damage}, 방어력: {defense}, 최종 데미지: {finalDamage}");
+
+        _currentHp -= finalDamage;
         UpdateHealthBar();
         if (_currentHp <= 0) 
         {

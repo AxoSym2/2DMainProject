@@ -8,19 +8,38 @@ public class PlayerUnit_Base : MonoBehaviour
     public void Init(string playerUnitId)
     {
         _playerData = DaniTechGameDataManager.Instance.GetPlayerUnitData(playerUnitId);
-        _currentHp = _playerData.Hp;
-        UpdateHealthBar();
 
         if (_playerData == null)
         {
             Debug.LogError($"플레이어 데이터 없음: {playerUnitId}");
             return;
         }
+
+        _currentHp = GetMaxHp();
+        UpdateHealthBar();
+    }
+
+    private float GetMaxHp()
+    {
+        int level = DaniTechGameManager.Inst.GetUpGradeLevel("Hp");
+        if (level == 0) 
+        {
+            return _playerData.Hp;
+        }
+
+        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_hp_{level}");
+        if (data == null)
+        {
+            return _playerData.Hp;
+        }
+        return _playerData.Hp + data.IncreaseAmount;
     }
 
     public void TakeDamage(float damage)
     {
-        _currentHp -= damage;
+        float defense = DaniTechGameManager.Inst.GetDefenseMultiplier();
+        float finalDamage = damage * (1f - defense);
+        _currentHp -= finalDamage;
         UpdateHealthBar();
         //Debug.Log($"플레이어 체력: {_currentHp}");
         if ( _currentHp <= 0 )
@@ -34,7 +53,7 @@ public class PlayerUnit_Base : MonoBehaviour
         var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
         if (inGameUI is InGameUI ui)
         {
-            ui.SetHealthBar(_currentHp, _playerData.Hp);
+            ui.SetHealthBar(_currentHp, GetMaxHp());
         }
     }
 

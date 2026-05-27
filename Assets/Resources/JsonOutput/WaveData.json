@@ -363,7 +363,7 @@
     "Id": "Wave_Chapter04_01",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 1,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 1,
     "SpawnInterval": 0.5
   },
@@ -371,7 +371,7 @@
     "Id": "Wave_Chapter04_02",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 2,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 3,
     "SpawnInterval": 0.5
   },
@@ -379,7 +379,7 @@
     "Id": "Wave_Chapter04_03",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 3,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 5,
     "SpawnInterval": 0.5
   },
@@ -387,7 +387,7 @@
     "Id": "Wave_Chapter04_04",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 4,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 7,
     "SpawnInterval": 0.5
   },
@@ -395,7 +395,7 @@
     "Id": "Wave_Chapter04_05",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 5,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 9,
     "SpawnInterval": 0.5
   },
@@ -403,7 +403,7 @@
     "Id": "Wave_Chapter04_06",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 6,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 11,
     "SpawnInterval": 0.5
   },
@@ -411,7 +411,7 @@
     "Id": "Wave_Chapter04_07",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 7,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 13,
     "SpawnInterval": 0.5
   },
@@ -419,7 +419,7 @@
     "Id": "Wave_Chapter04_08",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 8,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 15,
     "SpawnInterval": 0.5
   },
@@ -427,7 +427,7 @@
     "Id": "Wave_Chapter04_09",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 9,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 17,
     "SpawnInterval": 0.5
   },
@@ -435,7 +435,7 @@
     "Id": "Wave_Chapter04_10",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 10,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 19,
     "SpawnInterval": 0.5
   },
@@ -443,7 +443,7 @@
     "Id": "Wave_Chapter04_11",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 11,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 21,
     "SpawnInterval": 0.5
   },
@@ -451,7 +451,7 @@
     "Id": "Wave_Chapter04_12",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 12,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 23,
     "SpawnInterval": 0.5
   },
@@ -459,7 +459,7 @@
     "Id": "Wave_Chapter04_13",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 13,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 25,
     "SpawnInterval": 0.5
   },
@@ -467,7 +467,7 @@
     "Id": "Wave_Chapter04_14",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 14,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 27,
     "SpawnInterval": 0.5
   },
@@ -475,7 +475,7 @@
     "Id": "Wave_Chapter04_15",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 15,
-    "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
+    "EnemyIdList": null,
     "SpawnCount": 29,
     "SpawnInterval": 0.5
   },
@@ -483,7 +483,7 @@
     "Id": "Wave_Chapter05_01",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 1,
-    "EnemyIdList": "enemy_citizen_01",
+    "EnemyIdList": null,
     "SpawnCount": 1,
     "SpawnInterval": 0.5
   },
@@ -491,7 +491,7 @@
     "Id": "Wave_Chapter05_02",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 2,
-    "EnemyIdList": "enemy_citizen_01",
+    "EnemyIdList": null,
     "SpawnCount": 1,
     "SpawnInterval": 0.5
   },

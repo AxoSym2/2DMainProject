@@ -61,7 +61,7 @@ public class UpgradeSlot : MonoBehaviour
         }
 
         DaniTechGameManager.Inst.SpendUmbra(data.Cost);
-        DaniTechGameManager.Inst.SetUpgradeLevel(_statType, nextLevel);
+        DaniTechGameManager.Inst.SetUpGradeLevel(_statType, nextLevel);
         Refresh();
     }
 }

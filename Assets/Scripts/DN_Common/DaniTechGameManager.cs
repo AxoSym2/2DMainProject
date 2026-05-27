@@ -305,7 +305,7 @@ public class DaniTechGameManager : MonoBehaviour
         }
     }
 
-    public void SetUpgradeLevel(string statType, int level)
+    public void SetUpGradeLevel(string statType, int level)
     {
         switch (statType)
         {
@@ -342,4 +342,33 @@ public class DaniTechGameManager : MonoBehaviour
 
         return 1f + data.IncreaseAmount;
     }
+
+    public float GetDefenseMultiplier()
+    {
+        int level = _playerModel.DefenseUpgradeLevel;
+        if (level == 0) return 0f;
+
+        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_defense_{level}");
+        if (data == null)
+        {
+            return 0f;
+        }
+
+        return data.IncreaseAmount;
+    }
+
+    public float GetCoolDownMultiplier()
+    {
+        int level = _playerModel.CoolDownUpgradeLevel;
+        if (level == 0) return 0f;
+
+        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_cooldown_{level}");
+        if (data == null)
+        {
+            return 0f;
+        }
+
+        return data.IncreaseAmount;
+    }
+
 }
