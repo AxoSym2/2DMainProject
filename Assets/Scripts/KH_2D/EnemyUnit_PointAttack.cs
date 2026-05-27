@@ -34,43 +34,5 @@ public class EnemyUnit_PointAttack : MonoBehaviour
 
         pointAttack.transform.position = transform.position;
         pointAttack.GetComponent<Enemy_PointAttack>().Init(_enemyData.AttackDamage, _enemyData.AttackRange, _enemyData.ProjectileSpeed, targetPos, _enemyData.ProjectilePath);
-
-        DelayedAttack(targetPos).Forget();
-    }
-
-    private async UniTaskVoid DelayedAttack(Vector2 targetPos)
-    {
-        Debug.Log($"DelayedAttack 호출됨, ProjectilePath: {_enemyData.ProjectilePath}");
-        if (string.IsNullOrEmpty(_enemyData.ProjectilePath) == false)
-        {
-            GameObject effect = ObjectPoolManager.Instance.GetObject(_enemyData.ProjectilePath);
-            Debug.Log($"effect: {effect}");
-            if (effect != null)
-            {
-                effect.transform.position = targetPos;
-                ReturnEffect(effect).Forget();
-            }
-        }
-
-        await UniTask.Delay(TimeSpan.FromSeconds(_enemyData.PointAttackDelay));
-
-        Collider2D[] players = Physics2D.OverlapCircleAll(targetPos, _enemyData.AttackRange, LayerMask.GetMask("Player"));
-        foreach(var player in players)
-        {
-            PlayerUnit_Base playerBase = player.GetComponent<PlayerUnit_Base>();
-            if (playerBase != null)
-            {
-                playerBase.TakeDamage(_enemyData.AttackDamage);
-            }
-        }
-    }
-
-    private async UniTask ReturnEffect(GameObject effect)
-    {
-        await UniTask.Delay(TimeSpan.FromSeconds(_enemyData.PointAttackDelay + 0.5f));
-        if (effect.activeSelf)
-        {
-            ObjectPoolManager.Instance.ReturnObject(_enemyData.ProjectilePath, effect);
-        }
     }
 }

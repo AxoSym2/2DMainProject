@@ -281,7 +281,7 @@ TextureImporter:
         width: 112
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,28 +295,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Projectile3_5
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 303
-        width: 108
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d7b070f19c1449438c5f0b7a21402fe
-      internalID: 1256182713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Enemy_Projectile3_6
       rect:
         serializedVersion: 2
@@ -325,7 +303,7 @@ TextureImporter:
         width: 138
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -347,7 +325,7 @@ TextureImporter:
         width: 151
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,6 +334,28 @@ TextureImporter:
       bones: []
       spriteID: d2159fd8f7c3dd742a42291a2833d789
       internalID: -942844306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Projectile3_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 130
+        width: 135
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700710c0aa32d3743add31d898d2579f
+      internalID: 1256182713
       vertices: []
       indices: 
       edges: []
