@@ -144,6 +144,12 @@ public class EnemySpawnManager : MonoBehaviour
         {
             projectileAttack.Init(data, _playerTransform);
         }
+
+        EnemyUnit_PointAttack pointAttack = enemyObj.GetComponent<EnemyUnit_PointAttack>();
+        if (pointAttack != null)
+        {
+            pointAttack.Init(data, _playerTransform);
+        }
     }
 
     private Vector2 GetRandomSpawnPos()

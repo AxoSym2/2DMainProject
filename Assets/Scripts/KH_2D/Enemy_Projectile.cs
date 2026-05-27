@@ -31,7 +31,14 @@ public class Enemy_Projectile : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(_damage);
-            ObjectPoolManager.Instance.ReturnObject(_prefabPath, gameObject);
+            if (string.IsNullOrEmpty(_prefabPath) == false)
+            {
+                ObjectPoolManager.Instance.ReturnObject(_prefabPath, gameObject);
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 

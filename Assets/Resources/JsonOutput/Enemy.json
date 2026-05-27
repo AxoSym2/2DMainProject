@@ -13,6 +13,8 @@
     "MoveSpeed": 2,
     "AttackDamage": 5,
     "AttackCoolDown": 2,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 1,
     "DropUmbraAmount": 100
@@ -31,6 +33,8 @@
     "MoveSpeed": 4,
     "AttackDamage": 30,
     "AttackCoolDown": 5,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 150
@@ -49,6 +53,8 @@
     "MoveSpeed": 3,
     "AttackDamage": 15,
     "AttackCoolDown": 1,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 100
@@ -67,6 +73,8 @@
     "MoveSpeed": 3,
     "AttackDamage": 15,
     "AttackCoolDown": 4,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 500
@@ -85,6 +93,8 @@
     "MoveSpeed": 4,
     "AttackDamage": 30,
     "AttackCoolDown": 2,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 500
@@ -103,6 +113,8 @@
     "MoveSpeed": 2,
     "AttackDamage": 150,
     "AttackCoolDown": 3,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 3000
@@ -121,6 +133,8 @@
     "MoveSpeed": 3,
     "AttackDamage": 280,
     "AttackCoolDown": 4,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 3000
@@ -139,8 +153,30 @@
     "MoveSpeed": 1,
     "AttackDamage": 450,
     "AttackCoolDown": 5,
+    "PointAttackDelay": null,
+    "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 3000
+  },
+  {
+    "Id": "enemy_agent_01",
+    "Name": "특수요원",
+    "Description": null,
+    "IconPath": null,
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Agent_Prefab",
+    "EnemyType": "PointAttack",
+    "ProjectilePath": "Prefabs/Enemy/Enemy_Prefab/Enemy_PointAttack_Grenade",
+    "ProjectileSpeed": 3,
+    "ExpReward": 500,
+    "Hp": 5500,
+    "MoveSpeed": 2,
+    "AttackDamage": 800,
+    "AttackCoolDown": 7,
+    "PointAttackDelay": 2.5,
+    "AttackRange": 3,
+    "DropHealKitChance": 0.025,
+    "DropUmbraChance": 0.05,
+    "DropUmbraAmount": 5000
   }
 ]

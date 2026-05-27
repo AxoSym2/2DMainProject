@@ -127,6 +127,8 @@ public class EnemyUnitData: GameDataBase
     public float MoveSpeed;
     public float AttackDamage;
     public float AttackCoolDown;
+    public float PointAttackDelay;
+    public float AttackRange;
     public float DropHealKitChance;
     public float DropUmbraChance;
     public int DropUmbraAmount;

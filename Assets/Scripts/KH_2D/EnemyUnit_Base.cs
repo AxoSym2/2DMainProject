@@ -11,6 +11,7 @@ public class EnemyUnit_Base : MonoBehaviour
 
     public void Init(string enemyDataId)
     {
+        GetComponent<Collider2D>().enabled = true;
         _enemyDataId = enemyDataId;
         _enemyData = DaniTechGameDataManager.Instance.GetEnemyUnitData(enemyDataId);
         if (_enemyData == null)
@@ -36,6 +37,11 @@ public class EnemyUnit_Base : MonoBehaviour
         {
             OnDie();
         }
+    }
+
+    public string GetEnemyDataId()
+    {
+        return _enemyDataId;
     }
 
     private void UpdateHealthBar()
@@ -79,11 +85,19 @@ public class EnemyUnit_Base : MonoBehaviour
         if (UnityEngine.Random.value <= _enemyData.DropHealKitChance)
             DropHealKit();
 
-        ObjectPoolManager.Instance.ReturnObject(_enemyData.PrefabPath, gameObject);
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<EnemyUnit_Move>().enabled = false;
+        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+
+        GetComponent<EnemyUnit_AnimationController>().SetState(EnemyUnitState.Dead);
+
+        ReturnToPool().Forget();
     }
 
-    public string GetEnemyDataId()
+    
+    private async Cysharp.Threading.Tasks.UniTaskVoid ReturnToPool()
     {
-        return _enemyDataId;
+        await Cysharp.Threading.Tasks.UniTask.Delay(System.TimeSpan.FromSeconds(1f));
+        ObjectPoolManager.Instance.ReturnObject(_enemyDataId, gameObject);
     }
 }

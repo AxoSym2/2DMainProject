@@ -14,13 +14,16 @@ public class EnemyUnit_Move : MonoBehaviour
     private float _lastAttackTime = 0f;
     private EnemyUnit_AnimationController _animController;
     private EnemyUnit_Projectile _projectileAttack;
+    private EnemyUnit_PointAttack _pointattack;
 
     public void Init(float moveSpeed, float attackCoolDown)
     {
+        enabled = true;
         _rb = GetComponent<Rigidbody2D>();
         _enemyBase = GetComponent<EnemyUnit_Base>();
         _animController = GetComponent<EnemyUnit_AnimationController>();
         _projectileAttack = GetComponent<EnemyUnit_Projectile>();
+        _pointattack = GetComponent<EnemyUnit_PointAttack>();
         _moveSpeed = moveSpeed;
         _attackCoolDown = attackCoolDown;
     }
@@ -66,6 +69,14 @@ public class EnemyUnit_Move : MonoBehaviour
                     {
                         _projectileAttack.FireProjectile();
                     }    
+                }
+                else if (data.EnemyType == "PointAttack")
+                {
+                    _animController.SetState(EnemyUnitState.Attack);
+                    if (_pointattack != null)
+                    {
+                        _pointattack.FirePointAttack();
+                    }
                 }
                 else
                 {
