@@ -57,6 +57,7 @@ public class EnemyUnit_Move : MonoBehaviour
     private void FixedUpdate()
     {
         if (_target == null) return;
+        if (_InstanceAttack != null && _InstanceAttack.IsDashing) return;
         Collider2D player = Physics2D.OverlapCircle(_attackRangeCheck.position, _attackRange, _playerLayer);
 
         if (player != null)
