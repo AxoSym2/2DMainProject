@@ -14,7 +14,11 @@ public class EnemyUnit_Move : MonoBehaviour
     private float _lastAttackTime = 0f;
     private EnemyUnit_AnimationController _animController;
     private EnemyUnit_Projectile _projectileAttack;
-    private EnemyUnit_PointAttack _pointattack;
+    private EnemyUnit_PointAttack _pointAttack;
+    private EnemyUnit_Instance _InstanceAttack;
+
+    public Transform GetAttackRangeCheck() {  return _attackRangeCheck; }
+    public float GetAttackRange() { return _attackRange; }
 
     public void Init(float moveSpeed, float attackCoolDown)
     {
@@ -23,7 +27,8 @@ public class EnemyUnit_Move : MonoBehaviour
         _enemyBase = GetComponent<EnemyUnit_Base>();
         _animController = GetComponent<EnemyUnit_AnimationController>();
         _projectileAttack = GetComponent<EnemyUnit_Projectile>();
-        _pointattack = GetComponent<EnemyUnit_PointAttack>();
+        _pointAttack = GetComponent<EnemyUnit_PointAttack>();
+        _InstanceAttack = GetComponent<EnemyUnit_Instance>();
         _moveSpeed = moveSpeed;
         _attackCoolDown = attackCoolDown;
     }
@@ -73,15 +78,18 @@ public class EnemyUnit_Move : MonoBehaviour
                 else if (data.EnemyType == "PointAttack")
                 {
                     _animController.SetState(EnemyUnitState.Attack);
-                    if (_pointattack != null)
+                    if (_pointAttack != null)
                     {
-                        _pointattack.FirePointAttack();
+                        _pointAttack.FirePointAttack();
                     }
                 }
-                else
+                else if (data.EnemyType == "Instance")
                 {
                     _animController.SetState(EnemyUnitState.Attack);
-                    MeleeAttack(player).Forget();
+                    if (_InstanceAttack != null)
+                    {
+                        _InstanceAttack.DoAttack();
+                    }
                 }
             }
         }
@@ -93,16 +101,6 @@ public class EnemyUnit_Move : MonoBehaviour
             _animController.SetDirection(direction);
             Flip(direction);
         }
-    }
-
-    private async Cysharp.Threading.Tasks.UniTaskVoid MeleeAttack(Collider2D player)
-    {
-        await Cysharp.Threading.Tasks.UniTask.Delay(System.TimeSpan.FromSeconds(0.7f));
-        if (player == null) return;
-
-        Collider2D check = Physics2D.OverlapCircle(_attackRangeCheck.position, _attackRange, _playerLayer);
-        if(check == null) return;   
-        player.GetComponent<PlayerUnit_Base>()?.TakeDamage(_enemyBase.GetAttackDamage());
     }
 
     private void OnDrawGizmos()

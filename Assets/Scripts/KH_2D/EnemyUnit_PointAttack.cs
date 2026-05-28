@@ -24,11 +24,11 @@ public class EnemyUnit_PointAttack : MonoBehaviour
         if (_target == null) return;
         Vector2 targetPos = _target.position;
 
-        if (_enemyData.PointAttackType == "Throw")
+        if (_enemyData.AttackType == "Throw")
         {
             ThrowAttack(targetPos);
         }
-        else if (_enemyData.PointAttackType == "Instance")
+        else if (_enemyData.AttackType == "Instance")
         {
             InstanceAttack(targetPos).Forget();
         }

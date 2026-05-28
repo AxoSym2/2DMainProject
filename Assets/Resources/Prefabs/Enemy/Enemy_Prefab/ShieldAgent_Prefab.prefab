@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 7423381731481392280}
   - component: {fileID: 9191323164806923198}
   - component: {fileID: 3520422748731537665}
+  - component: {fileID: 3458357866013167912}
   - component: {fileID: 812224569838572564}
   - component: {fileID: 851057310051463316}
   - component: {fileID: 7975983068457855393}
@@ -216,6 +217,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_AnimationController
   Animator_enemyUnit: {fileID: 7984264189247101415}
+--- !u!114 &3458357866013167912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060049303463991261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de970e9283801eb4aac543b9016ab62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_Instance
 --- !u!212 &812224569838572564
 SpriteRenderer:
   serializedVersion: 2

@@ -506,7 +506,7 @@ MonoBehaviour:
   BGMPath: Sound/BGM_Chapter05
   ClearType: 1
   StartDialogueGroupId: 
-  ClearDialogueGroupId: dialogue_group_chapter5
+  ClearDialogueGroupId: dialogue_group_chapter05_end
 --- !u!1 &7212461298522907029
 GameObject:
   m_ObjectHideFlags: 0

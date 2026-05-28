@@ -3268,4 +3268,4 @@ MonoBehaviour:
   BGMPath: Sound/BGM_Chapter02
   ClearType: 1
   StartDialogueGroupId: 
-  ClearDialogueGroupId: dialogue_group_chapter2
+  ClearDialogueGroupId: dialogue_group_chapter02_end

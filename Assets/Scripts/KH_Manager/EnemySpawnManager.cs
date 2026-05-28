@@ -150,6 +150,12 @@ public class EnemySpawnManager : MonoBehaviour
         {
             pointAttack.Init(data, _playerTransform);
         }
+
+        EnemyUnit_Instance instance = enemyObj.GetComponent<EnemyUnit_Instance>();
+        if (instance != null)
+        {
+            instance.Init(data, _playerTransform);
+        }
     }
 
     private Vector2 GetRandomSpawnPos()

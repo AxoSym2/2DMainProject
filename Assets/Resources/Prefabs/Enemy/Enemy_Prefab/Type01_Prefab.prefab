@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 137045001462547401}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.37, y: -0.16, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -145,13 +145,13 @@ GameObject:
   - component: {fileID: 5179439515314592358}
   - component: {fileID: 818416809676405033}
   - component: {fileID: 7808785175915289338}
-  - component: {fileID: 8554564350984562948}
+  - component: {fileID: 2190640288287424882}
   - component: {fileID: 8754579844173682086}
   - component: {fileID: 1537690102717042391}
   - component: {fileID: 2737471892528094914}
-  - component: {fileID: 1716320323762251624}
+  - component: {fileID: 3889674556088862577}
   m_Layer: 8
-  m_Name: Subject03_Prefab
+  m_Name: Type01_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e623570e45734286bcbf1d6050c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_Move
-  _attackRange: 1.5
+  _attackRange: 3
   _attackRangeCheck: {fileID: 5767434711142684858}
   _playerLayer:
     serializedVersion: 2
@@ -216,8 +216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9af59164d118054db5f5a8683a8867c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_AnimationController
-  Animator_enemyUnit: {fileID: 1716320323762251624}
---- !u!114 &8554564350984562948
+  Animator_enemyUnit: {fileID: 0}
+--- !u!114 &2190640288287424882
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,7 +278,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2120176981, guid: 8f3b8e534a2fc934193769e73bab871f, type: 3}
+  m_Sprite: {fileID: 520194585, guid: 39ac950f11ba7b94397d9f08c5281d7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -352,7 +352,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.2, y: 0.9}
   m_Direction: 0
---- !u!95 &1716320323762251624
+--- !u!95 &3889674556088862577
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ Animator:
   m_GameObject: {fileID: 8656376363186729974}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d00e90bd57df81849816b145d2c12b62, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1058613db3060f441b07d327aed5c12b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

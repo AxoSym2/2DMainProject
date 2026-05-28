@@ -7834,4 +7834,4 @@ MonoBehaviour:
   BGMPath: Sound/BGM_Chapter03
   ClearType: 1
   StartDialogueGroupId: 
-  ClearDialogueGroupId: dialogue_group_chapter3
+  ClearDialogueGroupId: dialogue_group_chapter03_end
