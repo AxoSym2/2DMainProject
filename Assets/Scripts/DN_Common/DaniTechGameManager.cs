@@ -77,6 +77,11 @@ public class DaniTechGameManager : MonoBehaviour
         _pendingStartDialogueGroupId = string.Empty;
     }
 
+    public void OnReturnLoadingComplete()
+    {
+        DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+    }
+
     public void StartChapter(int chapterIdx)
     {
         if (_currentMap != null)
@@ -106,7 +111,6 @@ public class DaniTechGameManager : MonoBehaviour
         }
 
         _currentMap = Instantiate(mapPrefab);
-
 
         PlayerUnitData playerdata = DaniTechGameDataManager.Instance.GetPlayerUnitData(_selectedPlayerUnitId);
         //Debug.Log($"선택된 캐릭터 ID: {_selectedPlayerUnitId}");
@@ -162,7 +166,13 @@ public class DaniTechGameManager : MonoBehaviour
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.PausePopup);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.LevelUpPopup);
         DaniTechUIManager.Instance.CloseUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
-        DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+
+        DaniTechUIManager.Instance.OpenLoadingUI();
+        var loadingUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LoadingUI);
+        if (loadingUI is LoadingUI loading)
+        {
+            loading.SetOnLoadingComplete(OnReturnLoadingComplete);
+        }
     }
 
     public void SetSelectedPlayerUnit(string playerId)
