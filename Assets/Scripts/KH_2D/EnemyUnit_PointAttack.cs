@@ -46,7 +46,18 @@ public class EnemyUnit_PointAttack : MonoBehaviour
 
     private async UniTaskVoid InstanceAttack(Vector2 targetPos)
     {
+        if (string.IsNullOrEmpty(_enemyData.ProjectilePath) == false)
+        {
+            GameObject effect = ObjectPoolManager.Instance.GetObject(_enemyData.ProjectilePath);
+            if (effect != null)
+            {
+                effect.transform.position = targetPos;
+                effect.GetComponent<Enemy_PointAttack>().Init(_enemyData.ProjectilePath, _enemyData.PointAttackDelay + 0.5f);
+            }
+        }
+
         await UniTask.Delay(TimeSpan.FromSeconds(_enemyData.PointAttackDelay));
+
         Collider2D[] players = Physics2D.OverlapCircleAll(targetPos, _enemyData.AttackRange, LayerMask.GetMask("Player"));
         foreach (var player in players)
         {

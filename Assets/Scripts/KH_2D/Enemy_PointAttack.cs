@@ -10,10 +10,13 @@ public class Enemy_PointAttack : MonoBehaviour
     private string _prefabPath;
     private Vector2 _targetPos;
     private float _speed;
+    private float _duration;
     private Animator _animator;
+    private bool _isThrow;
 
     public void Init(float damage, float attackRange, float speed, Vector2 targetPos, string prefabPath)
     {
+        _isThrow = true;
         _animator = GetComponent<Animator>();
         _damage = damage;
         _attackRange = attackRange;
@@ -22,6 +25,14 @@ public class Enemy_PointAttack : MonoBehaviour
         _prefabPath = prefabPath;
         _animator.SetBool("IsFlying", true);
         MoveToTarget().Forget();
+    }
+
+    public void Init(string prefabPath, float duration)
+    {
+        _isThrow = false;
+        _prefabPath = prefabPath;
+        _duration = duration;
+        AutoReturn().Forget();
     }
 
     private async UniTaskVoid MoveToTarget()
@@ -43,8 +54,11 @@ public class Enemy_PointAttack : MonoBehaviour
     private void Explode()
     {
         transform.rotation = Quaternion.identity;
-        _animator.SetBool("IsFlying", false);
-        _animator.SetTrigger("Explode");
+        if (_animator != null)
+        {
+            _animator.SetBool("IsFlying", false);
+            _animator.SetTrigger("Explode");
+        }
 
         Collider2D[] players = Physics2D.OverlapCircleAll(transform.position, _attackRange, LayerMask.GetMask("Player"));
         foreach(var player in players)
@@ -63,5 +77,14 @@ public class Enemy_PointAttack : MonoBehaviour
     {
         await UniTask.Delay(TimeSpan.FromSeconds(1f));
         ObjectPoolManager.Instance.ReturnObject(_prefabPath, gameObject);
+    }
+
+    private async UniTaskVoid AutoReturn()
+    {
+        await UniTask.Delay(TimeSpan.FromSeconds(_duration));
+        if (gameObject.activeSelf)
+        {
+            ObjectPoolManager.Instance.ReturnObject(_prefabPath, gameObject);
+        }
     }
 }
