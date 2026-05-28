@@ -16,9 +16,10 @@
     "AttackCoolDown": 2,
     "PointAttackDelay": null,
     "AttackRange": null,
-    "DropHealKitChance": 0.025,
+    "DropHealKitChance": 1,
     "DropUmbraChance": 1,
-    "DropUmbraAmount": 100
+    "DropUmbraAmount": 100,
+    "DropMagnetChance": 1
   },
   {
     "Id": "enemy_police_01",
@@ -39,7 +40,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 150
+    "DropUmbraAmount": 150,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_athlete_01",
@@ -60,7 +62,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 100
+    "DropUmbraAmount": 100,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_soldiergun_01",
@@ -81,7 +84,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 500
+    "DropUmbraAmount": 500,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_soldierknife_01",
@@ -102,7 +106,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 500
+    "DropUmbraAmount": 500,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_tank_01",
@@ -123,7 +128,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 3000
+    "DropUmbraAmount": 3000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_firetank_01",
@@ -144,7 +150,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 3000
+    "DropUmbraAmount": 3000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_drill_01",
@@ -165,7 +172,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 3000
+    "DropUmbraAmount": 3000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_agent_01",
@@ -186,7 +194,8 @@
     "AttackRange": 2,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 5000
+    "DropUmbraAmount": 5000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_agent_02",
@@ -207,7 +216,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 5000
+    "DropUmbraAmount": 5000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_agent_03",
@@ -228,7 +238,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 6000
+    "DropUmbraAmount": 6000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_subject_01",
@@ -249,7 +260,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 15000
+    "DropUmbraAmount": 15000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_subject_02",
@@ -270,7 +282,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 15000
+    "DropUmbraAmount": 15000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_subject_03",
@@ -291,7 +304,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 15000
+    "DropUmbraAmount": 15000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_subject_04",
@@ -312,7 +326,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 15000
+    "DropUmbraAmount": 15000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_subject_05",
@@ -333,7 +348,8 @@
     "AttackRange": 3,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 15000
+    "DropUmbraAmount": 15000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_type_01",
@@ -354,7 +370,8 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 20000
+    "DropUmbraAmount": 20000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_type_02",
@@ -375,7 +392,8 @@
     "AttackRange": 2.5,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 20000
+    "DropUmbraAmount": 20000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_type_03",
@@ -396,7 +414,8 @@
     "AttackRange": 1.2,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 20000
+    "DropUmbraAmount": 20000,
+    "DropMagnetChance": 0.025
   },
   {
     "Id": "enemy_type_04",
@@ -417,6 +436,7 @@
     "AttackRange": null,
     "DropHealKitChance": 0.025,
     "DropUmbraChance": 0.05,
-    "DropUmbraAmount": 20000
+    "DropUmbraAmount": 20000,
+    "DropMagnetChance": 0.025
   }
 ]

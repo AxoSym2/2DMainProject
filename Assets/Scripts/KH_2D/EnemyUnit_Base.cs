@@ -75,6 +75,14 @@ public class EnemyUnit_Base : MonoBehaviour
         }
     }
 
+    private void DropMagnet()
+    {
+        GameObject obj = ObjectPoolManager.Instance.GetObject("Prefabs/Item/Magnet");
+        if (obj != null)
+        {
+            obj.transform.position = transform.position;
+        }
+    }
 
     private void OnDie()
     {
@@ -85,6 +93,9 @@ public class EnemyUnit_Base : MonoBehaviour
 
         if (UnityEngine.Random.value <= _enemyData.DropHealKitChance)
             DropHealKit();
+
+        if (UnityEngine.Random.value <= _enemyData.DropMagnetChance)
+            DropMagnet();
 
         GetComponent<Collider2D>().enabled = false;
         GetComponent<EnemyUnit_Move>().enabled = false;

@@ -133,6 +133,7 @@ public class EnemyUnitData: GameDataBase
     public float DropHealKitChance;
     public float DropUmbraChance;
     public int DropUmbraAmount;
+    public float DropMagnetChance;
 }
 
 [System.Serializable]

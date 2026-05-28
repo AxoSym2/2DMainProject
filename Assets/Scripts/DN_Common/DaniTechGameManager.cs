@@ -280,6 +280,8 @@ public class DaniTechGameManager : MonoBehaviour
 
     private void ClearAllItems()
     {
+        ItemManager.Instance.ClearAllItems();
+
         HealKit[] healKits = FindObjectsByType<HealKit>(FindObjectsSortMode.None);
         foreach (var item in healKits)
         {
@@ -295,6 +297,15 @@ public class DaniTechGameManager : MonoBehaviour
             if (item.gameObject.activeSelf)
             {
                 ObjectPoolManager.Instance.ReturnObject("Prefabs/Item/Umbra", item.gameObject);
+            }
+        }
+
+        Magnet[] magnet = FindObjectsByType<Magnet>(FindObjectsSortMode.None);
+        foreach (var item in magnet)
+        {
+            if (item.gameObject.activeSelf)
+            {
+                ObjectPoolManager.Instance.ReturnObject("Prefabs/Item/Magnet", item.gameObject);
             }
         }
     }
