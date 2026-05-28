@@ -603,121 +603,121 @@
     "Id": "Wave_Chapter06_01",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 1,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 10,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_02",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 2,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_03",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 3,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_04",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 4,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_05",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 5,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_06",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 6,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_07",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 7,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_08",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 8,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_09",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 9,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_10",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 10,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_11",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 11,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_12",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 12,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_13",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 13,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_14",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 14,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter06_15",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 15,
-    "EnemyIdList": null,
-    "SpawnCount": null,
-    "SpawnInterval": null
+    "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
+    "SpawnCount": 1,
+    "SpawnInterval": 5
   },
   {
     "Id": "Wave_Chapter07_01",

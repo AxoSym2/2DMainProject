@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9af59164d118054db5f5a8683a8867c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_AnimationController
-  Animator_enemyUnit: {fileID: 0}
+  Animator_enemyUnit: {fileID: 3889674556088862577}
 --- !u!114 &2190640288287424882
 MonoBehaviour:
   m_ObjectHideFlags: 0

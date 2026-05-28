@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 35
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Type04_14
+      name: Type04_15
       rect:
         serializedVersion: 2
         x: 10
@@ -295,11 +295,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Type04_15
+      name: Type04_13
       rect:
         serializedVersion: 2
         x: 97
-        y: 141
+        y: 142
         width: 64
         height: 98
       alignment: 0
@@ -317,7 +317,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Type04_16
+      name: Type04_14
       rect:
         serializedVersion: 2
         x: 171
@@ -501,7 +501,7 @@ TextureImporter:
         width: 105
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -535,10 +535,9 @@ TextureImporter:
       Type04_10: 199290933
       Type04_11: -83039556
       Type04_12: 533502276
-      Type04_13: -795225259
-      Type04_14: 1508882832
-      Type04_15: -351868932
-      Type04_16: 778160112
+      Type04_13: -351868932
+      Type04_14: 778160112
+      Type04_15: 1508882832
       Type04_17: 1373339243
       Type04_18: 1405399241
       Type04_19: 490459633

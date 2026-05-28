@@ -580,7 +580,7 @@
     "Description": "진짜 지구 종말 프로젝트를…",
     "NextDialogueId": "dialogue_chapter06_start_20",
     "SpeakerName": "관찰자",
-    "TexturePath": "Dialogue_Image/Dialogue_Image2/Dialogue_Image2_Angry",
+    "TexturePath": null,
     "EnemyTexturePath": "Dialogue_Image/Alien/Alien_0",
     "VoicePath": null
   },
@@ -759,9 +759,9 @@
     "Id": "dialogue_chapter07_start_4",
     "Description": "그럼 난 이만. 후후후",
     "NextDialogueId": "dialogue_chapter07_start_5",
-    "SpeakerName": "E-01",
-    "TexturePath": "Dialogue_Image/Dialogue_Image1/Dialogue_Image1_Basic",
-    "EnemyTexturePath": null,
+    "SpeakerName": "관찰자",
+    "TexturePath": null,
+    "EnemyTexturePath": "Dialogue_Image/Alien/Alien_0",
     "VoicePath": null
   },
   {
