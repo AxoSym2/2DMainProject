@@ -6,7 +6,7 @@
     "IconPath": "Icon/Cleave_Icon",
     "PrefabPath": "Prefabs/Skill/Skill_Instance_Cleave",
     "Damage": 20,
-    "CoolDown": 0.5,
+    "CoolDown": 0.8,
     "Duration": 0,
     "SkillType": "Instance",
     "RangeType": "Circle",

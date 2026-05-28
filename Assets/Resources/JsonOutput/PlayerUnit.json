@@ -30,7 +30,7 @@
     "Id": "Player_Unit_FeMale_02",
     "Name": "로셸",
     "Description": "여자캐릭터 2번",
-    "SkillId": "skill_area_02",
+    "SkillId": "skill_area_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_02",
     "Hp": 800,
     "MoveSpeed": 7
