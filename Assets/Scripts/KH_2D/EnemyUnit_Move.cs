@@ -16,6 +16,7 @@ public class EnemyUnit_Move : MonoBehaviour
     private EnemyUnit_Projectile _projectileAttack;
     private EnemyUnit_PointAttack _pointAttack;
     private EnemyUnit_Instance _InstanceAttack;
+    private LayerMask _wallLayer;
 
     public Transform GetAttackRangeCheck() {  return _attackRangeCheck; }
     public float GetAttackRange() { return _attackRange; }
@@ -31,6 +32,7 @@ public class EnemyUnit_Move : MonoBehaviour
         _InstanceAttack = GetComponent<EnemyUnit_Instance>();
         _moveSpeed = moveSpeed;
         _attackCoolDown = attackCoolDown;
+        _wallLayer = LayerMask.GetMask("Wall");
     }
 
     public void Flip(Vector2 direction)
@@ -96,12 +98,30 @@ public class EnemyUnit_Move : MonoBehaviour
         }
         else
         {
-            Vector2 direction = (_target.position - transform.position).normalized;
+            Vector2 direction = GetMoveDirection();
             _rb.linearVelocity = direction * _moveSpeed;
             _animController.SetState(EnemyUnitState.Run);
             _animController.SetDirection(direction);
             Flip(direction);
         }
+    }
+
+    private Vector2 GetMoveDirection()
+    {
+        Vector2 direction = (_target.position - transform.position).normalized;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1.5f, _wallLayer);
+        if (hit.collider == null) return direction;
+
+        Vector2 leftDir = Vector2.Perpendicular(direction).normalized;
+        RaycastHit2D leftHit = Physics2D.Raycast(transform.position, leftDir, 1.5f, _wallLayer);
+        if (leftHit.collider == null) return leftDir;
+
+        Vector2 rightDir = -Vector2.Perpendicular(direction).normalized;
+        RaycastHit2D rightHit = Physics2D.Raycast(transform.position, rightDir, 1.5f, _wallLayer);
+        if (rightHit.collider == null) return rightDir;
+
+        return direction;
     }
 
     private void OnDrawGizmos()
