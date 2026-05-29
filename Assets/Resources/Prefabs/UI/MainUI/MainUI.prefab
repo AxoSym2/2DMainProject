@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 6063947475065813251}
   - component: {fileID: 6665684240932507529}
   m_Layer: 5
-  m_Name: Button_Store
+  m_Name: Button_Dictionary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1347,7 +1347,7 @@ GameObject:
   - component: {fileID: 7544147382341392291}
   - component: {fileID: 6899625112268169719}
   m_Layer: 5
-  m_Name: Button_Buddy
+  m_Name: Button_Ending
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1544,7 +1544,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buddy
+  m_Text: 'Clear
+
+    Chapter'
 --- !u!1 &3784018462865305368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,7 +2309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Store
+  m_Text: Dictonary
 --- !u!1 &5256956014544706159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,8 +3092,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 11}
-  m_SizeDelta: {x: 60, y: 60}
+  m_AnchoredPosition: {x: 0, y: 7}
+  m_SizeDelta: {x: 44.9255, y: 53.5395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8771443574142338795
 CanvasRenderer:
@@ -3121,7 +3123,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5708cbec07dfb2a4cbc90cd309173ea3, type: 3}
+  m_Sprite: {fileID: 388135631, guid: 9f4a5183efe4cad41a1c6030331bf8a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
