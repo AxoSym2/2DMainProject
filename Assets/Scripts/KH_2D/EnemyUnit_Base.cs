@@ -11,6 +11,11 @@ public class EnemyUnit_Base : MonoBehaviour
 
     public void Init(string enemyDataId)
     {
+        if (Slider_Health != null)
+        {
+            Slider_Health.fillRect.gameObject.SetActive(true);
+        }
+
         GetComponent<Collider2D>().enabled = true;
         _enemyDataId = enemyDataId;
         _enemyData = DaniTechGameDataManager.Instance.GetEnemyUnitData(enemyDataId);
@@ -48,7 +53,8 @@ public class EnemyUnit_Base : MonoBehaviour
     private void UpdateHealthBar()
     {
         if (Slider_Health == null) return;
-        Slider_Health.value = _currentHp / _enemyData.Hp;
+        float value = _currentHp / _enemyData.Hp;
+        Slider_Health.value = Mathf.Max(0f, value);
     }
 
     public float GetAttackDamage()
@@ -86,6 +92,11 @@ public class EnemyUnit_Base : MonoBehaviour
 
     private void OnDie()
     {
+        if (Slider_Health != null)
+        {
+            Slider_Health.fillRect.gameObject.SetActive(false);  
+        }
+
         DaniTechGameManager.Inst.IncreasePlayerExp((int)_enemyData.ExpReward);
 
         if (UnityEngine.Random.value <= _enemyData.DropUmbraChance)
