@@ -70,10 +70,5 @@ public class UpgradeSlot : MonoBehaviour
             mUi.RefreshUmbra();
         }
 
-        var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
-        if (inGameUI is InGameUI iUi)
-        {
-            iUi.RefreshUmbra();
-        }
     }
 }

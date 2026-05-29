@@ -46,7 +46,6 @@ public class ChapterPopup : DaniTechUIBase
         DaniTechGameUtil.LoadAndSetTexture(RawImage_Thumbnail, data.IconPath).Forget();
 
         bool isUnlocked = IsChapterUnlocked(_currentChapterIdx);
-        Button_StartChapter.gameObject.SetActive(isUnlocked);
         LockObject.SetActive(!isUnlocked);
 
         if (!isUnlocked)
