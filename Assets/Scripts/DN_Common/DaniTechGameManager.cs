@@ -257,6 +257,25 @@ public class DaniTechGameManager : MonoBehaviour
         }
     }
 
+    public void OnChapterClearSave(string chapterId)
+    {
+        if (_playerModel.ClearedChapterList.Contains(chapterId) == false)
+        {
+            _playerModel.ClearedChapterList.Add(chapterId);
+        }
+        SaveData();
+    }
+
+    public int GetClearedChapterCount()
+    {
+        return _playerModel.ClearedChapterList.Count;
+    }
+
+    public bool IsChapterCleared(string chapterId)
+    {
+        return _playerModel.ClearedChapterList.Contains(chapterId);
+    }
+
     public void AddUmbra(int amount)
     {
         _playerModel.Umbra += amount;

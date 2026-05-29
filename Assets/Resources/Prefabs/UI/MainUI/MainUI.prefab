@@ -759,6 +759,7 @@ GameObject:
   - component: {fileID: 5130232308924496141}
   - component: {fileID: 4759555389887046013}
   - component: {fileID: 4152135685811698183}
+  - component: {fileID: 455060480884018826}
   m_Layer: 5
   m_Name: Image_Icon
   m_TagString: Untagged
@@ -813,7 +814,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a455e0901347f9d4783640818c1c88f3, type: 3}
+  m_Sprite: {fileID: 153532472, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -823,6 +824,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &455060480884018826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795199003676499144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71577f81d697cf74180561b530d9f1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndingIcon
+  _iconImage: {fileID: 4152135685811698183}
+  _iconSprites:
+  - {fileID: 153532472, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
+  - {fileID: 381570797, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
+  - {fileID: 285308092, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
+  - {fileID: 809352619, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
+  - {fileID: 1937669393, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
+  - {fileID: -1969140240, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
+  - {fileID: 967009433, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
+  - {fileID: 64924655, guid: dfdf0e2a96d2e994382d3330f63a6b2c, type: 3}
 --- !u!1 &1805610949055580930
 GameObject:
   m_ObjectHideFlags: 0

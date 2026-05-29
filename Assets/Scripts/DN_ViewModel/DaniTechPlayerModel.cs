@@ -22,6 +22,7 @@ public class DaniTechPlayerModel
     public Vector3 LastMapPosition;
 
     public List<DaniTechItemModel> ItemList = new List<DaniTechItemModel>();
+    public List<string> ClearedChapterList = new List<string>();
 
     public int Umbra;
 

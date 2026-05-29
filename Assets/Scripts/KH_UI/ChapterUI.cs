@@ -10,6 +10,7 @@ public enum ChapterClearType
 public class ChapterUI : MonoBehaviour
 {
     [SerializeField] private string BGMPath;
+    [SerializeField] public string ChapterId;
     [SerializeField] public ChapterClearType ClearType;
     [SerializeField] public string StartDialogueGroupId;
     [SerializeField] public string ClearDialogueGroupId;

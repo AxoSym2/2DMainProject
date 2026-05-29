@@ -190,6 +190,11 @@ public class EnemySpawnManager : MonoBehaviour
     {
         await UniTask.Delay(TimeSpan.FromSeconds(3f));
 
+        if(string.IsNullOrEmpty(_chapterUI.ChapterId) == false)
+        {
+            DaniTechGameManager.Inst.OnChapterClearSave(_chapterUI.ChapterId);
+        }
+
         if (_chapterUI != null && string.IsNullOrEmpty(_chapterUI.ClearDialogueGroupId) == false)
         {
             DaniTechGameManager.Inst.OnChapterClear(_chapterUI.ClearDialogueGroupId);
