@@ -21,7 +21,7 @@ public class InGameUI : DaniTechUIBase
 
     public void OnClick_Pause()
     {
-        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.PausePopup);
+        DaniTechUIManager.Instance.OpenUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.PausePopup);
     }
 
     public void SetWaveNum(int waveNum)

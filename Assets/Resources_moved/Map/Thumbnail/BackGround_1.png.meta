@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 98cc92fcf1b570b4bbac0d8b505e010c
+guid: 6d56a6d69e06fa74a8e3d38a24a3b344
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChapterLock_Image_0
+      name: BackGround_1_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 6
-        width: 389
-        height: 527
+        x: 0
+        y: 0
+        width: 1054
+        height: 1492
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,30 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 652f988471b7f4a48a6eae574755d359
-      internalID: 2137661197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChapterLock_Image_1
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 76
-        width: 249
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 125eaf3301f644c4daf8d5a6296b2db1
-      internalID: -1598895050
+      spriteID: 5f86b9f25b06ddb46a3969eca8266cf6
+      internalID: -872976864
       vertices: []
       indices: 
       edges: []
@@ -144,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6abe1c2c8f929124aa357dedaf544d26
+    spriteID: 0b9234a010228d647a42885e330eb481
     internalID: 0
     vertices: []
     indices: 
@@ -156,8 +134,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ChapterLock_Image_0: 2137661197
-      ChapterLock_Image_1: -1598895050
+      BackGround_1_0: -872976864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
