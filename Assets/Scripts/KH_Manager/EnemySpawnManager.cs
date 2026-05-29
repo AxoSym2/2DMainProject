@@ -16,6 +16,8 @@ public class EnemySpawnManager : MonoBehaviour
     private bool _isAllWaveSpawned = false;
     private bool _isChapterCleared = false;
 
+    private SpawnPoint[] _spawnPoints;
+
     [SerializeField] private float _spawnRadius = 10f;
 
     private ChapterUI _chapterUI;
@@ -63,6 +65,7 @@ public class EnemySpawnManager : MonoBehaviour
             _clearType = _chapterUI.ClearType;
         }
 
+        _spawnPoints = FindObjectsByType<SpawnPoint>(FindObjectsSortMode.None);
         StartNextWave();
     }
 
@@ -160,6 +163,12 @@ public class EnemySpawnManager : MonoBehaviour
 
     private Vector2 GetRandomSpawnPos()
     {
+        if (_spawnPoints != null && _spawnPoints.Length > 0)
+        {
+            int idx = UnityEngine.Random.Range(0, _spawnPoints.Length);
+            return _spawnPoints[idx].transform.position;
+        }
+
         Vector2 randomDir = UnityEngine.Random.insideUnitCircle.normalized;
         return (Vector2)_playerTransform.position + randomDir * _spawnRadius;
     }
