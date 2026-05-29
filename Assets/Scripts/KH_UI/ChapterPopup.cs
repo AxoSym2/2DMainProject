@@ -13,6 +13,11 @@ public class ChapterPopup : DaniTechUIBase
     [SerializeField] private RawImage RawImage_Thumbnail;
     [SerializeField] private Text Text_Description;
 
+    [SerializeField] private GameObject LockObject;
+    [SerializeField] private Text Text_LockCondition;
+    [SerializeField] private Text Text_LockChapterNum;
+    [SerializeField] private bool _isDebugMode = false;
+
     private int _currentChapterIdx = 1;
     private int _maxChapterIdx = 7;
 
@@ -39,6 +44,16 @@ public class ChapterPopup : DaniTechUIBase
         Text_Description.text = data.Description.Replace("\\n", "\n");
         Text_ChapterNum.text = data.ChapterNum;
         DaniTechGameUtil.LoadAndSetTexture(RawImage_Thumbnail, data.IconPath).Forget();
+
+        bool isUnlocked = IsChapterUnlocked(_currentChapterIdx);
+        Button_StartChapter.gameObject.SetActive(isUnlocked);
+        LockObject.SetActive(!isUnlocked);
+
+        if (!isUnlocked)
+        {
+            Text_LockCondition.text = $"챕터{_currentChapterIdx - 1} 클리어 필요";
+            Text_LockChapterNum.text = $"챕터 {_currentChapterIdx}";
+        }
     }
 
     public void OnClick_PreviousChpater()
@@ -65,8 +80,17 @@ public class ChapterPopup : DaniTechUIBase
 
     public void OnClick_StartChpater()
     {
+        if (IsChapterUnlocked(_currentChapterIdx) == false) return;
         DaniTechUIManager.Instance.OpenLoadingUI();
         DaniTechGameManager.Inst.StartChapter(_currentChapterIdx);
         //Debug.Log("챕터시작");
+    }
+
+    private bool IsChapterUnlocked(int chapterIdx)
+    {
+        if (_isDebugMode) return true;
+        if (chapterIdx == 1) return true;
+        string preChapterId = $"Chapter_Earth_{chapterIdx - 1}";
+        return DaniTechGameManager.Inst.IsChapterCleared(preChapterId);
     }
 }
