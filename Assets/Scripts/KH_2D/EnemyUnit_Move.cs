@@ -17,6 +17,7 @@ public class EnemyUnit_Move : MonoBehaviour
     private EnemyUnit_PointAttack _pointAttack;
     private EnemyUnit_Instance _InstanceAttack;
     private LayerMask _wallLayer;
+    private float _colliderRadius;
 
     public Transform GetAttackRangeCheck() {  return _attackRangeCheck; }
     public float GetAttackRange() { return _attackRange; }
@@ -33,6 +34,8 @@ public class EnemyUnit_Move : MonoBehaviour
         _moveSpeed = moveSpeed;
         _attackCoolDown = attackCoolDown;
         _wallLayer = LayerMask.GetMask("Wall");
+        var col = GetComponent<Collider2D>();
+        _colliderRadius = 0.5f;
     }
 
     public void Flip(Vector2 direction)
@@ -110,18 +113,28 @@ public class EnemyUnit_Move : MonoBehaviour
     {
         Vector2 direction = (_target.position - transform.position).normalized;
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1.5f, _wallLayer);
-        if (hit.collider == null) return direction;
+        float[] angles = { 0, 30, -30, 45, -45, 60, -60, 90, -90, 120, -120, 135, -135, 150, -150, 180 };
 
-        Vector2 leftDir = Vector2.Perpendicular(direction).normalized;
-        RaycastHit2D leftHit = Physics2D.Raycast(transform.position, leftDir, 1.5f, _wallLayer);
-        if (leftHit.collider == null) return leftDir;
+        foreach (float angle in angles)
+        {
+            Vector2 candidateDir = RotateVector(direction, angle);
 
-        Vector2 rightDir = -Vector2.Perpendicular(direction).normalized;
-        RaycastHit2D rightHit = Physics2D.Raycast(transform.position, rightDir, 1.5f, _wallLayer);
-        if (rightHit.collider == null) return rightDir;
+            RaycastHit2D hit = Physics2D.CircleCast(transform.position, _colliderRadius, candidateDir, 1f, _wallLayer);
+            if (hit.collider == null)
+            {
+                return candidateDir;
+            }
+        }
 
         return direction;
+    }
+
+    private Vector2 RotateVector(Vector2 v, float degrees)
+    {
+        float rad = degrees * Mathf.Deg2Rad;
+        float cos = Mathf.Cos(rad);
+        float sin = Mathf.Sin(rad);
+        return new Vector2(cos * v.x - sin * v.y, sin * v.x + cos * v.y);
     }
 
     private void OnDrawGizmos()
