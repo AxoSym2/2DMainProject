@@ -113,30 +113,36 @@ public class EnemyUnit_Move : MonoBehaviour
 
     private Vector2 GetMoveDirection()
     {
-        Vector2 direction = (_target.position - transform.position).normalized;
+        Vector2 toTarget = (_target.position - transform.position).normalized;
+        Vector2 wallAvoidance = Vector2.zero;
 
-        float[] angles = { 0, 30, -30, 45, -45, 60, -60, 90, -90, 120, -120, 135, -135, 150, -150, 180 };
+        float checkDistance = 0.8f;
+        bool isWallNear = false;
 
-        foreach (float angle in angles)
+        int rayCount = 16;
+        for (int i = 0; i < rayCount; i++)
         {
-            Vector2 candidateDir = RotateVector(direction, angle);
+            float angle = i*(360f/rayCount) * Mathf.Deg2Rad;
+            Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
 
-            RaycastHit2D hit = Physics2D.CircleCast(transform.position, _colliderRadius, candidateDir, 1f, _wallLayer);
-            if (hit.collider == null)
+            RaycastHit2D hit = Physics2D.CircleCast(transform.position, _colliderRadius, dir, checkDistance, _wallLayer);
+            if (hit.collider != null)
             {
-                return candidateDir;
+                float strength = Mathf.Pow(1f-(hit.distance/checkDistance), 2);
+                wallAvoidance += hit.normal * strength;
+                isWallNear = true;
             }
+        }    
+        if (isWallNear)
+        {
+            float dot = Vector2.Dot(wallAvoidance, toTarget);
+            if (dot < 0)
+            {
+                wallAvoidance -= toTarget * dot;
+            }
+            return (toTarget + wallAvoidance * 2f).normalized;
         }
-
-        return direction;
-    }
-
-    private Vector2 RotateVector(Vector2 v, float degrees)
-    {
-        float rad = degrees * Mathf.Deg2Rad;
-        float cos = Mathf.Cos(rad);
-        float sin = Mathf.Sin(rad);
-        return new Vector2(cos * v.x - sin * v.y, sin * v.x + cos * v.y);
+        return toTarget;
     }
 
     private void OnDrawGizmos()

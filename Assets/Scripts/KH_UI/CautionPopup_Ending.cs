@@ -11,7 +11,7 @@ public class CautionPopup_Ending : DaniTechUIBase
 
     private async UniTaskVoid AutoClose()
     {
-        await UniTask.Delay(TimeSpan.FromSeconds(3f));
+        await UniTask.Delay(TimeSpan.FromSeconds(1.5f));
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.CautionPopup_Ending);
     }
 }
