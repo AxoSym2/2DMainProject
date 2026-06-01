@@ -11,7 +11,7 @@ public enum DictionaryCategory
     Skill
 }
 
-public class DictionaryUI : MonoBehaviour
+public class DictionaryUI : DaniTechUIBase
 {
     [SerializeField] private Text Text_Name;
     [SerializeField] private Text Text_Description;
@@ -37,7 +37,7 @@ public class DictionaryUI : MonoBehaviour
         Skill_Btn.BindOnClickButtonEvent(OnClick_Skill);
         Next_Btn.BindOnClickButtonEvent(OnClick_Next);
         Previous_Btn.BindOnClickButtonEvent(OnClick_Previous);
-        SetCategory(DictionaryCategory.EnemyUnit);
+        SetCategory(DictionaryCategory.PlayerUnit);
     }
 
     private void OnDisable()
@@ -59,7 +59,7 @@ public class DictionaryUI : MonoBehaviour
         switch (category)
         {
             case DictionaryCategory.PlayerUnit:
-                foreach(var key in DaniTechGameDataManager.Instance.PlayerUnitDataList.Keys)
+                foreach (var key in DaniTechGameDataManager.Instance.PlayerUnitDataList.Keys)
                     _currentIdList.Add(key);
                 break;
             case DictionaryCategory.EnemyUnit:
@@ -71,7 +71,7 @@ public class DictionaryUI : MonoBehaviour
                     _currentIdList.Add(key);
                 break;
             case DictionaryCategory.Skill:
-                foreach (var key in DaniTechGameDataManager.Instance.SkillDataList.Keys)
+                foreach (var key in DaniTechGameDataManager.Instance.SkillsDataList.Keys)
                     _currentIdList.Add(key);
                 break;
         }

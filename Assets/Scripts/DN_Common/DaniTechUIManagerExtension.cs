@@ -28,7 +28,9 @@ public enum DaniTechUIType
     LaboratoryUI,
     DialogueUI,
     LevelUpPopup,
-    ChamberUI
+    ChamberUI,
+    DictionaryUI,
+    EndingUI
 
 }
 
@@ -159,6 +161,26 @@ public static class DaniTechUIManagerExtension
     public static void OpenChamberUI(this DaniTechUIManager uiManager)
     {
         var uiBase = uiManager.OpenContentUI(DaniTechUIType.ChamberUI);
+        if (uiManager == null)
+        {
+            Debug.LogWarning("UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+    
+    public static void OpenDictionaryUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenContentUI(DaniTechUIType.DictionaryUI);
+        if (uiManager == null)
+        {
+            Debug.LogWarning("UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void OpenEndingUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenContentUI(DaniTechUIType.EndingUI);
         if (uiManager == null)
         {
             Debug.LogWarning("UI가 생성되지 않았습니다");

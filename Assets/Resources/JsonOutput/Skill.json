@@ -18,7 +18,7 @@
     "Id": "skill_instance_02",
     "Name": "레이저",
     "Description": "에너지를 모아 전방에 레이저를 발사하여 큰 피해를 입힌다.",
-    "IconPath": "Icon/Skill_Icon//Laser_Icon",
+    "IconPath": "Icon/Skill_Icon/Laser_Icon",
     "PrefabPath": "Prefabs/Skill/Skill_Instance_Laser",
     "Damage": 50,
     "CoolDown": 7,

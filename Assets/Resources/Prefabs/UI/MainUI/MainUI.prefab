@@ -1869,11 +1869,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainUI
   Text_Umbra: {fileID: 3226142218384110751}
-  Button_Store: {fileID: 6665684240932507529}
+  Button_Dictionary: {fileID: 6665684240932507529}
   Button_Lab: {fileID: 3346814898472708000}
   Button_Chapter: {fileID: 1134822003152161892}
   Button_Chamber: {fileID: 5993581873258032705}
-  Button_Buddy: {fileID: 6899625112268169719}
+  Button_Ending: {fileID: 6899625112268169719}
 --- !u!82 &1845394496670103678
 AudioSource:
   m_ObjectHideFlags: 0

@@ -177,7 +177,7 @@
   },
   {
     "Id": "enemy_agent_01",
-    "Name": "특수요원(수류탄)",
+    "Name": "수류탄요원",
     "Description": "특수임무를 맡고 있는 요원이다. 수류탄을 던지며 그 위력은 엄청나다.",
     "IconPath": "Icon/EnemyUnit_Icon/GrenadeAgent",
     "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/GrenadeAgent_Prefab",
@@ -199,7 +199,7 @@
   },
   {
     "Id": "enemy_agent_02",
-    "Name": "특수요원(레이저)",
+    "Name": "레이저요원",
     "Description": "특수임무를 맡고 있는 요원이다. 레이저를 발사하며 공격속도가 빠르다.",
     "IconPath": "Icon/EnemyUnit_Icon/LaserAgent",
     "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/LaserAgent_Prefab",
@@ -221,7 +221,7 @@
   },
   {
     "Id": "enemy_agent_03",
-    "Name": "특수요원(방패)",
+    "Name": "방패요원",
     "Description": "특수임무를 맡고 있는 요원이다. 큰 방패로 적을 밀쳐내며 엄청난 내구성을 갖고 있다.",
     "IconPath": "Icon/EnemyUnit_Icon/ShieldAgent",
     "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/ShieldAgent_Prefab",

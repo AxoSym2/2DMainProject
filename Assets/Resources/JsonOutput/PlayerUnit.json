@@ -5,7 +5,7 @@
     "Description": "강력한 근접 공격으로 적을 휩쓴다.",
     "SkillId": "skill_instance_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_01",
-    "IconPath": null,
+    "IconPath": "Icon/PlayerUnit_Icon/Jade",
     "Hp": 1000,
     "MoveSpeed": 5
   },
@@ -15,7 +15,7 @@
     "Description": "에너지를 모아 강력한 에너지를 발사한다.",
     "SkillId": "skill_instance_02",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_02",
-    "IconPath": null,
+    "IconPath": "Icon/PlayerUnit_Icon/Chris",
     "Hp": 1000,
     "MoveSpeed": 5
   },
@@ -25,7 +25,7 @@
     "Description": "에너지를 날려 적에게 데미지를 준다.",
     "SkillId": "skill_projectile_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_01",
-    "IconPath": null,
+    "IconPath": "Icon/PlayerUnit_Icon/Alice",
     "Hp": 10000000,
     "MoveSpeed": 7
   },
@@ -35,7 +35,7 @@
     "Description": "전기 지대를 소환하여 주변 적들에게 피해를 입힌다.",
     "SkillId": "skill_area_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_02",
-    "IconPath": null,
+    "IconPath": "Icon/PlayerUnit_Icon/Rochelle",
     "Hp": 800,
     "MoveSpeed": 7
   }

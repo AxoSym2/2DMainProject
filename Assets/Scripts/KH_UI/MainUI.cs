@@ -5,19 +5,19 @@ public class MainUI : DaniTechUIBase
 {
     [SerializeField] private Text Text_Umbra;
 
-    [SerializeField] private DaniTechUIButton Button_Store;
+    [SerializeField] private DaniTechUIButton Button_Dictionary;
     [SerializeField] private DaniTechUIButton Button_Lab;
     [SerializeField] private DaniTechUIButton Button_Chapter;
     [SerializeField] private DaniTechUIButton Button_Chamber;
-    [SerializeField] private DaniTechUIButton Button_Buddy;
+    [SerializeField] private DaniTechUIButton Button_Ending;
 
     private void OnEnable()
     {
-        Button_Store.BindOnClickButtonEvent(OnClick_Store);
+        Button_Dictionary.BindOnClickButtonEvent(OnClick_Dictionary);
         Button_Lab.BindOnClickButtonEvent(OnClick_Lab);
         Button_Chapter.BindOnClickButtonEvent(OnClick_Chapter);
         Button_Chamber.BindOnClickButtonEvent(OnClick_Chamber);
-        Button_Buddy.BindOnClickButtonEvent(OnClick_Buddy);
+        Button_Ending.BindOnClickButtonEvent(OnClick_Ending);
 
         SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI");
         RefreshUmbra();
@@ -43,10 +43,11 @@ public class MainUI : DaniTechUIBase
         Text_Umbra.text = $"{DaniTechGameManager.Inst.GetUmbra()}";
     }
 
-    public void OnClick_Store()
+    public void OnClick_Dictionary()
     {
         DaniTechUIManager.Instance.CloseAllContentUI();
-        Debug.Log("상점열기");
+        //Debug.Log("도감열기");
+        DaniTechUIManager.Instance.OpenDictionaryUI();
     }
 
     public void OnClick_Lab()
@@ -71,10 +72,10 @@ public class MainUI : DaniTechUIBase
 
     }
 
-    public void OnClick_Buddy()
+    public void OnClick_Ending()
     {
         DaniTechUIManager.Instance.CloseAllContentUI();
-        Debug.Log("버디열기");
-
+        //Debug.Log("엔딩열기");
+        DaniTechUIManager.Instance.OpenEndingUI();
     }
 }
