@@ -30,7 +30,7 @@ public enum DaniTechUIType
     LevelUpPopup,
     ChamberUI,
     DictionaryUI,
-    EndingUI,
+    EndingPopup,
     CautionPopup_Ending
 
 }
@@ -181,7 +181,7 @@ public static class DaniTechUIManagerExtension
 
     public static void OpenEndingUI(this DaniTechUIManager uiManager)
     {
-        var uiBase = uiManager.OpenContentUI(DaniTechUIType.EndingUI);
+        var uiBase = uiManager.OpenPopupUI(DaniTechUIType.EndingPopup);
         if (uiManager == null)
         {
             Debug.LogWarning("UI가 생성되지 않았습니다");

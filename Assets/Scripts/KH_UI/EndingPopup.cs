@@ -36,7 +36,7 @@ public class EndingPopup : DaniTechUIBase
         }
         else
         {
-            DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.EndingUI);
+            DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.EndingPopup);
         }
     }
 }
