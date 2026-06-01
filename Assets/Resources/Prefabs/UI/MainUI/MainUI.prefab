@@ -1874,6 +1874,7 @@ MonoBehaviour:
   Button_Chapter: {fileID: 1134822003152161892}
   Button_Chamber: {fileID: 5993581873258032705}
   Button_Ending: {fileID: 6899625112268169719}
+  _isDebugMode: 0
 --- !u!82 &1845394496670103678
 AudioSource:
   m_ObjectHideFlags: 0

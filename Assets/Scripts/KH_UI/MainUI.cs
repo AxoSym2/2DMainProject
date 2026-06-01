@@ -11,6 +11,8 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Chamber;
     [SerializeField] private DaniTechUIButton Button_Ending;
 
+    [SerializeField] private bool _isDebugMode = false;
+
     private void OnEnable()
     {
         Button_Dictionary.BindOnClickButtonEvent(OnClick_Dictionary);
@@ -76,6 +78,14 @@ public class MainUI : DaniTechUIBase
     {
         DaniTechUIManager.Instance.CloseAllContentUI();
         //Debug.Log("엔딩열기");
+
+        if (_isDebugMode == false && DaniTechGameManager.Inst.GetClearedChapterCount() < 7)
+        {
+            DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.CautionPopup_Ending);
+            {
+                return;
+            }
+        }
         DaniTechUIManager.Instance.OpenEndingUI();
     }
 }
