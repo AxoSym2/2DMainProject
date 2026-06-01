@@ -67,7 +67,8 @@ public class DictionaryUI : MonoBehaviour
                     _currentIdList.Add(key);
                 break;
             case DictionaryCategory.Item:
-                //foreach (var key in DaniTechGameDataManager.Instance.PlayerUnitDataList.Keys)
+                foreach (var key in DaniTechGameDataManager.Instance.ItemDataList.Keys)
+                    _currentIdList.Add(key);
                 break;
             case DictionaryCategory.Skill:
                 foreach (var key in DaniTechGameDataManager.Instance.SkillDataList.Keys)
@@ -89,7 +90,7 @@ public class DictionaryUI : MonoBehaviour
                 if (playerData == null) return;
                 Text_Name.text = playerData.Name;
                 Text_Description.text = playerData.Description;
-                //아이콘 추가
+                LoadIcon(playerData.IconPath);
                 break;
             case DictionaryCategory.EnemyUnit:
                 EnemyUnitData enemyData = DaniTechGameDataManager.Instance.GetEnemyUnitData(id);
@@ -97,6 +98,13 @@ public class DictionaryUI : MonoBehaviour
                 Text_Name.text = enemyData.Name;
                 Text_Description.text = enemyData.Description;
                 LoadIcon(enemyData.IconPath);
+                break;
+            case DictionaryCategory.Item:
+                DNItemData itemData = DaniTechGameDataManager.Instance.GetDNItemData(id);
+                if (itemData == null) return;
+                Text_Name.text = itemData.Name;
+                Text_Description.text = itemData.Description;
+                LoadIcon(itemData.IconPath);
                 break;
             case DictionaryCategory.Skill:
                 SkillData skillData = DaniTechGameDataManager.Instance.GetSkillsData(id);
