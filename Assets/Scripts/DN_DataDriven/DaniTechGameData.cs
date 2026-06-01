@@ -107,6 +107,8 @@ public class ChapterData: GameDataBase
 public class PlayerUnitData: GameDataBase
 {
     public string Name;
+    public string Description;
+    public string IconPath;
     public string PrefabPath;
     public float Hp;
     public float MoveSpeed;
@@ -117,6 +119,7 @@ public class PlayerUnitData: GameDataBase
 public class EnemyUnitData: GameDataBase
 {
     public string Name;
+    public string Description;
     public string IconPath;
     public string PrefabPath;
     public string EnemyType;

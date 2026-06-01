@@ -10,7 +10,7 @@
     "Duration": 0,
     "SkillType": "Instance",
     "RangeType": "Circle",
-    "Range": 0.5,
+    "Range": 0.8,
     "RangeX": null,
     "RangeY": null
   },

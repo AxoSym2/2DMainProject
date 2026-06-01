@@ -2,7 +2,7 @@
   {
     "Id": "Chapter_Earth_1",
     "Name": "종말의 시작",
-    "Description": "방사능 물질을 대기권에 퍼뜨리기 시작했다.\\n지구의 생태계가 서서히 무너지고 있다..\\n지구 종말 프로젝트가 시작된다.",
+    "Description": "지구를 정복하기 위해 왔다.\\n나약한 인류를 모조리 없애버리겠다.\\n지금부터 지구 종말 프로젝트가 시작된다.",
     "IconPath": "Map/Thumbnail/Chapter01_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter01",
     "ChapterNum": "Chapter01"
@@ -10,15 +10,15 @@
   {
     "Id": "Chapter_Earth_2",
     "Name": "도시의 붕괴",
-    "Description": "오염된 도심에 발을 들였다.\\n저항하는 자들을 하나씩 쓰러뜨린다.\\n이 도시는 곧 나의 것이다.",
+    "Description": "붕괴된 도시에 발을 들였다.\\n저항하는 자들은 모조리 쓰러뜨린다.\\n이 지구는 곧 나의 것이다.",
     "IconPath": "Map/Thumbnail/Chapter02_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter02",
     "ChapterNum": "Chapter02"
   },
   {
     "Id": "Chapter_Earth_3",
-    "Name": "검은 침묵",
-    "Description": "오염이 퍼지며 야생의 소리가 사라져간다.\\n그 어떠한 생명체도 소리를 내지 않는다.\\n침묵 속에서 종말은 계속된다.",
+    "Name": "혼돈의 서막",
+    "Description": "혼돈이 가득한 지구에서 군인들이 나서기 시작했다.\\n인류의 힘은 고작 이것 뿐인가.\\n지구는 서서히 죽어가기 시작한다.",
     "IconPath": "Map/Thumbnail/Chapter03_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter03",
     "ChapterNum": "Chapter03"
@@ -26,7 +26,7 @@
   {
     "Id": "Chapter_Earth_4",
     "Name": "최후의 저항",
-    "Description": "인류의 마지막 저항선에 도달했다.\\n이 전선을 무너뜨리면 지구는 내 것이 된다.\\n하지만 인류의 저항이 생각보다 거세다.",
+    "Description": "인류의 마지막 저항선에 도달했다.\\n이 전선을 무너뜨려 쐐기를 박을때다.\\n하지만 인류의 저항이 생각보다 거세다.",
     "IconPath": "Map/Thumbnail/Chapter04_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter04",
     "ChapterNum": "Chapter04"
@@ -34,7 +34,7 @@
   {
     "Id": "Chapter_Earth_5",
     "Name": "붉은 계획",
-    "Description": "지구를 지키기 위한 비밀무기를 꺼냈다.\\n상대하기 힘들어보일지도 모른다.\\n잠깐.. 사람이..?",
+    "Description": "인류는 지구를 지키기 위해 비밀무기를 꺼냈다.\\n상대하기 힘들어보일지도 모른다.\\n잠깐.. 사람이..?",
     "IconPath": "Map/Thumbnail/Chapter05_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter05",
     "ChapterNum": "Chapter05"
@@ -42,14 +42,14 @@
   {
     "Id": "Chapter_Earth_6",
     "Name": "외계의 유산",
-    "Description": "나는 분명 저 외계에서 태어났는데..\\n앗 머리가…\\n이상한 기억이 떠오르기 시작한다.",
+    "Description": "외계종족이 나뿐만이 아니었다니...\\n앗 머리가…\\n이상한 기억이 떠오르기 시작한다.",
     "IconPath": "Map/Thumbnail/Chapter06_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter06",
     "ChapterNum": "Chapter06"
   },
   {
     "Id": "Chapter_Earth_7",
-    "Name": "멸망 프로토콜",
+    "Name": "Project.이클립스",
     "Description": "저것은..!\\n진실을 파헤치기 위해선 쓰러뜨리는 방법밖에 없다.\\n이게 내 마지막 전투가 될 것이다.",
     "IconPath": "Map/Thumbnail/Chapter07_Thumbnail",
     "PrefabPath": "Map/Prefab/Chapter07",

@@ -1775,7 +1775,7 @@ MonoBehaviour:
   LockObject: {fileID: 5867332956041427605}
   Text_LockCondition: {fileID: 5750336061269918205}
   Text_LockChapterNum: {fileID: 1047539579647306970}
-  _isDebugMode: 0
+  _isDebugMode: 1
 --- !u!1 &8622502774790586889
 GameObject:
   m_ObjectHideFlags: 0
