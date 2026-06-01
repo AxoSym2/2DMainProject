@@ -438,5 +438,27 @@
     "DropUmbraChance": 0.05,
     "DropUmbraAmount": 20000,
     "DropMagnetChance": 0.025
+  },
+  {
+    "Id": "enemy_boss_eclipse",
+    "Name": "이클립스",
+    "Description": "지구 종말 프로젝트의 결과물 Project.이클립스. 지금까지 주인공의 전투 데이터를 통해 온전한 형태의 프로젝트가 완성된 결과물이다. 이클립스를 이길 수 있는 존재는 없는 것 같다.",
+    "IconPath": "Icon/EnemyUnit_Icon/Eclipse",
+    "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Eclipse_Prefab",
+    "EnemyType": "Boss",
+    "AttackType": null,
+    "ProjectilePath": null,
+    "ProjectileSpeed": 10,
+    "ExpReward": 0,
+    "Hp": 500000,
+    "MoveSpeed": 3,
+    "AttackDamage": 5000,
+    "AttackCoolDown": 5,
+    "PointAttackDelay": 1,
+    "AttackRange": 3,
+    "DropHealKitChance": 0,
+    "DropUmbraChance": 0,
+    "DropUmbraAmount": 0,
+    "DropMagnetChance": 0
   }
 ]

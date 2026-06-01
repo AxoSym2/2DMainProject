@@ -159,6 +159,12 @@ public class EnemySpawnManager : MonoBehaviour
         {
             instance.Init(data, _playerTransform);
         }
+
+        EnemyUnit_Boss boss = enemyObj.GetComponent<EnemyUnit_Boss>();
+        if (boss != null)
+        {
+            boss.Init(data, _playerTransform);
+        }
     }
 
     private Vector2 GetRandomSpawnPos()

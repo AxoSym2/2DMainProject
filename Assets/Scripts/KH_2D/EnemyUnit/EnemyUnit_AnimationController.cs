@@ -33,6 +33,22 @@ public class EnemyUnit_AnimationController : MonoBehaviour
                 break;
         }
     }
+
+    public void SetBossState(string attackType)
+    {
+        switch (attackType)
+        {
+            case "Instance":
+                Animator_enemyUnit.SetTrigger("Attack_Melee");
+                break;
+            case "Projectile":
+                Animator_enemyUnit.SetTrigger("Attack_Projectile");
+                break;
+            case "PointAttack":
+                Animator_enemyUnit.SetTrigger("Attack_Point");
+                break;
+        }
+    }
     
     public void SetDirection(Vector2 moveInput)
     {

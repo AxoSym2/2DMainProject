@@ -73,6 +73,8 @@ public class EnemyUnit_Move : MonoBehaviour
                 _lastAttackTime = Time.time;
                 EnemyUnitData data = DaniTechGameDataManager.Instance.GetEnemyUnitData(_enemyBase.GetEnemyDataId());
 
+                if (data.EnemyType == "Boss") return;
+
                 if(data.EnemyType == "Projectile")
                 {
                     _animController.SetState(EnemyUnitState.Attack);

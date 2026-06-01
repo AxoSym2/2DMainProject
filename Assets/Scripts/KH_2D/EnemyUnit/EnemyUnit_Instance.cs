@@ -33,9 +33,7 @@ public class EnemyUnit_Instance : MonoBehaviour
                 break;
             case "Bombing":
                 if (_isBombing == false)
-                {
                     Bombing().Forget();
-                }
                 break;
             default:
                 MeleeAttack().Forget();
@@ -81,6 +79,12 @@ public class EnemyUnit_Instance : MonoBehaviour
                 player.TakeDamage(_enemyData.AttackDamage);
             }
         }
+    }
+    
+    public void DashAttack()
+    {
+        if (_isDashing == false)
+            Dash().Forget();
     }
 
     private async UniTaskVoid Bombing()
