@@ -47,6 +47,9 @@ public class EnemyUnit_AnimationController : MonoBehaviour
             case "PointAttack":
                 Animator_enemyUnit.SetTrigger("Attack_Point");
                 break;
+            case "Dash":
+                Animator_enemyUnit.SetTrigger("Attack_Dash");
+                break;
         }
     }
     

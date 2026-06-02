@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e623570e45734286bcbf1d6050c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_Move
-  _attackRange: 0.8
+  _attackRange: 5
   _attackRangeCheck: {fileID: 5767434711142684858}
   _playerLayer:
     serializedVersion: 2
@@ -268,6 +268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a9def0b4d0ca841b2dbbb11afd08b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyUnit_Boss
+  _projectilePath: Prefabs/Enemy/Enemy_Prefab/Enemy_Projectile_Eclipse
+  _pointAttackPath: Prefabs/Enemy/Enemy_Prefab/Enemy_PointAttack_Eclipse
 --- !u!212 &8754579844173682086
 SpriteRenderer:
   serializedVersion: 2
@@ -317,7 +319,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 72980780, guid: 05c43f26c9672fd43af164071d396903, type: 3}
+  m_Sprite: {fileID: -188980413, guid: 0ef7e9f843e78564b920d0ef6369a2da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -491,7 +493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4377307191373806836, guid: a5bd8b8687aba41468299e1b313fc419, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 38.1
+      value: -214
       objectReference: {fileID: 0}
     - target: {fileID: 4377307191373806836, guid: a5bd8b8687aba41468299e1b313fc419, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

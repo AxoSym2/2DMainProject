@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class EnemyUnit_Boss : MonoBehaviour
 {
-    [SerializeField] private string _projectilePath = "Prefabs/Enemy/Enemy_Prefab/Enemy_Projectile_EnergyBlade";
-    [SerializeField] private string _pointAttackPath = "Prefabs/Enemy/Enemy_Prefab/Enemy_PointAttack_Paranoia";
+    [SerializeField] private string _projectilePath = "Prefabs/Enemy/Enemy_Prefab/Enemy_Projectile_Eclipse";
+    [SerializeField] private string _pointAttackPath = "Prefabs/Enemy/Enemy_Prefab/Enemy_PointAttack_Eclipse";
 
     private EnemyUnitData _enemyData;
     private Transform _target;
@@ -19,6 +19,18 @@ public class EnemyUnit_Boss : MonoBehaviour
     {
         _enemyData = enemyData;
         _target = transform;
+
+        var projectile = GetComponent<EnemyUnit_Projectile>();
+        if (projectile != null )
+        {
+            projectile.SetProjectilePath( _projectilePath );
+        }
+        var pointAttack = GetComponent<EnemyUnit_PointAttack>();
+        if( pointAttack != null )
+        {
+            pointAttack.SetPointAttackPath( _pointAttackPath );
+        }
+
         BuildAttackCycle();
         StartBossPattern().Forget();
     }
