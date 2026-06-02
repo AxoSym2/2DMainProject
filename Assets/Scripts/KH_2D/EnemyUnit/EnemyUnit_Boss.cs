@@ -50,7 +50,7 @@ public class EnemyUnit_Boss : MonoBehaviour
     private void ShuffleCycle()
     {
         _remainingAttacks = new List<string> (_attackCycle);
-        for (int i = _remainingAttacks.Count - 1; i >0; i--)
+        for (int i = _remainingAttacks.Count - 1; i > 0; i--)
         {
             int j = UnityEngine.Random.Range(0, i + 1);
             string temp = _remainingAttacks[i];
@@ -89,7 +89,7 @@ public class EnemyUnit_Boss : MonoBehaviour
                 GetComponent<EnemyUnit_Instance>()?.DashAttack();
                 break;
             case "Projectile":
-                GetComponent<EnemyUnit_Projectile>()?.FireSpreadProjectile(10, 15f);
+                GetComponent<EnemyUnit_Projectile>()?.FireSpreadProjectile(10, 75f);
                 break;
             case "PointAttack":
                 GetComponent<EnemyUnit_PointAttack>()?.FirePointAttack();

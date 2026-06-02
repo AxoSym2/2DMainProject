@@ -80,7 +80,14 @@ public class EnemyUnit_Move : MonoBehaviour
                     _animController.SetState(EnemyUnitState.Attack);
                     if(_projectileAttack != null)
                     {
-                        _projectileAttack.FireProjectile();
+                        if (data.AttackType == "Spread")
+                        {
+                            _projectileAttack.FireSpreadProjectile(3, 30f);
+                        }
+                        else 
+                        {
+                            _projectileAttack.FireProjectile();
+                        }
                     }    
                 }
                 else if (data.EnemyType == "PointAttack")

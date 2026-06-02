@@ -118,7 +118,7 @@ public class EnemySpawnManager : MonoBehaviour
             return;
         }
 
-        float waitTime = 20f;
+        float waitTime = 10f;
         float elapsed = 0f;
         while (elapsed < waitTime)
         {

@@ -2125,7 +2125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChapterUI
   BGMPath: Sound/BGM_Chapter01
-  ChapterId: Chapter_Earth_01
+  ChapterId: Chapter_Earth_1
   ClearType: 1
   StartDialogueGroupId: 
   ClearDialogueGroupId: dialogue_group_chapter01_end

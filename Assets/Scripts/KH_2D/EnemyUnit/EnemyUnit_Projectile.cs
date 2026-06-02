@@ -50,8 +50,8 @@ public class EnemyUnit_Projectile : MonoBehaviour
         {
             float angle = startAngle + angleStep * i;
             float rad = angle * Mathf.Deg2Rad;
-            float cos = Mathf.Cos(angle);
-            float sin = Mathf.Sin(angle);
+            float cos = Mathf.Cos(rad);
+            float sin = Mathf.Sin(rad);
             Vector2 dir = new Vector2(cos * baseDir.x - sin * baseDir.y, sin * baseDir.x + cos * baseDir.y);
 
             GameObject projectileObj = ObjectPoolManager.Instance.GetObject(path);
