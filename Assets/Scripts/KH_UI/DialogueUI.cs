@@ -58,6 +58,11 @@ public class DialogueUI : DaniTechUIBase
         if (_openType == DialogueOpenType.ChapterStart)
         {
             Time.timeScale = 1f;
+            if (DaniTechGameManager.Inst.GetCurrentChapterIdx() == 7)
+            {
+                DaniTechGameManager.Inst.ShowBossChapterSkillSelection();
+                return;
+            }
         }
         else if (_openType == DialogueOpenType.ChapterClear)
         {

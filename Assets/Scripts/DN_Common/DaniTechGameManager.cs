@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using UnityEngine;
 using Cysharp.Threading.Tasks;
+using Cysharp.Threading.Tasks.CompilerServices;
 
 
 public class DaniTechGameManager : MonoBehaviour
@@ -17,6 +18,9 @@ public class DaniTechGameManager : MonoBehaviour
     private float _currentExp = 0f;
     private string _pendingStartDialogueGroupId;
     private int _currentChapterUmbra = 0;
+
+    private int _currentChapterIdx;
+    private int _pendingSkillSelectionCount;
 
     private void Awake()
     {
@@ -67,14 +71,49 @@ public class DaniTechGameManager : MonoBehaviour
 
     public void OnLoadingComplete()
     {
-        if (string.IsNullOrEmpty(_pendingStartDialogueGroupId)) return;
-        Time.timeScale = 0f;
-        var ui = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
-        if (ui is DialogueUI dialogueUI)
+        if (string.IsNullOrEmpty(_pendingStartDialogueGroupId) == false)
         {
-            dialogueUI.StartDialogue(_pendingStartDialogueGroupId, DialogueOpenType.ChapterStart);
+            Time.timeScale = 0f;
+            var ui = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.DialogueUI);
+            if (ui is DialogueUI dialogueUI)
+            {
+                dialogueUI.StartDialogue(_pendingStartDialogueGroupId, DialogueOpenType.ChapterStart);
+            }
+            _pendingStartDialogueGroupId = string.Empty;
+            return;
         }
-        _pendingStartDialogueGroupId = string.Empty;
+
+        if (_currentChapterIdx == 7)
+        {
+            ShowInitialSkillSelection().Forget();
+            return;
+        }
+    }
+
+    public int GetCurrentChapterIdx()
+    {
+        return _currentChapterIdx;
+    }
+
+    public void ShowBossChapterSkillSelection()
+    {
+        ShowInitialSkillSelection().Forget();
+    }
+
+    private async UniTaskVoid ShowInitialSkillSelection()
+    {
+        for (int i =0; i<3; i++)
+        {
+            OnLevelUp();
+            await UniTask.WaitUntil(IsLevelUpPopupClosed);
+        }
+        Time.timeScale = 1f;
+    }
+
+    private bool IsLevelUpPopupClosed()
+    {
+        var popup = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.PopupUI, DaniTechUIType.LevelUpPopup);
+        return popup == null || popup.gameObject.activeSelf == false;
     }
 
     public void OnReturnLoadingComplete()
@@ -84,6 +123,8 @@ public class DaniTechGameManager : MonoBehaviour
 
     public void StartChapter(int chapterIdx)
     {
+        _currentChapterIdx = chapterIdx;
+
         if (_currentMap != null)
         {
             Destroy(_currentMap);
@@ -144,6 +185,14 @@ public class DaniTechGameManager : MonoBehaviour
         if (chapterUI != null && string.IsNullOrEmpty(chapterUI.StartDialogueGroupId) == false)
         {
             _pendingStartDialogueGroupId = chapterUI.StartDialogueGroupId;
+            var loadingUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LoadingUI);
+            if (loadingUI is LoadingUI loading)
+            {
+                loading.SetOnLoadingComplete(OnLoadingComplete);
+            }
+        }
+        else if (chapterIdx == 7)
+        {
             var loadingUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LoadingUI);
             if (loadingUI is LoadingUI loading)
             {

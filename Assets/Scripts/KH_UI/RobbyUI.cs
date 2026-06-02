@@ -3,19 +3,18 @@
 public class RobbyUI : DaniTechUIBase
 {
     [SerializeField] private DaniTechUIButton Button_GameStart;
-    [SerializeField] private DaniTechUIButton Button_GameSetting;
     [SerializeField] private DaniTechUIButton Button_GameQuit;
 
     private void OnEnable()
     {
         Button_GameStart.BindOnClickButtonEvent(OnClick_GameStart);
-        Button_GameSetting.BindOnClickButtonEvent(OnClick_GameSetting);
         Button_GameQuit.BindOnClickButtonEvent(OnClick_GameQuit);
     }
 
     private void OnDisable()
     {
-        
+        Button_GameStart.UnBindOnClickButtonEvent(OnClick_GameStart);
+        Button_GameQuit.UnBindOnClickButtonEvent(OnClick_GameQuit);
     }
 
     public void OnClick_GameStart()
@@ -24,11 +23,6 @@ public class RobbyUI : DaniTechUIBase
 
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.RobbyUI);
         DaniTechUIManager.Instance.OpenLoadingUI();
-    }
-
-    public void OnClick_GameSetting()
-    {
-        Debug.Log("세팅열기");
     }
 
     public void OnClick_GameQuit()

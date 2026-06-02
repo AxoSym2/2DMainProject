@@ -84,6 +84,7 @@ public class EnemySpawnManager : MonoBehaviour
         if (inGameUI is InGameUI ui)
         {
             ui.SetWaveNum(waveData.WaveNumber);
+            ui.SetWaveTimer(0f);
         }
 
         SpawnWave(waveData).Forget();
@@ -117,7 +118,20 @@ public class EnemySpawnManager : MonoBehaviour
             return;
         }
 
-        await UniTask.Delay(TimeSpan.FromSeconds(10f));
+        float waitTime = 20f;
+        float elapsed = 0f;
+        while (elapsed < waitTime)
+        {
+            elapsed += Time.deltaTime;
+            var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
+            if (inGameUI is InGameUI ui)
+            {
+                ui.SetWaveTimer(elapsed / waitTime);
+            }
+
+            await UniTask.Yield();
+        }
+
         if (_playerTransform == null) return;
         StartNextWave();
     }

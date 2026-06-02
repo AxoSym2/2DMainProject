@@ -5,6 +5,8 @@ public class InGameUI : DaniTechUIBase
 {
     [SerializeField] private DaniTechUIButton Button_Pause;
     [SerializeField] private Text Text_WaveNum;
+    [SerializeField] private Image Image_WaveTimer;
+    [SerializeField] private Sprite[] WaveTimerSprites;
 
     [SerializeField] private Slider Slider_Health;
     [SerializeField] private Text Text_Health;
@@ -17,6 +19,10 @@ public class InGameUI : DaniTechUIBase
     private void OnEnable()
     {
         Button_Pause.BindOnClickButtonEvent(OnClick_Pause);
+        if (WaveTimerSprites != null && WaveTimerSprites.Length > 0)
+        {
+            Image_WaveTimer.sprite = WaveTimerSprites[0];
+        }
     }
 
     public void OnClick_Pause()
@@ -49,5 +55,12 @@ public class InGameUI : DaniTechUIBase
     public void RefreshUmbra()
     {
         Text_Umbra.text = $"{DaniTechGameManager.Inst.GetUmbra()}";
+    }
+
+    public void SetWaveTimer(float ratio)
+    {
+        if (WaveTimerSprites == null || WaveTimerSprites.Length == 0) return;
+        int index = Mathf.Clamp(Mathf.FloorToInt(ratio * WaveTimerSprites.Length), 0, WaveTimerSprites.Length - 1);
+        Image_WaveTimer.sprite = WaveTimerSprites[index];
     }
 }

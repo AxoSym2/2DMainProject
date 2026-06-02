@@ -30,16 +30,6 @@ public class MainUI : DaniTechUIBase
         //SoundManager.Instance.StopBGM();
     }
 
-    public void OnClick_Energy()
-    {
-        Debug.Log("에너지상점열기");
-    }
-
-    public void OnClick_Chip()
-    {
-        Debug.Log("칩셋상점열기");
-    }
-
     public void RefreshUmbra()
     {
         Text_Umbra.text = $"{DaniTechGameManager.Inst.GetUmbra()}";
