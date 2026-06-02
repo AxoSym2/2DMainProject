@@ -5,79 +5,79 @@
     "StatType": "Attack",
     "Level": 1,
     "Cost": 100,
-    "IncreaseAmount": 0.05
+    "IncreaseAmount": 5
   },
   {
     "Id": "upgrade_attack_2",
     "Name": "공격2렙",
     "StatType": "Attack",
     "Level": 2,
-    "Cost": 500,
-    "IncreaseAmount": 0.2
+    "Cost": 300,
+    "IncreaseAmount": 12
   },
   {
     "Id": "upgrade_attack_3",
     "Name": "공격3렙",
     "StatType": "Attack",
     "Level": 3,
-    "Cost": 1500,
-    "IncreaseAmount": 0.5
+    "Cost": 500,
+    "IncreaseAmount": 22
   },
   {
     "Id": "upgrade_attack_4",
     "Name": "공격4렙",
     "StatType": "Attack",
     "Level": 4,
-    "Cost": 5000,
-    "IncreaseAmount": 1
+    "Cost": 1000,
+    "IncreaseAmount": 35
   },
   {
     "Id": "upgrade_attack_5",
     "Name": "공격5렙",
     "StatType": "Attack",
     "Level": 5,
-    "Cost": 30000,
-    "IncreaseAmount": 5
+    "Cost": 4000,
+    "IncreaseAmount": 55
   },
   {
     "Id": "upgrade_attack_6",
     "Name": "공격6렙",
     "StatType": "Attack",
     "Level": 6,
-    "Cost": 80000,
-    "IncreaseAmount": 10
+    "Cost": 12000,
+    "IncreaseAmount": 80
   },
   {
     "Id": "upgrade_attack_7",
     "Name": "공격7렙",
     "StatType": "Attack",
     "Level": 7,
-    "Cost": 150000,
-    "IncreaseAmount": 25
+    "Cost": 25000,
+    "IncreaseAmount": 110
   },
   {
     "Id": "upgrade_attack_8",
     "Name": "공격8렙",
     "StatType": "Attack",
     "Level": 8,
-    "Cost": 500000,
-    "IncreaseAmount": 50
+    "Cost": 70000,
+    "IncreaseAmount": 150
   },
   {
     "Id": "upgrade_attack_9",
     "Name": "공격9렙",
     "StatType": "Attack",
     "Level": 9,
-    "Cost": 1000000,
-    "IncreaseAmount": 100
+    "Cost": 140000,
+    "IncreaseAmount": 200
   },
   {
     "Id": "upgrade_attack_10",
     "Name": "공격10렙",
     "StatType": "Attack",
     "Level": 10,
-    "Cost": 3000000,
-    "IncreaseAmount": 200
+    "Cost": 400000,
+    "IncreaseAmount": 260
   },
   {
     "Id": "upgrade_cooldown_1",
@@ -92,7 +92,7 @@
     "Name": "쿨감2렙",
     "StatType": "CoolDown",
     "Level": 2,
-    "Cost": 500,
+    "Cost": 300,
     "IncreaseAmount": 0.1
   },
   {
@@ -100,7 +100,7 @@
     "Name": "쿨감3렙",
     "StatType": "CoolDown",
     "Level": 3,
-    "Cost": 1500,
+    "Cost": 500,
     "IncreaseAmount": 0.15
   },
   {
@@ -108,7 +108,7 @@
     "Name": "쿨감4렙",
     "StatType": "CoolDown",
     "Level": 4,
-    "Cost": 5000,
+    "Cost": 1000,
     "IncreaseAmount": 0.2
   },
   {
@@ -116,7 +116,7 @@
     "Name": "쿨감5렙",
     "StatType": "CoolDown",
     "Level": 5,
-    "Cost": 30000,
+    "Cost": 4000,
     "IncreaseAmount": 0.25
   },
   {
@@ -124,7 +124,7 @@
     "Name": "쿨감6렙",
     "StatType": "CoolDown",
     "Level": 6,
-    "Cost": 80000,
+    "Cost": 12000,
     "IncreaseAmount": 0.3
   },
   {
@@ -132,7 +132,7 @@
     "Name": "쿨감7렙",
     "StatType": "CoolDown",
     "Level": 7,
-    "Cost": 150000,
+    "Cost": 25000,
     "IncreaseAmount": 0.35
   },
   {
@@ -140,7 +140,7 @@
     "Name": "쿨감8렙",
     "StatType": "CoolDown",
     "Level": 8,
-    "Cost": 500000,
+    "Cost": 70000,
     "IncreaseAmount": 0.4
   },
   {
@@ -148,7 +148,7 @@
     "Name": "쿨감9렙",
     "StatType": "CoolDown",
     "Level": 9,
-    "Cost": 1000000,
+    "Cost": 140000,
     "IncreaseAmount": 0.45
   },
   {
@@ -156,7 +156,7 @@
     "Name": "쿨감10렙",
     "StatType": "CoolDown",
     "Level": 10,
-    "Cost": 3000000,
+    "Cost": 400000,
     "IncreaseAmount": 0.5
   },
   {
@@ -165,79 +165,79 @@
     "StatType": "Hp",
     "Level": 1,
     "Cost": 100,
-    "IncreaseAmount": 50
+    "IncreaseAmount": 300
   },
   {
     "Id": "upgrade_hp_2",
     "Name": "체력2렙",
     "StatType": "Hp",
     "Level": 2,
-    "Cost": 500,
-    "IncreaseAmount": 150
+    "Cost": 300,
+    "IncreaseAmount": 700
   },
   {
     "Id": "upgrade_hp_3",
     "Name": "체력3렙",
     "StatType": "Hp",
     "Level": 3,
-    "Cost": 1500,
-    "IncreaseAmount": 300
+    "Cost": 500,
+    "IncreaseAmount": 1100
   },
   {
     "Id": "upgrade_hp_4",
     "Name": "체력4렙",
     "StatType": "Hp",
     "Level": 4,
-    "Cost": 5000,
-    "IncreaseAmount": 500
+    "Cost": 1000,
+    "IncreaseAmount": 1600
   },
   {
     "Id": "upgrade_hp_5",
     "Name": "체력5렙",
     "StatType": "Hp",
     "Level": 5,
-    "Cost": 30000,
-    "IncreaseAmount": 800
+    "Cost": 4000,
+    "IncreaseAmount": 2400
   },
   {
     "Id": "upgrade_hp_6",
     "Name": "체력6렙",
     "StatType": "Hp",
     "Level": 6,
-    "Cost": 80000,
-    "IncreaseAmount": 1200
+    "Cost": 12000,
+    "IncreaseAmount": 3500
   },
   {
     "Id": "upgrade_hp_7",
     "Name": "체력7렙",
     "StatType": "Hp",
     "Level": 7,
-    "Cost": 150000,
-    "IncreaseAmount": 1800
+    "Cost": 25000,
+    "IncreaseAmount": 4700
   },
   {
     "Id": "upgrade_hp_8",
     "Name": "체력8렙",
     "StatType": "Hp",
     "Level": 8,
-    "Cost": 500000,
-    "IncreaseAmount": 2500
+    "Cost": 70000,
+    "IncreaseAmount": 6100
   },
   {
     "Id": "upgrade_hp_9",
     "Name": "체력9렙",
     "StatType": "Hp",
     "Level": 9,
-    "Cost": 1000000,
-    "IncreaseAmount": 3500
+    "Cost": 140000,
+    "IncreaseAmount": 8100
   },
   {
     "Id": "upgrade_hp_10",
     "Name": "체력10렙",
     "StatType": "Hp",
     "Level": 10,
-    "Cost": 3000000,
-    "IncreaseAmount": 5000
+    "Cost": 400000,
+    "IncreaseAmount": 11000
   },
   {
     "Id": "upgrade_defense_1",
@@ -252,71 +252,71 @@
     "Name": "방어력2렙",
     "StatType": "Defense",
     "Level": 2,
-    "Cost": 500,
-    "IncreaseAmount": 0.1
+    "Cost": 300,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_3",
     "Name": "방어력3렙",
     "StatType": "Defense",
     "Level": 3,
-    "Cost": 1500,
-    "IncreaseAmount": 0.15
+    "Cost": 500,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_4",
     "Name": "방어력4렙",
     "StatType": "Defense",
     "Level": 4,
-    "Cost": 5000,
-    "IncreaseAmount": 0.2
+    "Cost": 1000,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_5",
     "Name": "방어력5렙",
     "StatType": "Defense",
     "Level": 5,
-    "Cost": 30000,
-    "IncreaseAmount": 0.25
+    "Cost": 4000,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_6",
     "Name": "방어력6렙",
     "StatType": "Defense",
     "Level": 6,
-    "Cost": 80000,
-    "IncreaseAmount": 0.3
+    "Cost": 12000,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_7",
     "Name": "방어력7렙",
     "StatType": "Defense",
     "Level": 7,
-    "Cost": 150000,
-    "IncreaseAmount": 0.38
+    "Cost": 25000,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_8",
     "Name": "방어력8렙",
     "StatType": "Defense",
     "Level": 8,
-    "Cost": 500000,
-    "IncreaseAmount": 0.46
+    "Cost": 70000,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_9",
     "Name": "방어력9렙",
     "StatType": "Defense",
     "Level": 9,
-    "Cost": 1000000,
-    "IncreaseAmount": 0.54
+    "Cost": 140000,
+    "IncreaseAmount": 0.05
   },
   {
     "Id": "upgrade_defense_10",
     "Name": "방어력10렙",
     "StatType": "Defense",
     "Level": 10,
-    "Cost": 3000000,
-    "IncreaseAmount": 0.6
+    "Cost": 400000,
+    "IncreaseAmount": 0.05
   }
 ]

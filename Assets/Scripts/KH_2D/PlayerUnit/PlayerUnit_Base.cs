@@ -26,7 +26,7 @@ public class PlayerUnit_Base : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        float finalDamage = Mathf.Max(1f, damage - DaniTechGameManager.Inst.GetDefenseBonus());
+        float finalDamage = damage * (1f - DaniTechGameManager.Inst.GetDefenseBonus());
         _currentHp -= finalDamage;
         UpdateHealthBar();
         //Debug.Log($"플레이어 체력: {_currentHp}");

@@ -4,7 +4,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 1,
     "EnemyIdList": "enemy_citizen_01",
-    "SpawnCount": 15,
+    "SpawnCount": 12,
     "SpawnInterval": 0.5
   },
   {
@@ -12,7 +12,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 2,
     "EnemyIdList": "enemy_citizen_01",
-    "SpawnCount": 15,
+    "SpawnCount": 13,
     "SpawnInterval": 0.5
   },
   {
@@ -20,7 +20,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 3,
     "EnemyIdList": "enemy_citizen_01",
-    "SpawnCount": 20,
+    "SpawnCount": 14,
     "SpawnInterval": 0.5
   },
   {
@@ -28,7 +28,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 4,
     "EnemyIdList": "enemy_citizen_01",
-    "SpawnCount": 20,
+    "SpawnCount": 17,
     "SpawnInterval": 0.5
   },
   {
@@ -36,7 +36,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 5,
     "EnemyIdList": "enemy_citizen_01",
-    "SpawnCount": 30,
+    "SpawnCount": 20,
     "SpawnInterval": 0.5
   },
   {
@@ -44,7 +44,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 6,
     "EnemyIdList": "enemy_citizen_01,enemy_athlete_01",
-    "SpawnCount": 20,
+    "SpawnCount": 24,
     "SpawnInterval": 0.5
   },
   {
@@ -52,7 +52,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 7,
     "EnemyIdList": "enemy_citizen_01,enemy_athlete_01",
-    "SpawnCount": 25,
+    "SpawnCount": 27,
     "SpawnInterval": 0.5
   },
   {
@@ -60,7 +60,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 8,
     "EnemyIdList": "enemy_citizen_01,enemy_athlete_01",
-    "SpawnCount": 25,
+    "SpawnCount": 31,
     "SpawnInterval": 0.5
   },
   {
@@ -68,7 +68,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 9,
     "EnemyIdList": "enemy_citizen_01,enemy_athlete_01",
-    "SpawnCount": 30,
+    "SpawnCount": 34,
     "SpawnInterval": 0.5
   },
   {
@@ -76,7 +76,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 10,
     "EnemyIdList": "enemy_citizen_01,enemy_athlete_01",
-    "SpawnCount": 30,
+    "SpawnCount": 39,
     "SpawnInterval": 0.5
   },
   {
@@ -84,7 +84,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 11,
     "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
-    "SpawnCount": 20,
+    "SpawnCount": 44,
     "SpawnInterval": 0.5
   },
   {
@@ -92,7 +92,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 12,
     "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
-    "SpawnCount": 23,
+    "SpawnCount": 48,
     "SpawnInterval": 0.5
   },
   {
@@ -100,7 +100,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 13,
     "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
-    "SpawnCount": 25,
+    "SpawnCount": 54,
     "SpawnInterval": 0.5
   },
   {
@@ -108,7 +108,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 14,
     "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
-    "SpawnCount": 35,
+    "SpawnCount": 59,
     "SpawnInterval": 0.5
   },
   {
@@ -116,7 +116,7 @@
     "ChapterId": "Chapter_Earth_1",
     "WaveNumber": 15,
     "EnemyIdList": "enemy_citizen_01,enemy_police_01,enemy_athlete_01",
-    "SpawnCount": 40,
+    "SpawnCount": 65,
     "SpawnInterval": 0.5
   },
   {
@@ -124,7 +124,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 1,
     "EnemyIdList": "enemy_soldierknife_01",
-    "SpawnCount": 10,
+    "SpawnCount": 14,
     "SpawnInterval": 0.5
   },
   {
@@ -140,7 +140,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 3,
     "EnemyIdList": "enemy_soldiergun_01",
-    "SpawnCount": 10,
+    "SpawnCount": 18,
     "SpawnInterval": 0.5
   },
   {
@@ -148,7 +148,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 4,
     "EnemyIdList": "enemy_soldiergun_01",
-    "SpawnCount": 15,
+    "SpawnCount": 22,
     "SpawnInterval": 0.5
   },
   {
@@ -156,7 +156,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 5,
     "EnemyIdList": "enemy_soldiergun_01,enemy_soldierknife_01",
-    "SpawnCount": 20,
+    "SpawnCount": 26,
     "SpawnInterval": 0.5
   },
   {
@@ -164,7 +164,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 6,
     "EnemyIdList": "enemy_soldierknife_01",
-    "SpawnCount": 20,
+    "SpawnCount": 31,
     "SpawnInterval": 0.5
   },
   {
@@ -172,7 +172,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 7,
     "EnemyIdList": "enemy_soldierknife_01",
-    "SpawnCount": 25,
+    "SpawnCount": 37,
     "SpawnInterval": 0.5
   },
   {
@@ -180,7 +180,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 8,
     "EnemyIdList": "enemy_soldiergun_01",
-    "SpawnCount": 20,
+    "SpawnCount": 42,
     "SpawnInterval": 0.5
   },
   {
@@ -188,7 +188,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 9,
     "EnemyIdList": "enemy_soldiergun_01",
-    "SpawnCount": 25,
+    "SpawnCount": 49,
     "SpawnInterval": 0.5
   },
   {
@@ -196,7 +196,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 10,
     "EnemyIdList": "enemy_soldiergun_01,enemy_soldierknife_01",
-    "SpawnCount": 30,
+    "SpawnCount": 56,
     "SpawnInterval": 0.5
   },
   {
@@ -204,7 +204,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 11,
     "EnemyIdList": "enemy_soldierknife_01",
-    "SpawnCount": 30,
+    "SpawnCount": 62,
     "SpawnInterval": 0.5
   },
   {
@@ -212,7 +212,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 12,
     "EnemyIdList": "enemy_soldiergun_01",
-    "SpawnCount": 30,
+    "SpawnCount": 70,
     "SpawnInterval": 0.5
   },
   {
@@ -220,7 +220,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 13,
     "EnemyIdList": "enemy_soldiergun_01,enemy_soldierknife_01",
-    "SpawnCount": 35,
+    "SpawnCount": 79,
     "SpawnInterval": 0.5
   },
   {
@@ -228,7 +228,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 14,
     "EnemyIdList": "enemy_soldiergun_01,enemy_soldierknife_01",
-    "SpawnCount": 40,
+    "SpawnCount": 87,
     "SpawnInterval": 0.5
   },
   {
@@ -236,7 +236,7 @@
     "ChapterId": "Chapter_Earth_2",
     "WaveNumber": 15,
     "EnemyIdList": "enemy_soldiergun_01,enemy_soldierknife_01",
-    "SpawnCount": 50,
+    "SpawnCount": 95,
     "SpawnInterval": 0.5
   },
   {
@@ -252,7 +252,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 2,
     "EnemyIdList": "enemy_firetank_01",
-    "SpawnCount": 10,
+    "SpawnCount": 6,
     "SpawnInterval": 1
   },
   {
@@ -260,7 +260,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 3,
     "EnemyIdList": "enemy_drill_01",
-    "SpawnCount": 3,
+    "SpawnCount": 9,
     "SpawnInterval": 1
   },
   {
@@ -268,7 +268,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 4,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01",
-    "SpawnCount": 7,
+    "SpawnCount": 12,
     "SpawnInterval": 1.5
   },
   {
@@ -276,7 +276,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 5,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01",
-    "SpawnCount": 9,
+    "SpawnCount": 15,
     "SpawnInterval": 1.5
   },
   {
@@ -284,7 +284,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 6,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01",
-    "SpawnCount": 11,
+    "SpawnCount": 20,
     "SpawnInterval": 1.5
   },
   {
@@ -292,7 +292,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 7,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01",
-    "SpawnCount": 13,
+    "SpawnCount": 24,
     "SpawnInterval": 1.5
   },
   {
@@ -300,7 +300,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 8,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01",
-    "SpawnCount": 15,
+    "SpawnCount": 30,
     "SpawnInterval": 1.5
   },
   {
@@ -308,7 +308,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 9,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01",
-    "SpawnCount": 17,
+    "SpawnCount": 35,
     "SpawnInterval": 1.5
   },
   {
@@ -316,7 +316,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 10,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01,enemy_drill_01",
-    "SpawnCount": 20,
+    "SpawnCount": 41,
     "SpawnInterval": 2
   },
   {
@@ -324,7 +324,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 11,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01,enemy_drill_01",
-    "SpawnCount": 30,
+    "SpawnCount": 47,
     "SpawnInterval": 2
   },
   {
@@ -332,7 +332,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 12,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01,enemy_drill_01",
-    "SpawnCount": 35,
+    "SpawnCount": 54,
     "SpawnInterval": 2
   },
   {
@@ -340,7 +340,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 13,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01,enemy_drill_01",
-    "SpawnCount": 40,
+    "SpawnCount": 60,
     "SpawnInterval": 2
   },
   {
@@ -348,7 +348,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 14,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01,enemy_drill_01",
-    "SpawnCount": 45,
+    "SpawnCount": 68,
     "SpawnInterval": 2
   },
   {
@@ -356,7 +356,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 15,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01,enemy_drill_01",
-    "SpawnCount": 50,
+    "SpawnCount": 75,
     "SpawnInterval": 2
   },
   {
@@ -365,119 +365,119 @@
     "WaveNumber": 1,
     "EnemyIdList": "enemy_agent_01,enemy_agent_03",
     "SpawnCount": 4,
-    "SpawnInterval": 5
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_02",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 2,
     "EnemyIdList": "enemy_agent_02",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 6,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_03",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 3,
     "EnemyIdList": "enemy_agent_03",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 7,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_04",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 4,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02",
-    "SpawnCount": 2,
-    "SpawnInterval": 5
+    "SpawnCount": 10,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_05",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 5,
     "EnemyIdList": "enemy_agent_01,enemy_agent_03",
-    "SpawnCount": 2,
-    "SpawnInterval": 5
+    "SpawnCount": 13,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_06",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 6,
     "EnemyIdList": "enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 2,
-    "SpawnInterval": 5
+    "SpawnCount": 18,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_07",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 7,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 3,
-    "SpawnInterval": 5
+    "SpawnCount": 22,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_08",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 8,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 3,
-    "SpawnInterval": 5
+    "SpawnCount": 27,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_09",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 9,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 3,
-    "SpawnInterval": 5
+    "SpawnCount": 31,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_10",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 10,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 5,
-    "SpawnInterval": 5
+    "SpawnCount": 37,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_11",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 11,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 5,
-    "SpawnInterval": 5
+    "SpawnCount": 42,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_12",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 12,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 5,
-    "SpawnInterval": 5
+    "SpawnCount": 48,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_13",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 13,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 15,
-    "SpawnInterval": 5
+    "SpawnCount": 54,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_14",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 14,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 15,
-    "SpawnInterval": 5
+    "SpawnCount": 61,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter04_15",
     "ChapterId": "Chapter_Earth_4",
     "WaveNumber": 15,
     "EnemyIdList": "enemy_agent_01,enemy_agent_02,enemy_agent_03",
-    "SpawnCount": 15,
-    "SpawnInterval": 5
+    "SpawnCount": 67,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_01",
@@ -485,239 +485,239 @@
     "WaveNumber": 1,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
     "SpawnCount": 10,
-    "SpawnInterval": 3
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_02",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 2,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 0.5
+    "SpawnCount": 13,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_03",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 3,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 15,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_04",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 4,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 21,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_05",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 5,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 27,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_06",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 6,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 33,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_07",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 7,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 40,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_08",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 8,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 48,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_09",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 9,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 55,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_10",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 10,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 64,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_11",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 11,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 75,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_12",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 12,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 84,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_13",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 13,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 94,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_14",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 14,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 104,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter05_15",
     "ChapterId": "Chapter_Earth_5",
     "WaveNumber": 15,
     "EnemyIdList": "enemy_subject_01,enemy_subject_02,enemy_subject_03,enemy_subject_04,enemy_subject_05",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 116,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_01",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 1,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 10,
-    "SpawnInterval": 5
+    "SpawnCount": 11,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_02",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 2,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 13,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_03",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 3,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 17,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_04",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 4,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 22,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_05",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 5,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 29,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_06",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 6,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 37,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_07",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 7,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 45,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_08",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 8,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 54,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_09",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 9,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 63,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_10",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 10,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 72,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_11",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 11,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 84,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_12",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 12,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 95,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_13",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 13,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 107,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_14",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 14,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 119,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter06_15",
     "ChapterId": "Chapter_Earth_6",
     "WaveNumber": 15,
     "EnemyIdList": "enemy_type_01,enemy_type_02,enemy_type_03,enemy_type_04",
-    "SpawnCount": 1,
-    "SpawnInterval": 5
+    "SpawnCount": 132,
+    "SpawnInterval": 2
   },
   {
     "Id": "Wave_Chapter07_01",
