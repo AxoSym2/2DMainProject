@@ -30,7 +30,6 @@ public class EnemyUnit_PointAttack : MonoBehaviour
         //Debug.Log("FirePointAttack 호출됨");
         if (_target == null) return;
         Vector2 targetPos = _target.position;
-        Debug.Log($"AttackType: {_enemyData.AttackType}, overridePath: {_overrideProjectilePath}");
 
         if (_enemyData.AttackType == "Throw")
         {

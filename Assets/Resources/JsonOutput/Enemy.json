@@ -446,7 +446,7 @@
     "IconPath": "Icon/EnemyUnit_Icon/Eclipse",
     "PrefabPath": "Prefabs/Enemy/Enemy_Prefab/Eclipse_Prefab",
     "EnemyType": "Boss",
-    "AttackType": null,
+    "AttackType": "Instance",
     "ProjectilePath": null,
     "ProjectileSpeed": 10,
     "ExpReward": 0,

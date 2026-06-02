@@ -89,7 +89,7 @@ public class EnemyUnit_Boss : MonoBehaviour
                 GetComponent<EnemyUnit_Instance>()?.DashAttack();
                 break;
             case "Projectile":
-                GetComponent<EnemyUnit_Projectile>()?.FireProjectile();
+                GetComponent<EnemyUnit_Projectile>()?.FireSpreadProjectile(10, 15f);
                 break;
             case "PointAttack":
                 GetComponent<EnemyUnit_PointAttack>()?.FirePointAttack();

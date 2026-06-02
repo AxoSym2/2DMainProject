@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73fc68fa1377e3e41932d2fd60d6e075
+guid: 5437c7134e67e1b439e45c861cceb6fd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_Projectile_Eclipse_1
+      name: Eclipse3_8
       rect:
         serializedVersion: 2
-        x: 14
-        y: 264
-        width: 72
-        height: 28
+        x: 18
+        y: 302
+        width: 44
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18e2f580250e5d4449bb42f0a0d3f9aa
-      internalID: -1826802799
+      spriteID: 9dd3bf2a493376c428d38705db440ab0
+      internalID: -1828785554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Projectile_Eclipse_2
+      name: Eclipse3_9
       rect:
         serializedVersion: 2
-        x: 110
-        y: 265
-        width: 92
-        height: 29
+        x: 89
+        y: 302
+        width: 49
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6057168ac8bbb004a8335f986acb9053
-      internalID: -1776385354
+      spriteID: 38e531d3b8a98df4298e18be421f5941
+      internalID: 1322906994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Projectile_Eclipse_3
+      name: Eclipse3_10
       rect:
         serializedVersion: 2
-        x: 219
-        y: 264
-        width: 97
-        height: 30
+        x: 162
+        y: 302
+        width: 60
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c95dca8e8c3fcca40a1342610cba9cab
-      internalID: -1484366044
+      spriteID: 0d37973c47900f1459e8945dd5a131a9
+      internalID: -811749680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Projectile_Eclipse_4
+      name: Eclipse3_11
       rect:
         serializedVersion: 2
-        x: 329
-        y: 265
-        width: 107
-        height: 29
+        x: 239
+        y: 301
+        width: 67
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4283f300ef7bbcc4fafaf9c15972d066
-      internalID: -464994500
+      spriteID: 5e926471c7dd12046afb896f27879c62
+      internalID: -1104898847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Projectile_Eclipse_5
+      name: Eclipse3_12
       rect:
         serializedVersion: 2
-        x: 470
-        y: 265
-        width: 127
-        height: 32
+        x: 310
+        y: 302
+        width: 69
+        height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d35c6bc7ca82649b5ea65524dfe03b
-      internalID: 763581854
+      spriteID: d17f24a0cb6092745af65d3fff609764
+      internalID: -1386618965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse3_15
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 282
+        width: 197
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6185afdda85166c4fb2f4a66a7222f4a
+      internalID: 1293143813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse3_16
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 132
+        width: 277
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c17de9cf5929d4b848d67c2d9714be
+      internalID: -1078590254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse3_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 168
+        width: 125
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b144758f936781c4b9b5cc680f84e8b5
+      internalID: 211448513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse3_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 164
+        width: 151
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e5190e79312ec4789972306c66c942
+      internalID: 1105538207
       vertices: []
       indices: 
       edges: []
@@ -210,7 +298,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bd5c5768cac4a6d44b2a19ebb4100ee0
+    spriteID: e6b7877928a34d34dad9ccd88a6b599e
     internalID: 0
     vertices: []
     indices: 
@@ -222,15 +310,52 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy_Projectile_Eclipse_0: 1548673168
-      Enemy_Projectile_Eclipse_1: -1826802799
-      Enemy_Projectile_Eclipse_2: -1776385354
-      Enemy_Projectile_Eclipse_3: -1484366044
-      Enemy_Projectile_Eclipse_4: -464994500
-      Enemy_Projectile_Eclipse_5: 763581854
-      Enemy_Projectile_Eclipse_6: 934926462
-      Enemy_Projectile_Eclipse_7: 2089002062
-      Enemy_Projectile_Eclipse_8: 2134042222
+      Eclipse3_0: 1620461482
+      Eclipse3_10: -811749680
+      Eclipse3_11: -1104898847
+      Eclipse3_12: -1386618965
+      Eclipse3_13: 211448513
+      Eclipse3_14: 1105538207
+      Eclipse3_15: 1293143813
+      Eclipse3_16: -1078590254
+      Eclipse3_17: 482287019
+      Eclipse3_18: -1433326123
+      Eclipse3_19: -806728149
+      Eclipse3_21: 1049041162
+      Eclipse3_22: 1180436619
+      Eclipse3_25: -96457384
+      Eclipse3_26: 1821196241
+      Eclipse3_27: -1418978926
+      Eclipse3_28: 1599448752
+      Eclipse3_29: -103011243
+      Eclipse3_3: -1915350379
+      Eclipse3_30: -2041093210
+      Eclipse3_31: -464045886
+      Eclipse3_32: 2100903430
+      Eclipse3_33: 807909183
+      Eclipse3_34: 748679290
+      Eclipse3_35: 1530432445
+      Eclipse3_36: 331654107
+      Eclipse3_37: 1796609647
+      Eclipse3_38: -681724592
+      Eclipse3_39: -464447604
+      Eclipse3_4: -1810590942
+      Eclipse3_40: -547893513
+      Eclipse3_41: 393114203
+      Eclipse3_42: -331228218
+      Eclipse3_43: 1803356963
+      Eclipse3_44: 1024698695
+      Eclipse3_45: 2034166890
+      Eclipse3_46: -569734242
+      Eclipse3_47: -1910204231
+      Eclipse3_48: 147489980
+      Eclipse3_49: -170052265
+      Eclipse3_5: -851316803
+      Eclipse3_50: -1882498916
+      Eclipse3_6: 335879083
+      Eclipse3_7: -703870910
+      Eclipse3_8: -1828785554
+      Eclipse3_9: 1322906994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
