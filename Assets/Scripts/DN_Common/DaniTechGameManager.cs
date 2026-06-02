@@ -369,46 +369,75 @@ public class DaniTechGameManager : MonoBehaviour
         _playerModel.Umbra -= amount;
     }
 
-    public float GetAttackMultiplier()
+    public float GetAttackBonus()
     {
         int level = _playerModel.AttackUpgradeLevel;
-        if (level == 0) return 1f;
+        if (level == 0) return 0f;
 
-        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_attack_{level}");
-        if (data == null)
+        float total = 0f;
+
+        for (int i = 1; i <= level; i++)
         {
-            return 1f;
+            UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_attack_{i}");
+            if (data != null)
+            {
+                total += data.IncreaseAmount;
+            }
         }
-
-        return 1f + data.IncreaseAmount;
+        return total;
     }
 
-    public float GetDefenseMultiplier()
+    public float GetDefenseBonus()
     {
         int level = _playerModel.DefenseUpgradeLevel;
         if (level == 0) return 0f;
 
-        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_defense_{level}");
-        if (data == null)
-        {
-            return 0f;
-        }
+        float total = 0f;
 
-        return data.IncreaseAmount;
+        for (int i = 1; i <= level; i++)
+        {
+            UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_defense_{i}");
+            if (data != null)
+            {
+                total += data.IncreaseAmount;
+            }
+        }
+        return total;
     }
 
-    public float GetCoolDownMultiplier()
+    public float GetCoolDownBonus()
     {
         int level = _playerModel.CoolDownUpgradeLevel;
         if (level == 0) return 0f;
 
-        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_cooldown_{level}");
-        if (data == null)
-        {
-            return 0f;
-        }
+        float total = 0f;
 
-        return data.IncreaseAmount;
+        for (int i = 1; i <= level; i++)
+        {
+            UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_cooldown_{i}");
+            if (data != null)
+            {
+                total += data.IncreaseAmount;
+            }
+        }
+        return total;
     }
 
+    public float GetHpBonus()
+    {
+        int level = _playerModel.HpUpgradeLevel;
+        if (level == 0) return 0f;
+
+        float total = 0f;
+
+        for (int i = 1; i <= level; i++)
+        {
+            UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_hp_{i}");
+            if (data != null)
+            {
+                total += data.IncreaseAmount;
+            }
+        }
+        return total;
+    }
 }

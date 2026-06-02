@@ -17,7 +17,7 @@ public class PlayerUnit_Attack : MonoBehaviour
 
         for (int i = 0; i < _skillDataList.Count; i++)
         {
-            float coolDown = _skillDataList[i].CoolDown * (1f - DaniTechGameManager.Inst.GetCoolDownMultiplier());
+            float coolDown = _skillDataList[i].CoolDown - DaniTechGameManager.Inst.GetCoolDownBonus();
             coolDown = Mathf.Max(0.1f, coolDown);
             //Debug.Log($"스킬: {_skillDataList[i].Name}, 쿨타임: {coolDown}");
 

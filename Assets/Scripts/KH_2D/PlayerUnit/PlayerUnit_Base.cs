@@ -21,24 +21,12 @@ public class PlayerUnit_Base : MonoBehaviour
 
     private float GetMaxHp()
     {
-        int level = DaniTechGameManager.Inst.GetUpGradeLevel("Hp");
-        if (level == 0) 
-        {
-            return _playerData.Hp;
-        }
-
-        UpgradeData data = DaniTechGameDataManager.Instance.GetUpgradeData($"upgrade_hp_{level}");
-        if (data == null)
-        {
-            return _playerData.Hp;
-        }
-        return _playerData.Hp + data.IncreaseAmount;
+        return _playerData.Hp + DaniTechGameManager.Inst.GetHpBonus();
     }
 
     public void TakeDamage(float damage)
     {
-        float defense = DaniTechGameManager.Inst.GetDefenseMultiplier();
-        float finalDamage = damage * (1f - defense);
+        float finalDamage = Mathf.Max(1f, damage - DaniTechGameManager.Inst.GetDefenseBonus());
         _currentHp -= finalDamage;
         UpdateHealthBar();
         //Debug.Log($"플레이어 체력: {_currentHp}");
@@ -59,11 +47,7 @@ public class PlayerUnit_Base : MonoBehaviour
 
     public void Heal(float amount)
     {
-        _currentHp += amount;
-        if(_currentHp > _playerData.Hp)
-        {
-            _currentHp = _playerData.Hp;
-        }
+        _currentHp = Mathf.Min(_currentHp + amount, GetMaxHp());
         UpdateHealthBar();
     }
 
