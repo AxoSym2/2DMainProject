@@ -42,6 +42,7 @@ public class DaniTechGameManager : MonoBehaviour
     private void LoadSaveData()
     {
         _playerModel = DaniTechNetworkManager.Inst.RequstLoadSaveData();
+        Debug.Log($"로드된 클리어 챕터 수: {_playerModel.ClearedChapterList.Count}");
     }
 
     public void AddItem(string itemDataId, int addItemCount)
