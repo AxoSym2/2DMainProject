@@ -32,7 +32,7 @@ public class MainUI : DaniTechUIBase
 
         if(_isDebugMode)
         {
-            DaniTechGameManager.Inst.AddUmbra(999999999);
+            DaniTechGameManager.Inst.AddUmbra(99999999);
         }
     }
 

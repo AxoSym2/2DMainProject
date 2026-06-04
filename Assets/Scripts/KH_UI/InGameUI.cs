@@ -19,6 +19,7 @@ public class InGameUI : DaniTechUIBase
     private void OnEnable()
     {
         Button_Pause.BindOnClickButtonEvent(OnClick_Pause);
+        SetUmbra(0);
         if (WaveTimerSprites != null && WaveTimerSprites.Length > 0)
         {
             Image_WaveTimer.sprite = WaveTimerSprites[0];
