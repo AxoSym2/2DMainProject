@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a4ae49e6bdfd64ab18c721b0543d7b
-      internalID: 2008775796
+      spriteID: 8e19cf124ffc21945a9c8046e5275540
+      internalID: 1870402891
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1f10c78327ff3bb4e9094b92263adbb4
+    spriteID: 583b476ae7fcf3c498c2c604b5b1fa9b
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +134,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Ending_01_0: 2008775796
+      Ending_01_0: 1870402891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

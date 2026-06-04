@@ -287,17 +287,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EndingPopup
   Image_Ending: {fileID: 475049408110877419}
   EndingSprites:
-  - {fileID: 2008775796, guid: 3912bec9bcd0f6a48bf4f38c23e58b75, type: 3}
-  - {fileID: 1948470762, guid: c3ba0b4248cdff24bad5a7d2c3535349, type: 3}
-  - {fileID: -767694264, guid: 4b0dbb367d92675479c00b0022b07bd4, type: 3}
-  - {fileID: -1374162131, guid: 2f0c269eef45fb74695773b8987c04e6, type: 3}
-  - {fileID: -346239758, guid: 32889ba0cc16841498bf113827f55263, type: 3}
-  - {fileID: -214860433, guid: 77980e09897243247b3a56d79b896789, type: 3}
-  - {fileID: 1708164324, guid: 271c5b40e8ce4424e8e605f911c77bcd, type: 3}
-  - {fileID: 0}
+  - {fileID: 1870402891, guid: 3912bec9bcd0f6a48bf4f38c23e58b75, type: 3}
+  - {fileID: 1525260111, guid: c3ba0b4248cdff24bad5a7d2c3535349, type: 3}
+  - {fileID: 993605349, guid: 4b0dbb367d92675479c00b0022b07bd4, type: 3}
+  - {fileID: -694876675, guid: 2f0c269eef45fb74695773b8987c04e6, type: 3}
+  - {fileID: 1983665835, guid: 32889ba0cc16841498bf113827f55263, type: 3}
+  - {fileID: 1164272843, guid: 77980e09897243247b3a56d79b896789, type: 3}
+  - {fileID: 1507026212, guid: 271c5b40e8ce4424e8e605f911c77bcd, type: 3}
+  - {fileID: 1826333324, guid: dcb1faaeba9ecc944b5113b0d020505e, type: 3}
   - {fileID: -861789555, guid: 91fd5286121bab14b926afda7a1e663e, type: 3}
   - {fileID: -2133561128, guid: e8eee4742d98e9047b77e3d7d6650dc2, type: 3}
   - {fileID: -1104262160, guid: 4835e7c70bc4a414487e1170807e818f, type: 3}
   - {fileID: 577653400, guid: 61068794ba61b484283b629981fcf3f8, type: 3}
-  - {fileID: 0}
+  - {fileID: -1951267868, guid: 42adb4f4713a5e8429a9fb9487516f9a, type: 3}
   Button_Next: {fileID: 9115209516964627425}
