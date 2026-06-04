@@ -10,6 +10,13 @@ public class SkillBase : MonoBehaviour
         float finalDamage = _skillData.Damage + DaniTechGameManager.Inst.GetAttackBonus();
         //Debug.Log($"스킬: {_skillData.Name}, 데미지: {finalDamage}");
         enemy.TakeDamage(finalDamage);
+
+        float healAmount = finalDamage * 0.005f;
+        var player = FindAnyObjectByType<PlayerUnit_Base>();
+        if (player != null)
+        {
+            player.Heal(healAmount);
+        }
     }
 
     protected Collider2D[] GetEnemiesInRange()
