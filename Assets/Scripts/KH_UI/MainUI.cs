@@ -25,7 +25,6 @@ public class MainUI : DaniTechUIBase
         Button_Chamber.BindOnClickButtonEvent(OnClick_Chamber);
         Button_Ending.BindOnClickButtonEvent(OnClick_Ending);
 
-        SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI");
         RefreshUmbra();
         RefreshBG();
     }
@@ -45,6 +44,13 @@ public class MainUI : DaniTechUIBase
         bool isEndingCleared = DaniTechGameManager.Inst.GetEndingCleared();
         string bgPath = isEndingCleared ? EndingBGPath : NormalBGPath;
         DaniTechGameUtil.LoadAndSetTexture(RawImage_BG, bgPath).Forget();
+
+        if (isEndingCleared)
+        {
+            SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI_Ending");
+        }
+        else
+            SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI");
     }
 
     public void OnClick_Dictionary()

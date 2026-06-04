@@ -14,7 +14,7 @@ public class EndingPopup : DaniTechUIBase
         _currentIndex = 0;
         Button_Next.BindOnClickButtonEvent(OnClick_Next);
         RefreshUI();
-        SoundManager.Instance.PlayBGMOnLoop("Sound/");
+        SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_Ending");
     }
 
     private void OnDisable()

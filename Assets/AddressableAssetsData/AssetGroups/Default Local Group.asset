@@ -75,6 +75,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3a86da2baa379f4e81afe21e8480ffa
+    m_Address: Sound/BGM_Ending
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab2c25d36192eb241a4995544807bf4d
+    m_Address: Sound/BGM_MainUI_Ending
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aeed067757a1bca46aa4f5ae234f3eea
     m_Address: Sound/BGM_Chapter06
     m_ReadOnly: 0
