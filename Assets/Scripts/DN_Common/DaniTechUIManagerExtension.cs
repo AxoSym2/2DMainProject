@@ -31,7 +31,8 @@ public enum DaniTechUIType
     ChamberUI,
     DictionaryUI,
     EndingPopup,
-    CautionPopup_Ending
+    CautionPopup_Ending,
+    ReturnToMainPopup
 
 }
 

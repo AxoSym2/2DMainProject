@@ -236,7 +236,8 @@ public class DaniTechGameManager : MonoBehaviour
 
     public void OnPlayerDie()
     {
-        ReturnToMainUI();
+        Time.timeScale = 0f;
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.ReturnToMainPopup);
     }
 
     public void IncreasePlayerExp(int exp)
