@@ -119,6 +119,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     public void StartChapter(int chapterIdx)
     {
+        _currentChapterUmbra = 0;
         _currentChapterIdx = chapterIdx;
 
         if (_currentMap != null)

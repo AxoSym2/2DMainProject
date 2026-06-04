@@ -356,7 +356,7 @@
     "ChapterId": "Chapter_Earth_3",
     "WaveNumber": 15,
     "EnemyIdList": "enemy_tank_01,enemy_firetank_01,enemy_drill_01",
-    "SpawnCount": 700,
+    "SpawnCount": 120,
     "SpawnInterval": 0.5
   },
   {

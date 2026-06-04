@@ -10,6 +10,7 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Chapter;
     [SerializeField] private DaniTechUIButton Button_Chamber;
     [SerializeField] private DaniTechUIButton Button_Ending;
+    [SerializeField] private DaniTechUIButton Button_SaveAndExit;
 
     [SerializeField] private RawImage RawImage_BG;
     [SerializeField] private string NormalBGPath;
@@ -24,6 +25,7 @@ public class MainUI : DaniTechUIBase
         Button_Chapter.BindOnClickButtonEvent(OnClick_Chapter);
         Button_Chamber.BindOnClickButtonEvent(OnClick_Chamber);
         Button_Ending.BindOnClickButtonEvent(OnClick_Ending);
+        Button_SaveAndExit.BindOnClickButtonEvent(OnClick_SaveAndExit);
 
         RefreshUmbra();
         RefreshBG();
@@ -100,5 +102,10 @@ public class MainUI : DaniTechUIBase
             }
         }
         DaniTechUIManager.Instance.OpenEndingUI();
+    }
+
+    public void OnClick_SaveAndExit()
+    {
+        DaniTechGameManager.Inst.SaveAndEndGame();
     }
 }
