@@ -489,4 +489,14 @@ public class DaniTechGameManager : MonoBehaviour
         }
         return total;
     }
+
+    public void SetEndingCleared()
+    {
+        _playerModel.IsEndingCleared = true;
+    }
+
+    public bool GetEndingCleared()
+    {
+        return _playerModel.IsEndingCleared;
+    }
 }

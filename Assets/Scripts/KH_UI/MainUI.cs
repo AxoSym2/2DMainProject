@@ -11,6 +11,10 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Chamber;
     [SerializeField] private DaniTechUIButton Button_Ending;
 
+    [SerializeField] private RawImage RawImage_BG;
+    [SerializeField] private string NormalBGPath;
+    [SerializeField] private string EndingBGPath;
+
     [SerializeField] private bool _isDebugMode = false;
 
     private void OnEnable()
@@ -23,6 +27,7 @@ public class MainUI : DaniTechUIBase
 
         SoundManager.Instance.PlayBGMOnLoop("Sound/BGM_MainUI");
         RefreshUmbra();
+        RefreshBG();
     }
 
     private void OnDisable()
@@ -33,6 +38,13 @@ public class MainUI : DaniTechUIBase
     public void RefreshUmbra()
     {
         Text_Umbra.text = $"{DaniTechGameManager.Inst.GetUmbra()}";
+    }
+
+    public void RefreshBG()
+    {
+        bool isEndingCleared = DaniTechGameManager.Inst.GetEndingCleared();
+        string bgPath = isEndingCleared ? EndingBGPath : NormalBGPath;
+        DaniTechGameUtil.LoadAndSetTexture(RawImage_BG, bgPath).Forget();
     }
 
     public void OnClick_Dictionary()

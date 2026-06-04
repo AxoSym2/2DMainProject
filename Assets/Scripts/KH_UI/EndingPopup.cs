@@ -14,16 +14,18 @@ public class EndingPopup : DaniTechUIBase
         _currentIndex = 0;
         Button_Next.BindOnClickButtonEvent(OnClick_Next);
         RefreshUI();
+        SoundManager.Instance.PlayBGMOnLoop("Sound/");
     }
 
     private void OnDisable()
     {
         Button_Next.UnBindOnClickButtonEvent(OnClick_Next);
+        SoundManager.Instance.StopBGM();
     }
 
     private void RefreshUI()
     {
-        if (EndingSprites == null && EndingSprites.Length == 0) return;
+        if (EndingSprites == null || EndingSprites.Length == 0) return;
         Image_Ending.sprite = EndingSprites[_currentIndex];
     }
 
@@ -36,7 +38,16 @@ public class EndingPopup : DaniTechUIBase
         }
         else
         {
+            //Debug.Log("엔딩 클리어");
+            DaniTechGameManager.Inst.SetEndingCleared();
+            DaniTechGameManager.Inst.SaveData();
             DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.EndingPopup);
+
+            var mainUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+            if (mainUI is MainUI mUi)
+            {
+                mUi.RefreshBG();
+            }
         }
     }
 }

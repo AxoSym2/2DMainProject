@@ -30,4 +30,6 @@ public class DaniTechPlayerModel
     public int HpUpgradeLevel;
     public int DefenseUpgradeLevel;
     public int CoolDownUpgradeLevel;
+
+    public bool IsEndingCleared;
 }
