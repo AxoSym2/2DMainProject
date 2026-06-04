@@ -27,6 +27,11 @@ public class MainUI : DaniTechUIBase
 
         RefreshUmbra();
         RefreshBG();
+
+        if(_isDebugMode)
+        {
+            DaniTechGameManager.Inst.AddUmbra(999999999);
+        }
     }
 
     private void OnDisable()

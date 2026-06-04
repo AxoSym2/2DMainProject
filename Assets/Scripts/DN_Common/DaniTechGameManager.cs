@@ -25,10 +25,6 @@ public class DaniTechGameManager : MonoBehaviour
     private void Awake()
     {
         Inst = this;
-    }
-
-    private void Start()
-    {
         LoadSaveData();
     }
 
