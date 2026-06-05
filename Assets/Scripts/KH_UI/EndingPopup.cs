@@ -59,5 +59,10 @@ public class EndingPopup : DaniTechUIBase
         {
             mUi.RefreshBG();
         }
+        EndingIcon endingIcon = FindAnyObjectByType<EndingIcon>();
+        if (endingIcon != null)
+        {
+            endingIcon.Refresh();
+        }
     }
 }
