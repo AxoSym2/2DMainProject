@@ -24,7 +24,6 @@ public class ChapterPopup : DaniTechUIBase
 
     private void OnEnable()
     {
-        _currentChapterIdx = 1;
         Button_StartChapter.BindOnClickButtonEvent(OnClick_StartChpater);
         Button_PreviousChapter.BindOnClickButtonEvent(OnClick_PreviousChpater);
         Button_NextChapter.BindOnClickButtonEvent(OnClick_NextChpater);

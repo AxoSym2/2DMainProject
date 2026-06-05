@@ -43,11 +43,21 @@ public class EndingPopup : DaniTechUIBase
             DaniTechGameManager.Inst.SaveData();
             DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.EndingPopup);
 
-            var mainUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
-            if (mainUI is MainUI mUi)
+            DaniTechUIManager.Instance.OpenLoadingUI();
+            var laodingUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.VeryFrontUI, DaniTechUIType.LoadingUI);
+            if (laodingUI is LoadingUI loading)
             {
-                mUi.RefreshBG();
+                loading.SetOnLoadingComplete(OnLoadingComplete);
             }
+        }
+    }
+
+    private void OnLoadingComplete()
+    {
+        var mainUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
+        if (mainUI is MainUI mUi)
+        {
+            mUi.RefreshBG();
         }
     }
 }

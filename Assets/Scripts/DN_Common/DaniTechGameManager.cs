@@ -99,7 +99,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     private async UniTaskVoid ShowInitialSkillSelection()
     {
-        for (int i =0; i<3; i++)
+        for (int i = 0; i < 5; i++)
         {
             OnLevelUp();
             await UniTask.WaitUntil(IsLevelUpPopupClosed);
@@ -247,7 +247,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     private float GetExpToNextLevel()
     {
-        return 100 * Mathf.Pow(1.5f, _currentLevel - 1);
+        return 100 * Mathf.Pow(1.2f, _currentLevel - 1);
     }
 
     private void CheckLevelUp()

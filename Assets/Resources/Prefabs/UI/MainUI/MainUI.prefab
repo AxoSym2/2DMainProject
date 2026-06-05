@@ -1596,7 +1596,7 @@ MonoBehaviour:
   RawImage_BG: {fileID: 6615040981576487106}
   NormalBGPath: BG_Image/Apocalypse_Project_Main_Image
   EndingBGPath: BG_Image/Apocalypse_Project_Main_Image2
-  _isDebugMode: 1
+  _isDebugMode: 0
 --- !u!82 &1845394496670103678
 AudioSource:
   m_ObjectHideFlags: 0
