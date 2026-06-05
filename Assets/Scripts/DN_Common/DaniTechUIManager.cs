@@ -140,4 +140,9 @@ public class DaniTechUIManager : MonoBehaviour
     {
         CloseUI(DaniTechUIRootType.PopupUI, uiType);
     }
+
+    public bool IsUIOpen(DaniTechUIType uiType)
+    {
+        return _openedUIDic.Contains(uiType);
+    }
 }

@@ -338,6 +338,7 @@ public class DaniTechGameManager : MonoBehaviour
 
     private void UpdateUmbraUI()
     {
+        if (DaniTechUIManager.Instance.IsUIOpen(DaniTechUIType.InGameUI) == false) return;
         var inGameUI = DaniTechUIManager.Instance.GetCreatedUI(DaniTechUIRootType.MainUI, DaniTechUIType.InGameUI);
         if (inGameUI is InGameUI ui)
         {
