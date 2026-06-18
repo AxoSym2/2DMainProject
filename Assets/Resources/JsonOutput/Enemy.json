@@ -450,7 +450,7 @@
     "ProjectilePath": null,
     "ProjectileSpeed": 10,
     "ExpReward": 0,
-    "Hp": 10000000,
+    "Hp": 100000,
     "MoveSpeed": 3,
     "AttackDamage": 8000,
     "AttackCoolDown": 3,

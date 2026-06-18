@@ -6,7 +6,7 @@
     "SkillId": "skill_instance_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_Male_01",
     "IconPath": "Icon/PlayerUnit_Icon/Jade",
-    "Hp": 500,
+    "Hp": 100000,
     "MoveSpeed": 5
   },
   {
@@ -26,7 +26,7 @@
     "SkillId": "skill_projectile_01",
     "PrefabPath": "Prefabs/KH_2DObject/PlayerUnit_FeMale_01",
     "IconPath": "Icon/PlayerUnit_Icon/Alice",
-    "Hp": 500,
+    "Hp": 100000,
     "MoveSpeed": 5
   },
   {
